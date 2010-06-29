@@ -1,0 +1,544 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>Scaladoc for scala.xml</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		      <script type="text/javascript" src="../../lib/jquery.js"></script>
+          
+      <link href="../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+
+      <p id="owner"><a href="../package.html" class="extype" name="scala">scala</a></p>
+
+      <div id="definition">
+        <img src="../../lib/package_big.png" />
+        <h1>xml</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">xml</span>
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"></div>
+      
+      <div id="template">
+
+        <div id="mbrsel">
+          
+          <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+          </div>
+        </div>
+        
+                
+        
+        <div class="members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="scala.xml.Atom">
+      <h4 class="signature"><a href="Atom.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Atom</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends SpecialNode</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The class <code>Atom</code> provides an XML node for text (PCDATA).</p>
+    </li><li visbl="pub" name="scala.xml.Attribute">
+      <h4 class="signature"><a href="Attribute.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Attribute</span><span class="result"> extends MetaData</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.xml.Comment">
+      <h4 class="signature"><a href="Comment.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Comment</span><span class="params">(<span name="commentText">commentText: String</span>)</span><span class="result"> extends SpecialNode with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The class <code>Comment</code> implements an XML node for comments.</p>
+    </li><li visbl="pub" name="scala.xml.Document">
+      <h4 class="signature"><a href="Document.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Document</span><span class="result"> extends NodeSeq with XMLEvent</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A document information item (according to InfoSet spec).</p>
+    </li><li visbl="pub" name="scala.xml.Elem">
+      <h4 class="signature"><a href="Elem.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Elem</span><span class="result"> extends Node</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The case class <code>Elem</code> extends the <code>Node</code> class,
+ providing an immutable data object representing an XML element.</p>
+    </li><li visbl="pub" name="scala.xml.EntityRef">
+      <h4 class="signature"><a href="EntityRef.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">EntityRef</span><span class="params">(<span name="entityName">entityName: String</span>)</span><span class="result"> extends SpecialNode with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The class <code>EntityRef</code> implements an XML node for entity
+ references.</p>
+    </li><li visbl="pub" name="_root_#EntityResolver">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">EntityResolver</span><span class="result"> = <span class="extype" name="org.xml.sax.EntityResolver">EntityResolver</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.xml.Group">
+      <h4 class="signature"><a href="Group.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Group</span><span class="params">(<span name="nodes">nodes: Seq[Node]</span>)</span><span class="result"> extends Node with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A hack to group XML nodes in one node for output.</p>
+    </li><li visbl="pub" name="scala.xml.HasKeyValue">
+      <h4 class="signature"><a href="HasKeyValue.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name deprecated">HasKeyValue</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   Use this class to match on (unprefixed) attribute values</p>
+    </li><li visbl="pub" name="_root_#InputSource">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">InputSource</span><span class="result"> = <span class="extype" name="org.xml.sax.InputSource">InputSource</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.xml.MalformedAttributeException">
+      <h4 class="signature"><a href="MalformedAttributeException.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">MalformedAttributeException</span><span class="params">(<span name="msg">msg: String</span>)</span><span class="result"> extends RuntimeException with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.xml.MetaData">
+      <h4 class="signature"><a href="MetaData.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">MetaData</span><span class="result"> extends Iterable[MetaData] with Equality</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This class represents an attribute and at the same time a linked list of attributes.</p>
+    </li><li visbl="pub" name="scala.xml.NamespaceBinding">
+      <h4 class="signature"><a href="NamespaceBinding.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">NamespaceBinding</span><span class="params">(<span name="prefix">prefix: String</span>, <span name="uri">uri: String</span>, <span name="parent">parent: NamespaceBinding</span>)</span><span class="result"> extends Equality with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The class <code>NamespaceBinding</code> represents namespace bindings
+ and scopes.</p>
+    </li><li visbl="pub" name="scala.xml.Node">
+      <h4 class="signature"><a href="Node.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Node</span><span class="result"> extends NodeSeq</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">An abstract class representing XML with nodes of a labelled tree.</p>
+    </li><li visbl="pub" name="scala.xml.NodeBuffer">
+      <h4 class="signature"><a href="NodeBuffer.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">NodeBuffer</span><span class="result"> extends ArrayBuffer[Node]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">  This class acts as a Buffer for nodes.</p>
+    </li><li visbl="pub" name="scala.xml.NodeSeq">
+      <h4 class="signature"><a href="NodeSeq.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">NodeSeq</span><span class="result"> extends Seq[Node] with SeqLike[Node, NodeSeq] with Equality</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class implements a wrapper around <code>Seq[Node]</code> that
+ adds XPath and comprehension methods.</p>
+    </li><li visbl="pub" name="scala.xml.PCData">
+      <h4 class="signature"><a href="PCData.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">PCData</span><span class="params">(<span name="_data">_data: String</span>)</span><span class="result"> extends Atom[String] with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class (which is not used by all XML parsers, but always used by the XHTML one)
+ represents parseable character data, which appeared as CDATA sections in the input
+ and is to be preserved as CDATA section in the output.</p>
+    </li><li visbl="pub" name="scala.xml.PrefixedAttribute">
+      <h4 class="signature"><a href="PrefixedAttribute.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">PrefixedAttribute</span><span class="result"> extends MetaData with Attribute</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">prefixed attributes always have a non-null namespace.</p>
+    </li><li visbl="pub" name="scala.xml.PrettyPrinter">
+      <h4 class="signature"><a href="PrettyPrinter.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">PrettyPrinter</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Class for pretty printing.</p>
+    </li><li visbl="pub" name="scala.xml.ProcInstr">
+      <h4 class="signature"><a href="ProcInstr.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ProcInstr</span><span class="params">(<span name="target">target: String</span>, <span name="proctext">proctext: String</span>)</span><span class="result"> extends SpecialNode with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">an XML node for processing instructions (PI)
+</p>
+    </li><li visbl="pub" name="_root_#SAXException">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">SAXException</span><span class="result"> = <span class="extype" name="org.xml.sax.SAXException">SAXException</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#SAXParseException">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">SAXParseException</span><span class="result"> = <span class="extype" name="org.xml.sax.SAXParseException">SAXParseException</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#SAXParser">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">SAXParser</span><span class="result"> = <span class="extype" name="javax.xml.parsers.SAXParser">SAXParser</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.xml.SpecialNode">
+      <h4 class="signature"><a href="SpecialNode.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">SpecialNode</span><span class="result"> extends Node with XMLEvent</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   <code>SpecialNode</code> is a special XML node which
+   represents either text (PCDATA), a comment, a PI, or an entity ref.</p>
+    </li><li visbl="pub" name="scala.xml.Text">
+      <h4 class="signature"><a href="Text.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Text</span><span class="params">(<span name="_data">_data: String</span>)</span><span class="result"> extends Atom[String] with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The class <code>Text</code> implements an XML node for text (PCDATA).</p>
+    </li><li visbl="pub" name="scala.xml.TextBuffer">
+      <h4 class="signature"><a href="TextBuffer.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">TextBuffer</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The class <code>TextBuffer</code> is for creating text nodes without
+ surplus whitespace.</p>
+    </li><li visbl="pub" name="scala.xml.TypeSymbol">
+      <h4 class="signature"><a href="TypeSymbol.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">TypeSymbol</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: abstract 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.xml.Unparsed">
+      <h4 class="signature"><a href="Unparsed.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Unparsed</span><span class="result"> extends Atom[String]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">An XML node for unparsed content.</p>
+    </li><li visbl="pub" name="scala.xml.UnprefixedAttribute">
+      <h4 class="signature"><a href="UnprefixedAttribute.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">UnprefixedAttribute</span><span class="result"> extends MetaData with Attribute</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Unprefixed attributes have the null namespace, and no prefix field
+</p>
+    </li></ol>
+            </div>
+        
+        <div class="members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="scala.xml.Attribute">
+      <h4 class="signature"><a href="Attribute$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Attribute</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Attribute defines the interface shared by both
+ PrefixedAttribute and UnprefixedAttribute
+</p>
+    </li><li visbl="pub" name="scala.xml.Elem">
+      <h4 class="signature"><a href="Elem$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Elem</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This singleton object contains the apply and unapplySeq methods for convenient construction and
+ deconstruction.</p>
+    </li><li visbl="pub" name="scala.xml.Equality">
+      <h4 class="signature"><a href="Equality$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Equality</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">In an attempt to contain the damage being inflicted on
+ consistency by the ad hoc equals methods spread around
+ xml, the logic is centralized and all the xml classes
+ go through the xml.</p>
+    </li><li visbl="pub" name="scala.xml.MetaData">
+      <h4 class="signature"><a href="MetaData$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">MetaData</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Copyright 2008 Google Inc.</p>
+    </li><li visbl="pub" name="scala.xml.Node">
+      <h4 class="signature"><a href="Node$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Node</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This object provides methods .</p>
+    </li><li visbl="pub" name="scala.xml.NodeSeq">
+      <h4 class="signature"><a href="NodeSeq$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">NodeSeq</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This object .</p>
+    </li><li visbl="pub" name="scala.xml.Null">
+      <h4 class="signature"><a href="Null$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Null</span><span class="result"> extends MetaData with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Essentially, every method in here is a dummy, returning Zero[T].</p>
+    </li><li visbl="pub" name="scala.xml.PrefixedAttribute">
+      <h4 class="signature"><a href="PrefixedAttribute$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">PrefixedAttribute</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.xml.QNode">
+      <h4 class="signature"><a href="QNode$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">QNode</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This object provides an extractor method to match a qualified node with its namespace URI
+</p>
+    </li><li visbl="pub" name="scala.xml.Source">
+      <h4 class="signature"><a href="Source$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Source</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.xml.TextBuffer">
+      <h4 class="signature"><a href="TextBuffer$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">TextBuffer</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.xml.TopScope">
+      <h4 class="signature"><a href="TopScope$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">TopScope</span><span class="result"> extends NamespaceBinding</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">top level namespace scope.</p>
+    </li><li visbl="pub" name="scala.xml.Unparsed">
+      <h4 class="signature"><a href="Unparsed$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Unparsed</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.xml.UnprefixedAttribute">
+      <h4 class="signature"><a href="UnprefixedAttribute$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">UnprefixedAttribute</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.xml.Utility">
+      <h4 class="signature"><a href="Utility$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Utility</span><span class="result"> extends TokenTests</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The <code>Utility</code> object provides utility functions for processing
+instances of bound and not bound XML classes, as well as escaping text nodes.</p>
+    </li><li visbl="pub" name="scala.xml.XML">
+      <h4 class="signature"><a href="XML$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">XML</span><span class="result"> extends XMLLoader[Elem]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The object <code>XML</code> provides constants, and functions to load
+ and save XML elements.</p>
+    </li><li visbl="pub" name="_root_#XercesClassName">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">XercesClassName</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.xml.Xhtml">
+      <h4 class="signature"><a href="Xhtml$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Xhtml</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.xml.dtd">
+      <h4 class="signature"><a href="dtd/package.html">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">dtd</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.xml.factory">
+      <h4 class="signature"><a href="factory/package.html">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">factory</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.xml.include">
+      <h4 class="signature"><a href="include/package.html">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">include</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.xml.parsing">
+      <h4 class="signature"><a href="parsing/package.html">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">parsing</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.xml.persistent">
+      <h4 class="signature"><a href="persistent/package.html">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">persistent</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.xml.pull">
+      <h4 class="signature"><a href="pull/package.html">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">pull</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.xml.transform">
+      <h4 class="signature"><a href="transform/package.html">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">transform</span>
+      </span>
+      </a></h4>
+      
+    </li></ol>
+            </div>
+                
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

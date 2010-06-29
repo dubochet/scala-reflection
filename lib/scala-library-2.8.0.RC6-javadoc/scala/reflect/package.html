@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>Scaladoc for scala.reflect</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		      <script type="text/javascript" src="../../lib/jquery.js"></script>
+          
+      <link href="../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+
+      <p id="owner"><a href="../package.html" class="extype" name="scala">scala</a></p>
+
+      <div id="definition">
+        <img src="../../lib/package_big.png" />
+        <h1>reflect</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">reflect</span>
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"></div>
+      
+      <div id="template">
+
+        <div id="mbrsel">
+          
+          <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+          </div>
+        </div>
+        
+                
+        
+        <div class="members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="scala.reflect.BeanDescription">
+      <h4 class="signature"><a href="BeanDescription.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">BeanDescription</span><span class="result"> extends Annotation</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Provides a short description that will be included when generating
+ bean information.</p>
+    </li><li visbl="pub" name="scala.reflect.BeanDisplayName">
+      <h4 class="signature"><a href="BeanDisplayName.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">BeanDisplayName</span><span class="result"> extends Annotation</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Provides a display name when generating bean information.</p>
+    </li><li visbl="pub" name="scala.reflect.BeanInfo">
+      <h4 class="signature"><a href="BeanInfo.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">BeanInfo</span><span class="result"> extends Annotation</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This annotation indicates that a JavaBean-compliant BeanInfo
+   class should be generated for this annotated Scala class.</p>
+    </li><li visbl="pub" name="scala.reflect.BeanInfoSkip">
+      <h4 class="signature"><a href="BeanInfoSkip.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">BeanInfoSkip</span><span class="result"> extends Annotation</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This annotation indicates that bean information should
+ <strong>not</strong> be generated for the val, var, or def that it is
+ attached to.</p>
+    </li><li visbl="pub" name="scala.reflect.BeanProperty">
+      <h4 class="signature"><a href="BeanProperty.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">BeanProperty</span><span class="result"> extends Annotation with StaticAnnotation</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   When attached to a field, this annotation adds a setter and a getter
+   method following the  Java Bean convention.</p>
+    </li><li visbl="pub" name="scala.reflect.BooleanBeanProperty">
+      <h4 class="signature"><a href="BooleanBeanProperty.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">BooleanBeanProperty</span><span class="result"> extends Annotation with StaticAnnotation</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This annotation has the same functionality as
+   <code>scala.</p>
+    </li><li visbl="pub" name="scala.reflect.ClassManifest">
+      <h4 class="signature"><a href="ClassManifest.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">ClassManifest</span><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends OptManifest[T] with Equals</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">  A <code>ClassManifest[T]</code> is an opaque descriptor for type <code>T</code>.</p>
+    </li><li visbl="pub" name="scala.reflect.OptManifest">
+      <h4 class="signature"><a href="OptManifest.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">OptManifest</span><span class="tparams">[<span name="T">+T</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   A <code>OptManifest[T]</code> is an optional <a href="Manifest.html"
+   target="ContentFrame"><code>Manifest</code></a>.</p>
+    </li><li visbl="pub" name="scala.reflect.ScalaBeanInfo">
+      <h4 class="signature"><a href="ScalaBeanInfo.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ScalaBeanInfo</span><span class="result"> extends SimpleBeanInfo</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Provides some simple runtime processing necessary to create
+ JavaBean descriptors for Scala entities.</p>
+    </li></ol>
+            </div>
+        
+        <div class="members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="scala.reflect.ClassManifest">
+      <h4 class="signature"><a href="ClassManifest$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">ClassManifest</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">  This object is used by the compiler and <b>should not be used in client
+  code</b>.</p>
+    </li><li visbl="pub" name="scala.reflect.NameTransformer">
+      <h4 class="signature"><a href="NameTransformer$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">NameTransformer</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">no summary matey</p>
+    </li><li visbl="pub" name="scala.reflect.NoManifest">
+      <h4 class="signature"><a href="NoManifest$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">NoManifest</span><span class="result"> extends OptManifest[Nothing]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt"> One of the branches of an OptManifest
+</p>
+    </li><li visbl="pub" name="scala.reflect.generic">
+      <h4 class="signature"><a href="generic/package.html">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">generic</span>
+      </span>
+      </a></h4>
+      
+    </li></ol>
+            </div>
+                
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

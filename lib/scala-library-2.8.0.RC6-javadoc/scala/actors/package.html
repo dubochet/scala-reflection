@@ -1,0 +1,381 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>Scaladoc for scala.actors</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		      <script type="text/javascript" src="../../lib/jquery.js"></script>
+          
+      <link href="../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+
+      <p id="owner"><a href="../package.html" class="extype" name="scala">scala</a></p>
+
+      <div id="definition">
+        <img src="../../lib/package_big.png" />
+        <h1>actors</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">actors</span>
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"></div>
+      
+      <div id="template">
+
+        <div id="mbrsel">
+          
+          <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+          </div>
+        </div>
+        
+                
+        
+        <div class="members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="scala.actors.!">
+      <h4 class="signature"><a href="$bang.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">!</span><span class="tparams">[<span name="a">a</span>]</span><span class="params">(<span name="ch">ch: Channel[a]</span>, <span name="msg">msg: a</span>)</span><span class="result"> extends Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt"> This class is used to pattern match on values that were sent
+ to some channel <code>Chan<sub>n</sub></code> by the current
+ actor <code>self</code>.</p>
+    </li><li visbl="pub" name="scala.actors.AbstractActor">
+      <h4 class="signature"><a href="AbstractActor.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">AbstractActor</span><span class="result"> extends OutputChannel[Any] with CanReply[Any, Any]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The <code>AbstractActor</code> trait.</p>
+    </li><li visbl="pub" name="scala.actors.Actor">
+      <h4 class="signature"><a href="Actor.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Actor</span><span class="result"> extends AbstractActor with ReplyReactor with ActorCanReply with InputChannel[Any]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">  This class provides an implementation of event-based actors.</p>
+    </li><li visbl="pub" name="scala.actors.CanReply">
+      <h4 class="signature"><a href="CanReply.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">CanReply</span><span class="tparams">[<span name="T">-T</span>, <span name="R">+R</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The <code>CanReply</code> trait defines result-bearing message send operations.</p>
+    </li><li visbl="pub" name="scala.actors.Channel">
+      <h4 class="signature"><a href="Channel.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Channel</span><span class="tparams">[<span name="Msg">Msg</span>]</span><span class="result"> extends InputChannel[Msg] with OutputChannel[Msg] with CanReply[Msg, Any]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class provides a means for typed communication among
+actors.</p>
+    </li><li visbl="pub" name="scala.actors.DaemonActor">
+      <h4 class="signature"><a href="DaemonActor.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">DaemonActor</span><span class="result"> extends Actor</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Base trait for actors with daemon semantics.</p>
+    </li><li visbl="pub" name="scala.actors.Debug">
+      <h4 class="signature"><a href="Debug.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name deprecated">Debug</span><span class="result"> extends Logger</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block"><ol>deprecated:
+          <li><p>this class is going to be removed in a future release</p></li>
+        </ol></div></div>
+          
+    </li><li visbl="pub" name="scala.actors.Exit">
+      <h4 class="signature"><a href="Exit.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Exit</span><span class="params">(<span name="from">from: AbstractActor</span>, <span name="reason">reason: AnyRef</span>)</span><span class="result"> extends Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">An <code>Exit</code> message (an instance of this class) is sent to an actor
+ with <code>trapExit</code> set to <code>true</code> whenever one of its linked actors
+ terminates.</p>
+    </li><li visbl="pub" name="_root_#FJTaskScheduler2">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name deprecated">FJTaskScheduler2</span><span class="result"> = <a href="scheduler/ForkJoinScheduler.html" class="extype" name="scala.actors.scheduler.ForkJoinScheduler">ForkJoinScheduler</a></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../package.html" class="extype" name="_root_">root</a>
+        </div><div class="block"><ol>deprecated:
+          <li><p>use scheduler.ForkJoinScheduler instead</p></li>
+        </ol></div></div>
+          
+    </li><li visbl="pub" name="scala.actors.Future">
+      <h4 class="signature"><a href="Future.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Future</span><span class="tparams">[<span name="T">+T</span>]</span><span class="result"> extends Responder[T] with () ⇒ T</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A <code>Future[T]</code> is a function of arity 0 that returns
+ a value of type <code>T</code>.</p>
+    </li><li visbl="pub" name="scala.actors.IScheduler">
+      <h4 class="signature"><a href="IScheduler.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">IScheduler</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The <code>IScheduler</code> trait provides a common interface
+for all schedulers used to execute actor tasks.</p>
+    </li><li visbl="pub" name="scala.actors.InputChannel">
+      <h4 class="signature"><a href="InputChannel.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">InputChannel</span><span class="tparams">[<span name="Msg">+Msg</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The <code>InputChannel</code> trait provides a common interface
+for all channels from which values can be received.</p>
+    </li><li visbl="pub" name="scala.actors.MessageQueue">
+      <h4 class="signature"><a href="MessageQueue.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name deprecated">MessageQueue</span><span class="result"> extends MQueue[Any]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The class <code>MessageQueue</code> provides an efficient
+implementation of a message queue specialized for this actor
+library.</p>
+    </li><li visbl="pub" name="scala.actors.MessageQueueElement">
+      <h4 class="signature"><a href="MessageQueueElement.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name deprecated">MessageQueueElement</span><span class="result"> extends MQueueElement[Any]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class is used by our efficient message queue
+implementation.</p>
+    </li><li visbl="pub" name="scala.actors.OutputChannel">
+      <h4 class="signature"><a href="OutputChannel.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">OutputChannel</span><span class="tparams">[<span name="Msg">-Msg</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The <code>OutputChannel</code> trait provides a common interface
+for all channels to which values can be sent.</p>
+    </li><li visbl="pub" name="scala.actors.Reaction">
+      <h4 class="signature"><a href="Reaction.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name deprecated">Reaction</span><span class="result"> extends ActorTask</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   The abstract class <code>Reaction</code> associates
+   an instance of an <code>Actor</code> with a
+   <a class="java/lang/Runnable" href="" target="contentFrame">   <code>java.</p>
+    </li><li visbl="pub" name="scala.actors.Reactor">
+      <h4 class="signature"><a href="Reactor.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Reactor</span><span class="tparams">[<span name="Msg">Msg &gt;: Null</span>]</span><span class="result"> extends OutputChannel[Msg] with Combinators</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The Reactor trait provides lightweight actors.</p>
+    </li><li visbl="pub" name="scala.actors.ReplyReactor">
+      <h4 class="signature"><a href="ReplyReactor.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">ReplyReactor</span><span class="result"> extends Reactor[Any] with ReactorCanReply</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   The <code>ReplyReactor</code> trait extends the <code>Reactor</code>   trait with methods to reply to the sender of a message.</p>
+    </li><li visbl="pub" name="scala.actors.SchedulerAdapter">
+      <h4 class="signature"><a href="SchedulerAdapter.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">SchedulerAdapter</span><span class="result"> extends IScheduler</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The <code>SchedulerAdapter</code> trait is used to adapt
+ the behavior of the standard <code>Scheduler</code> object.</p>
+    </li><li visbl="pub" name="_root_#SingleThreadedScheduler">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name deprecated">SingleThreadedScheduler</span><span class="result"> = <a href="scheduler/SingleThreadedScheduler.html" class="extype" name="scala.actors.scheduler.SingleThreadedScheduler">SingleThreadedScheduler</a></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../package.html" class="extype" name="_root_">root</a>
+        </div><div class="block"><ol>deprecated:
+          <li><p>use scheduler.SingleThreadedScheduler instead</p></li>
+        </ol></div></div>
+          
+    </li><li visbl="pub" name="_root_#TickedScheduler">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name deprecated">TickedScheduler</span><span class="result"> = <a href="scheduler/ForkJoinScheduler.html" class="extype" name="scala.actors.scheduler.ForkJoinScheduler">ForkJoinScheduler</a></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../package.html" class="extype" name="_root_">root</a>
+        </div><div class="block"><ol>deprecated:
+          <li><p>use scheduler.ForkJoinScheduler instead</p></li>
+        </ol></div></div>
+          
+    </li><li visbl="pub" name="scala.actors.UncaughtException">
+      <h4 class="signature"><a href="UncaughtException.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">UncaughtException</span><span class="params">(<span name="actor">actor: Actor</span>, <span name="message">message: Option[Any]</span>, <span name="sender">sender: Option[OutputChannel[Any]]</span>, <span name="thread">thread: Thread</span>, <span name="cause">cause: Throwable</span>)</span><span class="result"> extends Exception with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The exit reason when an actor fails to catch an exception.</p>
+    </li><li visbl="pub" name="_root_#WorkerThread">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name deprecated">WorkerThread</span><span class="result"> = <span class="extype" name="java.lang.Thread">Thread</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../package.html" class="extype" name="_root_">root</a>
+        </div><div class="block"><ol>deprecated:
+          <li><p>this class is going to be removed in a future release</p></li>
+        </ol></div></div>
+          
+    </li><li visbl="pub" name="_root_#WorkerThreadScheduler">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name deprecated">WorkerThreadScheduler</span><span class="result"> = <a href="scheduler/ForkJoinScheduler.html" class="extype" name="scala.actors.scheduler.ForkJoinScheduler">ForkJoinScheduler</a></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../package.html" class="extype" name="_root_">root</a>
+        </div><div class="block"><ol>deprecated:
+          <li><p>use scheduler.ForkJoinScheduler instead</p></li>
+        </ol></div></div>
+          
+    </li></ol>
+            </div>
+        
+        <div class="members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="scala.actors.Actor">
+      <h4 class="signature"><a href="Actor$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Actor</span><span class="result"> extends Combinators</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The <code>Actor</code> object provides functions for the definition of
+actors, as well as actor operations, such as<code>receive</code>, <code>react</code>, <code>reply</code>,
+etc.</p>
+    </li><li visbl="pub" name="_root_#ActorGC">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name deprecated">ActorGC</span><span class="result">: <a href="IScheduler.html" class="extype" name="scala.actors.IScheduler">IScheduler</a> with <a href="scheduler/ActorGC.html" class="extype" name="scala.actors.scheduler.ActorGC">ActorGC</a></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../package.html" class="extype" name="_root_">root</a>
+        </div><div class="block"><ol>deprecated:
+          <li><p>this value is going to be removed in a future release</p></li>
+        </ol></div></div>
+          
+    </li><li visbl="pub" name="scala.actors.Debug">
+      <h4 class="signature"><a href="Debug$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Debug</span><span class="result"> extends Logger</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Provides methods for generating debugging output.</p>
+    </li><li visbl="pub" name="scala.actors.Futures">
+      <h4 class="signature"><a href="Futures$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Futures</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The <code>Futures</code> object contains methods that operate on futures.</p>
+    </li><li visbl="pub" name="scala.actors.Scheduler">
+      <h4 class="signature"><a href="Scheduler$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Scheduler</span><span class="result"> extends DelegatingScheduler</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The <code>Scheduler</code> object is used by <code>Actor</code> to
+execute tasks of an actor execution.</p>
+    </li><li visbl="pub" name="scala.actors.TIMEOUT">
+      <h4 class="signature"><a href="TIMEOUT$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">TIMEOUT</span><span class="result"> extends Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object is used as the timeout pattern in
+   <a href="Actor.html#receiveWithin(Long)" target="contentFrame">   <code>receiveWithin</code></a> and
+   <a href="Actor.html#reactWithin(Long)" target="contentFrame">   <code>reactWithin</code></a>.</p>
+    </li><li visbl="pub" name="scala.actors.remote">
+      <h4 class="signature"><a href="remote/package.html">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">remote</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.actors.scheduler">
+      <h4 class="signature"><a href="scheduler/package.html">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">scheduler</span>
+      </span>
+      </a></h4>
+      
+    </li></ol>
+            </div>
+                
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

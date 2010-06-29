@@ -1,0 +1,1645 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>Scaladoc for scala.math.BigInt</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		      <script type="text/javascript" src="../../lib/jquery.js"></script>
+          
+      <link href="../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="type">
+
+      <p id="owner"><a href="../package.html" class="extype" name="scala">scala</a>.<a href="package.html" class="extype" name="scala.math">math</a></p>
+
+      <div id="definition">
+        <img src="../../lib/class_big.png" />
+        <h1>BigInt</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">BigInt</span><span class="result"> extends <span class="extype" name="scala.math.ScalaNumber">ScalaNumber</span> with <a href="ScalaNumericConversions.html" class="extype" name="scala.math.ScalaNumericConversions">ScalaNumericConversions</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"><div class="comment cmt"></div><div class="block">
+            go to: <a href="BigInt$.html">companion</a>
+          </div><div class="block">
+            source: <a href="https://lampsvn.epfl.ch/trac/scala/browser/scala/trunk/src///library/scala/math/BigInt.scala">BigInt.scala</a>
+          </div>
+            <div class="block"><ol>version
+                  <li><p>1.0, 15/07/2003
+</p></li>
+                </ol></div>
+            
+            
+            <div class="block"><ol>authors:
+                  <li><p>Martin Odersky</p></li>
+                </ol></div>
+          </div>
+      
+      <div id="template">
+
+        <div id="mbrsel">
+          <div id="ancestors">
+                <span class="filtertype">Inherited</span>
+                <ol><li class="hideall">Hide All</li><li class="showall">Show all</li></ol>
+                <ol id="linearization"><li class="in" name="scala.math.ScalaNumericConversions">ScalaNumericConversions</li><li class="in" name="scala.math.ScalaNumber">ScalaNumber</li><li class="in" name="java.lang.Number">Number</li><li class="in" name="java.io.Serializable">Serializable</li><li class="in" name="scala.AnyRef">AnyRef</li><li class="in" name="scala.Any">Any</li></ol>
+              </div>
+          <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+          </div>
+        </div>
+        
+        <div class="members" id="constructors">
+              <h3>Instance constructors</h3>
+              <ol><li visbl="pub" name="scala.math.BigInt#this">
+      <h4 class="signature">
+      <span class="kind">new</span>
+      <span class="symbol">
+        <span class="name">BigInt</span><span class="params">(<span name="bigInteger">bigInteger: <span class="extype" name="java.math.BigInteger">BigInteger</span></span>)</span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>        
+        
+        
+        
+        <div class="members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="scala.AnyRef#!=">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">!=</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.Any#!=">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"><code>o != arg0</code> is the same as <code>!(o == (arg0))</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p><code>o != arg0</code> is the same as <code>!(o == (arg0))</code>.
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for dis-equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>false</code> if the receiver object is equivalent to the argument; <code>true</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef###">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef → Any
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#$asInstanceOf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">$asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">()</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#$isInstanceOf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">$isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#%">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">%</span><span class="params">(<span name="that">that: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>)</span><span class="result">: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Remainder of BigInts
+</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Remainder of BigInts
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#&amp;">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">&amp;</span><span class="params">(<span name="that">that: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>)</span><span class="result">: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Bitwise and of BigInts
+</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Bitwise and of BigInts
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#&amp;~">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">&amp;~</span><span class="params">(<span name="that">that: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>)</span><span class="result">: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Bitwise and-not of BigInts.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Bitwise and-not of BigInts. Returns a BigInt whose value is (this &amp; ~that).
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#*">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">*</span><span class="params">(<span name="that">that: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>)</span><span class="result">: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Multiplication of BigInts
+</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Multiplication of BigInts
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#+">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">+</span><span class="params">(<span name="that">that: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>)</span><span class="result">: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Addition of BigInts
+</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Addition of BigInts
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#-">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">-</span><span class="params">(<span name="that">that: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>)</span><span class="result">: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Subtraction of BigInts
+</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Subtraction of BigInts
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#/">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">/</span><span class="params">(<span name="that">that: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>)</span><span class="result">: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Division of BigInts
+</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Division of BigInts
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#/%">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">/%</span><span class="params">(<span name="that">that: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>)</span><span class="result">: (<a href="" class="extype" name="scala.math.BigInt">BigInt</a>, <a href="" class="extype" name="scala.math.BigInt">BigInt</a>)</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a pair of two BigInts containing (this / that) and (this % that).</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a pair of two BigInts containing (this / that) and (this % that).
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#&lt;">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">&lt;</span><span class="params">(<span name="that">that: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Less-than of BigInts
+</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Less-than of BigInts
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#&lt;&lt;">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">&lt;&lt;</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Leftshift of BigInt
+</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Leftshift of BigInt
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#&lt;=">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">&lt;=</span><span class="params">(<span name="that">that: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Less-than-or-equals comparison of BigInts
+</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Less-than-or-equals comparison of BigInts
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#==">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">==</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"><code>o == arg0</code> is the same as <code>if (o eq null) arg0 eq null else o.equals(arg0)</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p><code>o == arg0</code> is the same as <code>if (o eq null) arg0 eq null else o.equals(arg0)</code>.
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the receiver object is equivalent to the argument; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.Any#==">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"><code>o == arg0</code> is the same as <code>o.equals(arg0)</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p><code>o == arg0</code> is the same as <code>o.equals(arg0)</code>.
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the receiver object is equivalent to the argument; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#&gt;">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">&gt;</span><span class="params">(<span name="that">that: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Greater-than comparison of BigInts
+</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Greater-than comparison of BigInts
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#&gt;=">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">&gt;=</span><span class="params">(<span name="that">that: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Greater-than-or-equals comparison of BigInts
+</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Greater-than-or-equals comparison of BigInts
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#&gt;&gt;">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">&gt;&gt;</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">(Signed) rightshift of BigInt
+</p>
+            <div class="fullcomment"><div class="comment cmt"><p>(Signed) rightshift of BigInt
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#^">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">^</span><span class="params">(<span name="that">that: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>)</span><span class="result">: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Bitwise exclusive-or of BigInts
+</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Bitwise exclusive-or of BigInts
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#abs">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">abs</span><span class="result">: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns the absolute value of this BigInt
+</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns the absolute value of this BigInt
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.Any#asInstanceOf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is used to cast the receiver object to be of type <code>T0</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is used to cast the receiver object to be of type <code>T0</code>.</p><p>Note that the success of a cast at runtime is modulo Scala's erasure semantics.  Therefore the expression<code>1.asInstanceOf[String]</code> will throw a <code>ClassCastException</code> at runtime, while the expression<code>List(1).asInstanceOf[List[String]]</code> will not.  In the latter example, because the type argument is erased as
+part of compilation it is not possible to check whether the contents of the list are of the requested typed.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the receiver object.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#bigInteger">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">bigInteger</span><span class="result">: <span class="extype" name="java.math.BigInteger">BigInteger</span></span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="scala.math.BigInt#bitCount">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">bitCount</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns the number of bits in the two's complement representation of this BigInt
+ that differ from its sign bit.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns the number of bits in the two's complement representation of this BigInt
+ that differ from its sign bit.
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#bitLength">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">bitLength</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns the number of bits in the minimal two's-complement representation of this BigInt,
+ excluding a sign bit.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns the number of bits in the minimal two's-complement representation of this BigInt,
+ excluding a sign bit.
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#byteValue">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">byteValue</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Byte">Byte</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Converts this BigInt to a <tt>byte</tt>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Converts this BigInt to a <tt>byte</tt>.
+ If the BigInt is too big to fit in a byte, only the low-order 8 bits are returned.
+ Note that this conversion can lose information about the overall magnitude of the
+ BigInt value as well as return a result with the opposite sign.
+</p></div><div class="block">
+          definition classes: <a href="" class="extype" name="scala.math.BigInt">BigInt</a> → Number
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#charValue">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">charValue</span><span class="result">: <span class="extype" name="scala.Char">Char</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Converts this BigInt to a <tt>char</tt>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Converts this BigInt to a <tt>char</tt>.
+ If the BigInt is too big to fit in a char, only the low-order 16 bits are returned.
+ Note that this conversion can lose information about the overall magnitude of the
+ BigInt value and that it always returns a positive result.
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#clearBit">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">clearBit</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a BigInt whose value is equivalent to this BigInt with the designated bit cleared.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a BigInt whose value is equivalent to this BigInt with the designated bit cleared.
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="prt" name="scala.AnyRef#clone">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: AnyRef</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method creates and returns a copy of the receiver object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method creates and returns a copy of the receiver object.</p><p>The default implementation of the <code>clone</code> method is platform dependent.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a copy of the receiver object.</p></dd></dl><div class="block">
+          attributes: protected 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#compare">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">compare</span><span class="params">(<span name="that">that: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Compares this BigInt with the specified BigInt
+</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Compares this BigInt with the specified BigInt
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#doubleValue">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">doubleValue</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Converts this BigInt to a <tt>double</tt>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Converts this BigInt to a <tt>double</tt>.
+ if this BigInt has too great a magnitude to represent as a float,
+ it will be converted to <code>Float.NEGATIVE_INFINITY</code> or
+ <code>Float.POSITIVE_INFINITY</code> as appropriate.
+</p></div><div class="block">
+          definition classes: <a href="" class="extype" name="scala.math.BigInt">BigInt</a> → Number
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#eq">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is used to test whether the argument (<code>arg0</code>) is a reference to the
+receiver object (<code>this</code>).</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is used to test whether the argument (<code>arg0</code>) is a reference to the
+receiver object (<code>this</code>).</p><p>The <code>eq</code> method implements an [http://en.wikipedia.org/wiki/Equivalence_relation equivalence relation] on
+non-null instances of <code>AnyRef</code>:
+ * It is reflexive: for any non-null instance <code>x</code> of type <code>AnyRef</code>, <code>x.eq(x)</code> returns <code>true</code>.
+ * It is symmetric: for any non-null instances <code>x</code> and <code>y</code> of type <code>AnyRef</code>, <code>x.eq(y)</code> returns <code>true</code> if and
+   only if <code>y.eq(x)</code> returns <code>true</code>.
+ * It is transitive: for any non-null instances <code>x</code>, <code>y</code>, and <code>z</code> of type <code>AnyRef</code> if <code>x.eq(y)</code> returns <code>true</code>   and <code>y.eq(z)</code> returns <code>true</code>, then <code>x.eq(z)</code> returns <code>true</code>.</p><p>Additionally, the <code>eq</code> method has three other properties.
+ * It is consistent: for any non-null instances <code>x</code> and <code>y</code> of type <code>AnyRef</code>, multiple invocations of
+   <code>x.eq(y)</code> consistently returns <code>true</code> or consistently returns <code>false</code>.
+ * For any non-null instance <code>x</code> of type <code>AnyRef</code>, <code>x.eq(null)</code> and <code>null.eq(x)</code> returns <code>false</code>.
+ * <code>null.eq(null)</code> returns <code>true</code>.</p><p>When overriding the <code>equals</code> or <code>hashCode</code> methods, it is important to ensure that their behavior is
+consistent with reference equality.  Therefore, if two objects are references to each other (<code>o1 eq o2</code>), they
+should be equal to each other (<code>o1 == o2</code>) and they should hash to the same value (<code>o1.hashCode == o2.hashCode</code>).
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for reference equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the argument is a reference to the receiver object; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#equals">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="that">that: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Compares this BigInt with the specified BigInt for equality.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Compares this BigInt with the specified BigInt for equality.
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#equals">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="that">that: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Compares this BigInt with the specified value for equality.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Compares this BigInt with the specified value for equality.@return     <code>true</code> if the receiver object is equivalent to the argument; <code>false</code> otherwise. */</p></div><div class="block">
+          definition classes: <a href="" class="extype" name="scala.math.BigInt">BigInt</a> → AnyRef → Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="prt" name="scala.AnyRef#finalize">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is called by the garbage collector on the receiver object when garbage collection determines that
+there are no more references to the object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is called by the garbage collector on the receiver object when garbage collection determines that
+there are no more references to the object.</p><p>The details of when and if the <code>finalize</code> method are invoked, as well as the interaction between <code>finalize</code>and non-local returns and exceptions, are all platform dependent.</p></div><div class="block">
+          attributes: protected 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#flipBit">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">flipBit</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a BigInt whose value is equivalent to this BigInt with the designated bit flipped.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a BigInt whose value is equivalent to this BigInt with the designated bit flipped.
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#floatValue">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">floatValue</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Float">Float</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Converts this BigInt to a <tt>float</tt>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Converts this BigInt to a <tt>float</tt>.
+ if this BigInt has too great a magnitude to represent as a float,
+ it will be converted to <code>Float.NEGATIVE_INFINITY</code> or
+ <code>Float.POSITIVE_INFINITY</code> as appropriate.
+</p></div><div class="block">
+          definition classes: <a href="" class="extype" name="scala.math.BigInt">BigInt</a> → Number
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#gcd">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">gcd</span><span class="params">(<span name="that">that: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>)</span><span class="result">: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns the greatest common divisor of abs(this) and abs(that)
+</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns the greatest common divisor of abs(this) and abs(that)
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#getClass">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: java.lang.Class[_ &lt;: java.lang.Object]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a representation that corresponds to the dynamic class of the receiver object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a representation that corresponds to the dynamic class of the receiver object.</p><p>The nature of the representation is platform dependent.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a representation that corresponds to the dynamic class of the receiver object.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#hashCode">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns the hash code for this BigInt.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns the hash code for this BigInt.@return the hash code value for the object. */</p></div><div class="block">
+          definition classes: <a href="" class="extype" name="scala.math.BigInt">BigInt</a> → AnyRef → Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#intValue">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">intValue</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Converts this BigInt to an <tt>int</tt>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Converts this BigInt to an <tt>int</tt>.
+ If the BigInt is too big to fit in a char, only the low-order 32 bits
+ are returned. Note that this conversion can lose information about the
+ overall magnitude of the BigInt value as well as return a result with
+ the opposite sign.
+</p></div><div class="block">
+          definition classes: <a href="" class="extype" name="scala.math.BigInt">BigInt</a> → Number
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.Any#isInstanceOf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is used to test whether the dynamic type of the receiver object is <code>T0</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is used to test whether the dynamic type of the receiver object is <code>T0</code>.</p><p>Note that the test result of the test is modulo Scala's erasure semantics.  Therefore the expression<code>1.isInstanceOf[String]</code> will return <code>false</code>, while the expression <code>List(1).isInstanceOf[List[String]]</code> will
+return <code>true</code>.  In the latter example, because the type argument is erased as part of compilation it is not
+possible to check whether the contents of the list are of the requested typed.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>true</code> if the receiver object is an instance of erasure of type <code>T0</code>; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#isProbablePrime">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">isProbablePrime</span><span class="params">(<span name="certainty">certainty: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns true if this BigInt is probably prime, false if it's definitely composite.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns true if this BigInt is probably prime, false if it's definitely composite.</p></div><dl class="paramcmts block"><dt class="param">certainty</dt><dd class="cmt"><p>a measure of the uncertainty that the caller is willing to tolerate:
+                   if the call returns true the probability that this BigInt is prime
+                   exceeds (1 - 1/2 <sup> certainty).
+                   The execution time of this method is proportional to the value of
+                   this parameter.
+</sup></p></dd></dl>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.ScalaNumericConversions#isValidByte">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">isValidByte</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="ScalaNumericConversions.html" class="extype" name="scala.math.ScalaNumericConversions">ScalaNumericConversions</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.math.ScalaNumericConversions#isValidChar">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">isValidChar</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="ScalaNumericConversions.html" class="extype" name="scala.math.ScalaNumericConversions">ScalaNumericConversions</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.math.ScalaNumericConversions#isValidInt">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">isValidInt</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="ScalaNumericConversions.html" class="extype" name="scala.math.ScalaNumericConversions">ScalaNumericConversions</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.math.ScalaNumericConversions#isValidShort">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">isValidShort</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="ScalaNumericConversions.html" class="extype" name="scala.math.ScalaNumericConversions">ScalaNumericConversions</a>
+        </div></div>
+          
+    </li><li visbl="prt" name="scala.math.BigInt#isWhole">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">isWhole</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: protected[<a href="package.html" class="extype" name="scala.math">math</a>] 
+        </div><div class="block">
+          definition classes: <a href="" class="extype" name="scala.math.BigInt">BigInt</a> → ScalaNumber
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#longValue">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">longValue</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Converts this BigInt to a <tt>long</tt>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Converts this BigInt to a <tt>long</tt>.
+ If the BigInt is too big to fit in a char, only the low-order 64 bits
+ are returned. Note that this conversion can lose information about the
+ overall magnitude of the BigInt value as well as return a result with
+ the opposite sign.
+</p></div><div class="block">
+          definition classes: <a href="" class="extype" name="scala.math.BigInt">BigInt</a> → Number
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#lowestSetBit">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">lowestSetBit</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns the index of the rightmost (lowest-order) one bit in this BigInt
+(the number of zero bits to the right of the rightmost one bit).</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns the index of the rightmost (lowest-order) one bit in this BigInt
+(the number of zero bits to the right of the rightmost one bit).
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#max">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">max</span><span class="params">(<span name="that">that: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>)</span><span class="result">: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns the maximum of this and that
+</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns the maximum of this and that
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#min">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">min</span><span class="params">(<span name="that">that: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>)</span><span class="result">: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns the minimum of this and that
+</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns the minimum of this and that
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#mod">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">mod</span><span class="params">(<span name="that">that: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>)</span><span class="result">: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a BigInt whose value is (this mod m).</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a BigInt whose value is (this mod m).
+ This method differs from <code>%' in that it always returns a non-negative BigInt.
+</code></p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#modInverse">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">modInverse</span><span class="params">(<span name="m">m: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>)</span><span class="result">: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a BigInt whose value is (the inverse of <tt>this</tt> modulo <tt>m</tt>).</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a BigInt whose value is (the inverse of <tt>this</tt> modulo <tt>m</tt>).
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#modPow">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">modPow</span><span class="params">(<span name="exp">exp: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>, <span name="m">m: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>)</span><span class="result">: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a BigInt whose value is
+ (<tt>this</tt> raised to the power of <tt>exp</tt> modulo <tt>m</tt>).</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a BigInt whose value is
+ (<tt>this</tt> raised to the power of <tt>exp</tt> modulo <tt>m</tt>).
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#ne">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"><code>o.ne(arg0)</code> is the same as <code>!(o.eq(arg0))</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p><code>o.ne(arg0)</code> is the same as <code>!(o.eq(arg0))</code>.
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for reference dis-equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>false</code> if the argument is not a reference to the receiver object; <code>true</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#notify">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Wakes up a single thread that is waiting on the receiver object's monitor.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Wakes up a single thread that is waiting on the receiver object's monitor.</p></div><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#notifyAll">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Wakes up all threads that are waiting on the receiver object's monitor.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Wakes up all threads that are waiting on the receiver object's monitor.</p></div><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#pow">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">pow</span><span class="params">(<span name="exp">exp: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a BigInt whose value is (<tt>this</tt> raised to the power of <tt>exp</tt>).</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a BigInt whose value is (<tt>this</tt> raised to the power of <tt>exp</tt>).
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#setBit">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">setBit</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a BigInt whose value is equivalent to this BigInt with the designated bit set.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a BigInt whose value is equivalent to this BigInt with the designated bit set.
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#shortValue">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">shortValue</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Short">Short</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Converts this BigInt to a <tt>short</tt>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Converts this BigInt to a <tt>short</tt>.
+ If the BigInt is too big to fit in a byte, only the low-order 16 bits are returned.
+ Note that this conversion can lose information about the overall magnitude of the
+ BigInt value as well as return a result with the opposite sign.
+</p></div><div class="block">
+          definition classes: <a href="" class="extype" name="scala.math.BigInt">BigInt</a> → Number
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#signum">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">signum</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns the sign of this BigInt, i.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns the sign of this BigInt, i.e.
+  -1 if it is less than 0,
+  +1 if it is greater than 0
+  0  if it is equal to 0
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#synchronized">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: T0</span>)</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#testBit">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">testBit</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns true if and only if the designated bit is set.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns true if and only if the designated bit is set.
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#to">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">to</span><span class="params">(<span name="end">end: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>, <span name="step">step: <a href="" class="extype" name="scala.math.BigInt">BigInt</a> = <span class="default">BigInt.apply(1)</span></span>)</span><span class="result">: <a href="../collection/immutable/NumericRange$$Inclusive.html" class="extype" name="scala.collection.immutable.NumericRange.Inclusive">Inclusive</a>[<a href="" class="extype" name="scala.math.BigInt">BigInt</a>]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Like until, but inclusive of the end value.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Like until, but inclusive of the end value.
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.ScalaNumericConversions#toByte">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toByte</span><span class="result">: <span class="extype" name="scala.Byte">Byte</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="ScalaNumericConversions.html" class="extype" name="scala.math.ScalaNumericConversions">ScalaNumericConversions</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#toByteArray">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toByteArray</span><span class="result">: <a href="../Array.html" class="extype" name="scala.Array">Array</a>[<span class="extype" name="scala.Byte">Byte</span>]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a byte array containing the two's-complement representation of
+ this BigInt.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a byte array containing the two's-complement representation of
+ this BigInt. The byte array will be in big-endian byte-order: the most
+ significant byte is in the zeroth element. The array will contain the
+ minimum number of bytes required to represent this BigInt, including at
+ least one sign bit.
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.ScalaNumericConversions#toChar">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toChar</span><span class="result">: <span class="extype" name="scala.Char">Char</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="ScalaNumericConversions.html" class="extype" name="scala.math.ScalaNumericConversions">ScalaNumericConversions</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.math.ScalaNumericConversions#toDouble">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toDouble</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="ScalaNumericConversions.html" class="extype" name="scala.math.ScalaNumericConversions">ScalaNumericConversions</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.math.ScalaNumericConversions#toFloat">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toFloat</span><span class="result">: <span class="extype" name="scala.Float">Float</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="ScalaNumericConversions.html" class="extype" name="scala.math.ScalaNumericConversions">ScalaNumericConversions</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.math.ScalaNumericConversions#toInt">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toInt</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="ScalaNumericConversions.html" class="extype" name="scala.math.ScalaNumericConversions">ScalaNumericConversions</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.math.ScalaNumericConversions#toLong">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toLong</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="ScalaNumericConversions.html" class="extype" name="scala.math.ScalaNumericConversions">ScalaNumericConversions</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.math.ScalaNumericConversions#toShort">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toShort</span><span class="result">: <span class="extype" name="scala.Short">Short</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="ScalaNumericConversions.html" class="extype" name="scala.math.ScalaNumericConversions">ScalaNumericConversions</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#toString">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">(<span name="radix">radix: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns the String representation in the specified radix of this BigInt.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns the String representation in the specified radix of this BigInt.
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#toString">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns the decimal String representation of this BigInt.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns the decimal String representation of this BigInt.@return a string representation of the object. */</p></div><div class="block">
+          definition classes: <a href="" class="extype" name="scala.math.BigInt">BigInt</a> → AnyRef → Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#unary_-">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">unary_-</span><span class="result">: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a BigInt whose value is the negation of this BigInt
+</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a BigInt whose value is the negation of this BigInt
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#underlying">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">underlying</span><span class="params">()</span><span class="result">: <span class="extype" name="java.math.BigInteger">BigInteger</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="" class="extype" name="scala.math.BigInt">BigInt</a> → ScalaNumber
+        </div></div>
+          
+    </li><li visbl="prt" name="scala.math.ScalaNumericConversions#unifiedPrimitiveEquals">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">unifiedPrimitiveEquals</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Should only be called after all known non-primitive
+ types have been excluded.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Should only be called after all known non-primitive
+ types have been excluded.  This method won't dispatch
+ anywhere else after checking against the primitives
+ to avoid infinite recursion between equals and this on
+ unknown &quot;Number&quot; variants.</p><p> Additionally, this should only be called if the numeric
+ type is happy to be converted to Long, Float, and Double.
+ If for instance a BigInt much larger than the Long range is
+ sent here, it will claim equality with whatever Long is left
+ in its lower 64 bits.  Or a BigDecimal with more precision
+ than Double can hold: same thing.  There's no way given the
+ interface available here to prevent this error.
+</p></div><div class="block">
+          attributes: protected 
+        </div><div class="block">
+          definition classes: <a href="ScalaNumericConversions.html" class="extype" name="scala.math.ScalaNumericConversions">ScalaNumericConversions</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="prt" name="scala.math.ScalaNumericConversions#unifiedPrimitiveHashcode">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">unifiedPrimitiveHashcode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: protected 
+        </div><div class="block">
+          definition classes: <a href="ScalaNumericConversions.html" class="extype" name="scala.math.ScalaNumericConversions">ScalaNumericConversions</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#until">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">until</span><span class="params">(<span name="end">end: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>, <span name="step">step: <a href="" class="extype" name="scala.math.BigInt">BigInt</a> = <span class="default">BigInt.apply(1)</span></span>)</span><span class="result">: <a href="../collection/immutable/NumericRange$$Exclusive.html" class="extype" name="scala.collection.immutable.NumericRange.Exclusive">Exclusive</a>[<a href="" class="extype" name="scala.math.BigInt">BigInt</a>]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Create a NumericRange[BigInt] in range <code>[start;end)</code> with the specified step, where start is the target BigInt.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Create a NumericRange[BigInt] in range <code>[start;end)</code> with the specified step, where start is the target BigInt.
+</p></div><dl class="paramcmts block"><dt class="param">end</dt><dd class="cmt"><p>the end value of the range (exclusive)</p></dd><dt class="param">step</dt><dd class="cmt"><p>the distance between elements (defaults to 1)</p></dd><dt>returns</dt><dd class="cmt"><p>the range
+</p></dd></dl>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#wait">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#wait">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#wait">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#|">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">|</span><span class="params">(<span name="that">that: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>)</span><span class="result">: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Bitwise or of BigInts
+</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Bitwise or of BigInts
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.math.BigInt#~">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">~</span><span class="result">: <a href="" class="extype" name="scala.math.BigInt">BigInt</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns the bitwise complement of this BigNum
+</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns the bitwise complement of this BigNum
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li></ol>
+            </div>
+                
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

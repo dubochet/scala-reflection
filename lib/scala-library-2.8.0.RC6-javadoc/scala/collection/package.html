@@ -1,0 +1,600 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>Scaladoc for scala.collection</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		      <script type="text/javascript" src="../../lib/jquery.js"></script>
+          
+      <link href="../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+
+      <p id="owner"><a href="../package.html" class="extype" name="scala">scala</a></p>
+
+      <div id="definition">
+        <img src="../../lib/package_big.png" />
+        <h1>collection</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">collection</span>
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"></div>
+      
+      <div id="template">
+
+        <div id="mbrsel">
+          
+          <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+          </div>
+        </div>
+        
+                
+        
+        <div class="members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="scala.collection.BitSet">
+      <h4 class="signature"><a href="BitSet.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">BitSet</span><span class="result"> extends Set[Int] with BitSetLike[BitSet]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A common base class for mutable and immutable bitsets.</p>
+    </li><li visbl="pub" name="scala.collection.BitSetLike">
+      <h4 class="signature"><a href="BitSetLike.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">BitSetLike</span><span class="tparams">[<span name="This">+This &lt;: BitSetLike[This] with Set[Int]</span>]</span><span class="result"> extends SetLike[Int, This]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A template trait for bitsets.</p>
+    </li><li visbl="pub" name="scala.collection.BufferedIterator">
+      <h4 class="signature"><a href="BufferedIterator.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">BufferedIterator</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends Iterator[A]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Buffered iterators are iterators which provide a method <code>head</code> that inspects the next element without discarding it.</p>
+    </li><li visbl="pub" name="scala.collection.DefaultMap">
+      <h4 class="signature"><a href="DefaultMap.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">DefaultMap</span><span class="tparams">[<span name="A">A</span>, <span name="B">+B</span>]</span><span class="result"> extends Map[A, B]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   A default map which implements the <code>+</code> and <code>-</code>   methods of maps.</p>
+    </li><li visbl="pub" name="scala.collection.IndexedSeq">
+      <h4 class="signature"><a href="IndexedSeq.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">IndexedSeq</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends Seq[A] with GenericTraversableTemplate[A, IndexedSeq[A][A]] with IndexedSeqLike[A, IndexedSeq[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A base trait for indexed sequences.</p>
+    </li><li visbl="pub" name="scala.collection.IndexedSeqLike">
+      <h4 class="signature"><a href="IndexedSeqLike.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">IndexedSeqLike</span><span class="tparams">[<span name="A">+A</span>, <span name="Repr">+Repr</span>]</span><span class="result"> extends SeqLike[A, Repr]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A template trait for indexed sequences of type <code>IndexedSeq[A]</code>.</p>
+    </li><li visbl="pub" name="scala.collection.IndexedSeqOptimized">
+      <h4 class="signature"><a href="IndexedSeqOptimized.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">IndexedSeqOptimized</span><span class="tparams">[<span name="A">+A</span>, <span name="Repr">+Repr</span>]</span><span class="result"> extends IndexedSeqLike[A, Repr]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A template trait for indexed sequences of type <code>IndexedSeq[A]</code> which optimizes
+ the implementation of several methods under the assumption of fast random access.</p>
+    </li><li visbl="pub" name="scala.collection.Iterable">
+      <h4 class="signature"><a href="Iterable.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Iterable</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends Traversable[A] with GenericTraversableTemplate[A, Iterable[A][A]] with IterableLike[A, Iterable[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A base trait for iterable collections.</p>
+    </li><li visbl="pub" name="scala.collection.IterableLike">
+      <h4 class="signature"><a href="IterableLike.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">IterableLike</span><span class="tparams">[<span name="A">+A</span>, <span name="Repr">+Repr</span>]</span><span class="result"> extends Equals with TraversableLike[A, Repr]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A template trait for iterable collections of type <code>Iterable[A]</code>.</p>
+    </li><li visbl="pub" name="scala.collection.IterableProxy">
+      <h4 class="signature"><a href="IterableProxy.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">IterableProxy</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends Iterable[A] with IterableProxyLike[A, Iterable[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This trait implements a proxy for iterable objects.</p>
+    </li><li visbl="pub" name="scala.collection.IterableProxyLike">
+      <h4 class="signature"><a href="IterableProxyLike.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">IterableProxyLike</span><span class="tparams">[<span name="A">+A</span>, <span name="Repr">+Repr &lt;: IterableLike[A, Repr] with Iterable[A]</span>]</span><span class="result"> extends IterableLike[A, Repr] with TraversableProxyLike[A, Repr]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This trait implements a proxy for Iterable objects.</p>
+    </li><li visbl="pub" name="scala.collection.IterableView">
+      <h4 class="signature"><a href="IterableView.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">IterableView</span><span class="tparams">[<span name="A">+A</span>, <span name="Coll">+Coll</span>]</span><span class="result"> extends IterableViewLike[A, Coll, IterableView[A, Coll]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A base trait for non-strict views of <code>Iterable</code>s.</p>
+    </li><li visbl="pub" name="scala.collection.IterableViewLike">
+      <h4 class="signature"><a href="IterableViewLike.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">IterableViewLike</span><span class="tparams">[<span name="A">+A</span>, <span name="Coll">+Coll</span>, <span name="This">+This &lt;: IterableView[A, Coll] with IterableViewLike[A, Coll, This]</span>]</span><span class="result"> extends Iterable[A] with IterableLike[A, This] with TraversableView[A, Coll] with TraversableViewLike[A, Coll, This]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A template trait for non-strict views of iterable collections.</p>
+    </li><li visbl="pub" name="scala.collection.Iterator">
+      <h4 class="signature"><a href="Iterator.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Iterator</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends TraversableOnce[A]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Iterators are data structures that allow to iterate over a sequence
+ of elements.</p>
+    </li><li visbl="pub" name="scala.collection.LinearSeq">
+      <h4 class="signature"><a href="LinearSeq.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">LinearSeq</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends Seq[A] with GenericTraversableTemplate[A, LinearSeq[A][A]] with LinearSeqLike[A, LinearSeq[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A base trait for linear sequences.</p>
+    </li><li visbl="pub" name="scala.collection.LinearSeqLike">
+      <h4 class="signature"><a href="LinearSeqLike.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">LinearSeqLike</span><span class="tparams">[<span name="A">+A</span>, <span name="Repr">+Repr &lt;: LinearSeqLike[A, Repr]</span>]</span><span class="result"> extends SeqLike[A, Repr]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A template trait for linear sequences of type <code>LinearSeq[A]</code>.</p>
+    </li><li visbl="pub" name="scala.collection.LinearSeqOptimized">
+      <h4 class="signature"><a href="LinearSeqOptimized.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">LinearSeqOptimized</span><span class="tparams">[<span name="A">+A</span>, <span name="Repr">+Repr &lt;: LinearSeqOptimized[A, Repr]</span>]</span><span class="result"> extends LinearSeqLike[A, Repr]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A template trait for linear sequences of type <code>LinearSeq[A]</code>  which optimizes
+ the implementation of several methods under the assumption of fast linear access.</p>
+    </li><li visbl="pub" name="scala.collection.Map">
+      <h4 class="signature"><a href="Map.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Map</span><span class="tparams">[<span name="A">A</span>, <span name="B">+B</span>]</span><span class="result"> extends Iterable[(A, B)] with MapLike[A, B, Map[A, B]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt"> A map from keys of type <code>A</code> to values of type <code>B</code>.</p>
+    </li><li visbl="pub" name="scala.collection.MapLike">
+      <h4 class="signature"><a href="MapLike.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">MapLike</span><span class="tparams">[<span name="A">A</span>, <span name="B">+B</span>, <span name="This">+This &lt;: MapLike[A, B, This] with Map[A, B]</span>]</span><span class="result"> extends PartialFunction[A, B] with IterableLike[(A, B), This] with Subtractable[A, This]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A template trait for maps, which associate keys with values.</p>
+    </li><li visbl="pub" name="scala.collection.MapProxy">
+      <h4 class="signature"><a href="MapProxy.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">MapProxy</span><span class="tparams">[<span name="A">A</span>, <span name="B">+B</span>]</span><span class="result"> extends Map[A, B] with MapProxyLike[A, B, Map[A, B]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This is a simple wrapper class for <a href="Map.html"
+ target="contentFrame"><code>scala.</p>
+    </li><li visbl="pub" name="scala.collection.MapProxyLike">
+      <h4 class="signature"><a href="MapProxyLike.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">MapProxyLike</span><span class="tparams">[<span name="A">A</span>, <span name="B">+B</span>, <span name="This">+This &lt;: MapLike[A, B, This] with Map[A, B]</span>]</span><span class="result"> extends MapLike[A, B, This] with IterableProxyLike[(A, B), This]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This trait implements a proxy for Map objects.</p>
+    </li><li visbl="pub" name="scala.collection.Seq">
+      <h4 class="signature"><a href="Seq.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Seq</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends PartialFunction[Int, A] with Iterable[A] with GenericTraversableTemplate[A, Seq[A][A]] with SeqLike[A, Seq[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A base trait for sequences.</p>
+    </li><li visbl="pub" name="scala.collection.SeqLike">
+      <h4 class="signature"><a href="SeqLike.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">SeqLike</span><span class="tparams">[<span name="A">+A</span>, <span name="Repr">+Repr</span>]</span><span class="result"> extends IterableLike[A, Repr]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A template trait for sequences of type <code>Seq[A]</code></p>
+    </li><li visbl="pub" name="scala.collection.SeqProxy">
+      <h4 class="signature"><a href="SeqProxy.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">SeqProxy</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends Seq[A] with SeqProxyLike[A, Seq[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This trait implements a proxy for sequence objects.</p>
+    </li><li visbl="pub" name="scala.collection.SeqProxyLike">
+      <h4 class="signature"><a href="SeqProxyLike.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">SeqProxyLike</span><span class="tparams">[<span name="A">+A</span>, <span name="Repr">+Repr &lt;: SeqLike[A, Repr] with Seq[A]</span>]</span><span class="result"> extends SeqLike[A, Repr] with IterableProxyLike[A, Repr]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This trait implements a proxy for sequences.</p>
+    </li><li visbl="pub" name="scala.collection.SeqView">
+      <h4 class="signature"><a href="SeqView.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">SeqView</span><span class="tparams">[<span name="A">+A</span>, <span name="Coll">+Coll</span>]</span><span class="result"> extends SeqViewLike[A, Coll, SeqView[A, Coll]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A base trait for non-strict views of sequences.</p>
+    </li><li visbl="pub" name="scala.collection.SeqViewLike">
+      <h4 class="signature"><a href="SeqViewLike.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">SeqViewLike</span><span class="tparams">[<span name="A">+A</span>, <span name="Coll">+Coll</span>, <span name="This">+This &lt;: SeqView[A, Coll] with SeqViewLike[A, Coll, This]</span>]</span><span class="result"> extends Seq[A] with SeqLike[A, This] with IterableView[A, Coll] with IterableViewLike[A, Coll, This]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A template trait for non-strict views of sequences.</p>
+    </li><li visbl="pub" name="scala.collection.Set">
+      <h4 class="signature"><a href="Set.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Set</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends (A) ⇒ Boolean with Iterable[A] with GenericSetTemplate[A, Set[A][A]] with SetLike[A, Set[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A base trait for all sets, mutable as well as immutable.</p>
+    </li><li visbl="pub" name="scala.collection.SetLike">
+      <h4 class="signature"><a href="SetLike.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">SetLike</span><span class="tparams">[<span name="A">A</span>, <span name="This">+This &lt;: SetLike[A, This] with Set[A]</span>]</span><span class="result"> extends IterableLike[A, This] with Addable[A, This] with Subtractable[A, This]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A template trait for sets.</p>
+    </li><li visbl="pub" name="scala.collection.SetProxy">
+      <h4 class="signature"><a href="SetProxy.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">SetProxy</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Set[A] with SetProxyLike[A, Set[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This is a simple wrapper class for <a href="Set.html"
+ target="contentFrame"><code>scala.</p>
+    </li><li visbl="pub" name="scala.collection.SetProxyLike">
+      <h4 class="signature"><a href="SetProxyLike.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">SetProxyLike</span><span class="tparams">[<span name="A">A</span>, <span name="This">+This &lt;: SetLike[A, This] with Set[A]</span>]</span><span class="result"> extends SetLike[A, This] with IterableProxyLike[A, This]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This trait implements a proxy for sets.</p>
+    </li><li visbl="pub" name="scala.collection.SortedMap">
+      <h4 class="signature"><a href="SortedMap.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">SortedMap</span><span class="tparams">[<span name="A">A</span>, <span name="B">+B</span>]</span><span class="result"> extends Map[A, B] with SortedMapLike[A, B, SortedMap[A, B]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A map whose keys are sorted.</p>
+    </li><li visbl="pub" name="scala.collection.SortedMapLike">
+      <h4 class="signature"><a href="SortedMapLike.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">SortedMapLike</span><span class="tparams">[<span name="A">A</span>, <span name="B">+B</span>, <span name="This">+This &lt;: SortedMapLike[A, B, This] with SortedMap[A, B]</span>]</span><span class="result"> extends Sorted[A, This] with MapLike[A, B, This]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A template for maps whose keys are sorted.</p>
+    </li><li visbl="pub" name="scala.collection.SortedSet">
+      <h4 class="signature"><a href="SortedSet.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">SortedSet</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Set[A] with SortedSetLike[A, SortedSet[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A sorted set.</p>
+    </li><li visbl="pub" name="scala.collection.SortedSetLike">
+      <h4 class="signature"><a href="SortedSetLike.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">SortedSetLike</span><span class="tparams">[<span name="A">A</span>, <span name="This">+This &lt;: SortedSet[A] with SortedSetLike[A, This]</span>]</span><span class="result"> extends Sorted[A, This] with SetLike[A, This]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A template for sets which are sorted.</p>
+    </li><li visbl="pub" name="scala.collection.Traversable">
+      <h4 class="signature"><a href="Traversable.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Traversable</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends TraversableLike[A, Traversable[A]] with GenericTraversableTemplate[A, Traversable[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A trait for traversable collections.</p>
+    </li><li visbl="pub" name="scala.collection.TraversableLike">
+      <h4 class="signature"><a href="TraversableLike.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">TraversableLike</span><span class="tparams">[<span name="A">+A</span>, <span name="Repr">+Repr</span>]</span><span class="result"> extends HasNewBuilder[A, Repr] with FilterMonadic[A, Repr] with TraversableOnce[A]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A template trait for traversable collections of type <code>Traversable[A]</code>.</p>
+    </li><li visbl="pub" name="scala.collection.TraversableOnce">
+      <h4 class="signature"><a href="TraversableOnce.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">TraversableOnce</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A template trait for collections which can be traversed either once only
+ or one or more times.</p>
+    </li><li visbl="pub" name="scala.collection.TraversableProxy">
+      <h4 class="signature"><a href="TraversableProxy.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">TraversableProxy</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends Traversable[A] with TraversableProxyLike[A, Traversable[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This trait implements a proxy for traversable objects.</p>
+    </li><li visbl="pub" name="scala.collection.TraversableProxyLike">
+      <h4 class="signature"><a href="TraversableProxyLike.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">TraversableProxyLike</span><span class="tparams">[<span name="A">+A</span>, <span name="Repr">+Repr &lt;: TraversableLike[A, Repr] with Traversable[A]</span>]</span><span class="result"> extends TraversableLike[A, Repr] with Proxy</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This trait implements a proxy for Traversable objects.</p>
+    </li><li visbl="pub" name="scala.collection.TraversableView">
+      <h4 class="signature"><a href="TraversableView.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">TraversableView</span><span class="tparams">[<span name="A">+A</span>, <span name="Coll">+Coll</span>]</span><span class="result"> extends TraversableViewLike[A, Coll, TraversableView[A, Coll]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A base trait for non-strict views of traversable collections.</p>
+    </li><li visbl="pub" name="scala.collection.TraversableViewLike">
+      <h4 class="signature"><a href="TraversableViewLike.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">TraversableViewLike</span><span class="tparams">[<span name="A">+A</span>, <span name="Coll">+Coll</span>, <span name="This">+This &lt;: TraversableView[A, Coll] with TraversableViewLike[A, Coll, This]</span>]</span><span class="result"> extends Traversable[A] with TraversableLike[A, This]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A template trait for non-strict views of traversable collections.</p>
+    </li></ol>
+            </div>
+        
+        <div class="members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="scala.collection.BitSet">
+      <h4 class="signature"><a href="BitSet$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">BitSet</span><span class="result"> extends BitSetFactory[BitSet]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations to create <code>BitSet</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.BitSetLike">
+      <h4 class="signature"><a href="BitSetLike$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">BitSetLike</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Companion object for BitSets.</p>
+    </li><li visbl="pub" name="scala.collection.IndexedSeq">
+      <h4 class="signature"><a href="IndexedSeq$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">IndexedSeq</span><span class="result"> extends SeqFactory[IndexedSeq[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations to create <code>IndexedSeq</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.Iterable">
+      <h4 class="signature"><a href="Iterable$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Iterable</span><span class="result"> extends TraversableFactory[Iterable[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations to create <code>Iterable</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.IterableView">
+      <h4 class="signature"><a href="IterableView$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">IterableView</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">An object containing the necessary implicit definitions to make
+ <code>IterableView</code>s work.</p>
+    </li><li visbl="pub" name="scala.collection.Iterator">
+      <h4 class="signature"><a href="Iterator$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Iterator</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The <code>Iterator</code> object provides various functions for
+ creating specialized iterators.</p>
+    </li><li visbl="pub" name="scala.collection.JavaConversions">
+      <h4 class="signature"><a href="JavaConversions$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">JavaConversions</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   A collection of implicit conversions supporting interoperability between
+   Scala and Java collections.</p>
+    </li><li visbl="pub" name="scala.collection.LinearSeq">
+      <h4 class="signature"><a href="LinearSeq$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">LinearSeq</span><span class="result"> extends SeqFactory[LinearSeq[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations to create <code>LinearSeq</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.Map">
+      <h4 class="signature"><a href="Map$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Map</span><span class="result"> extends MapFactory[Map[A, B][A, B]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations needed to create <code>Map</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.Seq">
+      <h4 class="signature"><a href="Seq$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Seq</span><span class="result"> extends SeqFactory[Seq[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations to create <code>Seq</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.SeqLike">
+      <h4 class="signature"><a href="SeqLike$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">SeqLike</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The companion object for trait <code>SeqLike</code>.</p>
+    </li><li visbl="pub" name="scala.collection.SeqView">
+      <h4 class="signature"><a href="SeqView$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">SeqView</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">An object containing the necessary implicit definitions to make
+ <code>SeqView</code>s work.</p>
+    </li><li visbl="pub" name="scala.collection.Set">
+      <h4 class="signature"><a href="Set$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Set</span><span class="result"> extends SetFactory[Set[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations needed to create <code>Set</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.SortedMap">
+      <h4 class="signature"><a href="SortedMap$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">SortedMap</span><span class="result"> extends SortedMapFactory[SortedMap[A, B][A, B]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">no summary matey</p>
+    </li><li visbl="pub" name="scala.collection.SortedSet">
+      <h4 class="signature"><a href="SortedSet$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">SortedSet</span><span class="result"> extends SortedSetFactory[SortedSet[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">no summary matey</p>
+    </li><li visbl="pub" name="scala.collection.Traversable">
+      <h4 class="signature"><a href="Traversable$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Traversable</span><span class="result"> extends TraversableFactory[Traversable[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations to create <code>Traversable</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.TraversableView">
+      <h4 class="signature"><a href="TraversableView$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">TraversableView</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">An object containing the necessary implicit definitions to make
+ <code>TraversableView</code>s work.</p>
+    </li><li visbl="pub" name="_root_#breakOut">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">breakOut</span><span class="tparams">[<span name="From">From</span>, <span name="T">T</span>, <span name="To">To</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="b">b: <a href="generic/CanBuildFrom.html" class="extype" name="scala.collection.generic.CanBuildFrom">CanBuildFrom</a>[<span class="extype" name="scala.Nothing">Nothing</span>, T, To]</span>)</span><span class="result">: <a href="generic/CanBuildFrom.html" class="extype" name="scala.collection.generic.CanBuildFrom">CanBuildFrom</a>[From, T, To]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Provides a CanBuildFrom instance that builds a specific target collection (<code>To') irrespective of the original collection (</code>From').</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Provides a CanBuildFrom instance that builds a specific target collection (<code>To') irrespective of the original collection (</code>From').
+</p></div><div class="block">
+          definition classes: <a href="../../package.html" class="extype" name="_root_">root</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.generic">
+      <h4 class="signature"><a href="generic/package.html">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">generic</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.collection.immutable">
+      <h4 class="signature"><a href="immutable/package.html">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">immutable</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.collection.interfaces">
+      <h4 class="signature"><a href="interfaces/package.html">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">interfaces</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.collection.mutable">
+      <h4 class="signature"><a href="mutable/package.html">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">mutable</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.collection.script">
+      <h4 class="signature"><a href="script/package.html">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">script</span>
+      </span>
+      </a></h4>
+      
+    </li></ol>
+            </div>
+                
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

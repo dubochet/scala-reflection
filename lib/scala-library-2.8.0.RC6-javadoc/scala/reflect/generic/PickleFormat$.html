@@ -1,0 +1,1944 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>Scaladoc for scala.reflect.generic.PickleFormat</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+          
+      <link href="../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+
+      <p id="owner"><a href="../../package.html" class="extype" name="scala">scala</a>.<a href="../package.html" class="extype" name="scala.reflect">reflect</a>.<a href="package.html" class="extype" name="scala.reflect.generic">generic</a></p>
+
+      <div id="definition">
+        <img src="../../../lib/object_big.png" />
+        <h1>PickleFormat</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">PickleFormat</span><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"><div class="comment cmt"><p>This object provides constants for pickling attributes.</p><p> If you extend the format, be sure to increase the
+ version minor number.
+</p></div><div class="block">
+            source: <a href="https://lampsvn.epfl.ch/trac/scala/browser/scala/trunk/src///library/scala/reflect/generic/PickleFormat.scala">PickleFormat.scala</a>
+          </div>
+            <div class="block"><ol>version
+                  <li><p>1.0
+</p></li>
+                </ol></div>
+            
+            
+            <div class="block"><ol>authors:
+                  <li><p>Martin Odersky</p></li>
+                </ol></div>
+          </div>
+      
+      <div id="template">
+
+        <div id="mbrsel">
+          <div id="ancestors">
+                <span class="filtertype">Inherited</span>
+                <ol><li class="hideall">Hide All</li><li class="showall">Show all</li></ol>
+                <ol id="linearization"><li class="in" name="scala.AnyRef">AnyRef</li><li class="in" name="scala.Any">Any</li></ol>
+              </div>
+          <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+          </div>
+        </div>
+        
+                
+        
+        
+        
+        <div class="members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="scala.AnyRef#!=">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">!=</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.Any#!=">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"><code>o != arg0</code> is the same as <code>!(o == (arg0))</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p><code>o != arg0</code> is the same as <code>!(o == (arg0))</code>.
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for dis-equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>false</code> if the receiver object is equivalent to the argument; <code>true</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef###">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef → Any
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#$asInstanceOf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">$asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">()</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#$isInstanceOf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">$isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#==">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">==</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"><code>o == arg0</code> is the same as <code>if (o eq null) arg0 eq null else o.equals(arg0)</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p><code>o == arg0</code> is the same as <code>if (o eq null) arg0 eq null else o.equals(arg0)</code>.
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the receiver object is equivalent to the argument; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.Any#==">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"><code>o == arg0</code> is the same as <code>o.equals(arg0)</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p><code>o == arg0</code> is the same as <code>o.equals(arg0)</code>.
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the receiver object is equivalent to the argument; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#ALIASsym">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">ALIASsym</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#ALTERNATIVEtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">ALTERNATIVEtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#ANNOTARGARRAY">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">ANNOTARGARRAY</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#ANNOTATEDtpe">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">ANNOTATEDtpe</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#ANNOTATEDtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">ANNOTATEDtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#ANNOTINFO">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">ANNOTINFO</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#APPLIEDTYPEtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">APPLIEDTYPEtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#APPLYDYNAMICtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">APPLYDYNAMICtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#APPLYtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">APPLYtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#ARRAYVALUEtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">ARRAYVALUEtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#ASSIGNtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">ASSIGNtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#BINDtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">BINDtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#BLOCKtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">BLOCKtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#CASEtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">CASEtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#CHILDREN">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">CHILDREN</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#CLASSINFOtpe">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">CLASSINFOtpe</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#CLASSsym">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">CLASSsym</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#CLASStree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">CLASStree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#COMPOUNDTYPEtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">COMPOUNDTYPEtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#CONSTANTtpe">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">CONSTANTtpe</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#DEBRUIJNINDEXtpe">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">DEBRUIJNINDEXtpe</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#DEFDEFtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">DEFDEFtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#DOCDEFtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">DOCDEFtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#EMPTYtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">EMPTYtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#EXISTENTIALTYPEtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">EXISTENTIALTYPEtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#EXISTENTIALtpe">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">EXISTENTIALtpe</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#EXTMODCLASSref">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">EXTMODCLASSref</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#EXTref">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">EXTref</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#FUNCTIONtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">FUNCTIONtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#IDENTtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">IDENTtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#IFtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">IFtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#IMPLICITMETHODtpe">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">IMPLICITMETHODtpe</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#IMPORTtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">IMPORTtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#LABELtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">LABELtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#LITERAL">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">LITERAL</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#LITERALboolean">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">LITERALboolean</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#LITERALbyte">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">LITERALbyte</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#LITERALchar">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">LITERALchar</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#LITERALclass">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">LITERALclass</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#LITERALdouble">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">LITERALdouble</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#LITERALenum">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">LITERALenum</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#LITERALfloat">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">LITERALfloat</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#LITERALint">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">LITERALint</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#LITERALlong">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">LITERALlong</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#LITERALnull">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">LITERALnull</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#LITERALshort">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">LITERALshort</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#LITERALstring">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">LITERALstring</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#LITERALtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">LITERALtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#LITERALunit">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">LITERALunit</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#MATCHtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">MATCHtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#METHODtpe">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">METHODtpe</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#MODIFIERS">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">MODIFIERS</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#MODULEsym">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">MODULEsym</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#MODULEtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">MODULEtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#MajorVersion">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">MajorVersion</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">*************************************************
+Symbol table attribute format:
+  Symtab         = nentries_Nat {Entry}
+  Entry          = 1 TERMNAME len_Nat NameInfo
+                 | 2 TYPENAME len_Nat NameInfo
+                 | 3 NONEsym len_Nat
+                 | 4 TYPEsym len_Nat SymbolInfo
+                 | 5 ALIASsym len_Nat SymbolInfo
+                 | 6 CLASSsym len_Nat SymbolInfo [thistype_Ref]
+                 | 7 MODULEsym len_Nat SymbolInfo
+                 | 8 VALsym len_Nat [defaultGetter_Ref /* no longer needed*/ SymbolInfo [alias_Ref]
+                 | 9 EXTref len_Nat name_Ref [owner_Ref]
+                 | 10 EXTMODCLASSref len_Nat name_Ref [owner_Ref]
+                 | 11 NOtpe len_Nat
+                 | 12 NOPREFIXtpe len_Nat
+                 | 13 THIStpe len_Nat sym_Ref
+                 | 14 SINGLEtpe len_Nat type_Ref sym_Ref
+                 | 15 CONSTANTtpe len_Nat constant_Ref
+                 | 16 TYPEREFtpe len_Nat type_Ref sym_Ref {targ_Ref}
+                 | 17 TYPEBOUNDStpe len_Nat tpe_Ref tpe_Ref
+                 | 18 REFINEDtpe len_Nat classsym_Ref {tpe_Ref}
+                 | 19 CLASSINFOtpe len_Nat classsym_Ref {tpe_Ref}
+                 | 20 METHODtpe len_Nat tpe_Ref {sym_Ref}
+                 | 21 POLYTtpe len_Nat tpe_Ref {sym_Ref}
+                 | 22 IMPLICITMETHODtpe len_Nat tpe_Ref {sym_Ref} /* no longer needed */ *                  | 52 SUPERtpe len_Nat tpe_Ref tpe_Ref
+                 | 24 LITERALunit len_Nat
+                 | 25 LITERALboolean len_Nat value_Long
+                 | 26 LITERALbyte len_Nat value_Long
+                 | 27 LITERALshort len_Nat value_Long
+                 | 28 LITERALchar len_Nat value_Long
+                 | 29 LITERALint len_Nat value_Long
+                 | 30 LITERALlong len_Nat value_Long
+                 | 31 LITERALfloat len_Nat value_Long
+                 | 32 LITERALdouble len_Nat value_Long
+                 | 33 LITERALstring len_Nat name_Ref
+                 | 34 LITERALnull len_Nat
+                 | 35 LITERALclass len_Nat tpe_Ref
+                 | 36 LITERALenum len_Nat sym_Ref
+                 | 40 SYMANNOT len_Nat sym_Ref AnnotInfoBody
+                 | 41 CHILDREN len_Nat sym_Ref {sym_Ref}
+                 | 42 ANNOTATEDtpe len_Nat [sym_Ref /* no longer needed */ tpe_Ref {annotinfo_Ref}
+                 | 43 ANNOTINFO len_Nat AnnotInfoBody
+                 | 44 ANNOTARGARRAY len_Nat {constAnnotArg_Ref}
+                 | 47 DEBRUIJNINDEXtpe len_Nat level_Nat index_Nat
+                 | 48 EXISTENTIALtpe len_Nat type_Ref {symbol_Ref}
+                 | 49 TREE len_Nat 1 EMPTYtree
+                 | 49 TREE len_Nat 2 PACKAGEtree type_Ref sym_Ref mods_Ref name_Ref {tree_Ref}
+                 | 49 TREE len_Nat 3 CLASStree type_Ref sym_Ref mods_Ref name_Ref tree_Ref {tree_Ref}
+                 | 49 TREE len_Nat 4 MODULEtree type_Ref sym_Ref mods_Ref name_Ref tree_Ref
+                 | 49 TREE len_Nat 5 VALDEFtree type_Ref sym_Ref mods_Ref name_Ref tree_Ref tree_Ref
+                 | 49 TREE len_Nat 6 DEFDEFtree type_Ref sym_Ref mods_Ref name_Ref numtparams_Nat {tree_Ref} numparamss_Nat {numparams_Nat {tree_Ref}} tree_Ref tree_Ref
+                 | 49 TREE len_Nat 7 TYPEDEFtree type_Ref sym_Ref mods_Ref name_Ref tree_Ref {tree_Ref}
+                 | 49 TREE len_Nat 8 LABELtree type_Ref sym_Ref tree_Ref {tree_Ref}
+                 | 49 TREE len_Nat 9 IMPORTtree type_Ref sym_Ref tree_Ref {name_Ref name_Ref}
+                 | 49 TREE len_Nat 11 DOCDEFtree type_Ref sym_Ref string_Ref tree_Ref
+                 | 49 TREE len_Nat 12 TEMPLATEtree type_Ref sym_Ref numparents_Nat {tree_Ref} tree_Ref {tree_Ref}
+                 | 49 TREE len_Nat 13 BLOCKtree type_Ref tree_Ref {tree_Ref}
+                 | 49 TREE len_Nat 14 CASEtree type_Ref tree_Ref tree_Ref tree_Ref
+                 | 49 TREE len_Nat 15 SEQUENCEtree type_Ref {tree_Ref}
+                 | 49 TREE len_Nat 16 ALTERNATIVEtree type_Ref {tree_Ref}
+                 | 49 TREE len_Nat 17 STARtree type_Ref {tree_Ref}
+                 | 49 TREE len_Nat 18 BINDtree type_Ref sym_Ref name_Ref tree_Ref
+                 | 49 TREE len_Nat 19 UNAPPLYtree type_Ref tree_Ref {tree_Ref}
+                 | 49 TREE len_Nat 20 ARRAYVALUEtree type_Ref tree_Ref {tree_Ref}
+                 | 49 TREE len_Nat 21 FUNCTIONtree type_Ref sym_Ref tree_Ref {tree_Ref}
+                 | 49 TREE len_Nat 22 ASSIGNtree type_Ref tree_Ref tree_Ref
+                 | 49 TREE len_Nat 23 IFtree type_Ref tree_Ref tree_Ref tree_Ref
+                 | 49 TREE len_Nat 24 MATCHtree type_Ref tree_Ref {tree_Ref}
+                 | 49 TREE len_Nat 25 RETURNtree type_Ref sym_Ref tree_Ref
+                 | 49 TREE len_Nat 26 TREtree type_Ref tree_Ref tree_Ref {tree_Ref}
+                 | 49 TREE len_Nat 27 THROWtree type_Ref tree_Ref
+                 | 49 TREE len_Nat 28 NEWtree type_Ref tree_Ref
+                 | 49 TREE len_Nat 29 TYPEDtree type_Ref tree_Ref tree_Ref
+                 | 49 TREE len_Nat 30 TYPEAPPLYtree type_Ref tree_Ref {tree_Ref}
+                 | 49 TREE len_Nat 31 APPLYtree type_Ref tree_Ref {tree_Ref}
+                 | 49 TREE len_Nat 32 APPLYDYNAMICtree type_Ref sym_Ref tree_Ref {tree_Ref}
+                 | 49 TREE len_Nat 33 SUPERtree type_Ref sym_Ref tree_Ref name_Ref
+                 | 49 TREE len_Nat 34 THIStree type_Ref sym_Ref  name_Ref
+                 | 49 TREE len_Nat 35 SELECTtree type_Ref sym_Ref tree_Ref name_Ref
+                 | 49 TREE len_Nat 36 IDENTtree type_Ref sym_Ref name_Ref
+                 | 49 TREE len_Nat 37 LITERALtree type_Ref constant_Ref
+                 | 49 TREE len_Nat 38 TYPEtree type_Ref
+                 | 49 TREE len_Nat 39 ANNOTATEDtree type_Ref tree_Ref tree_Ref
+                 | 49 TREE len_Nat 40 SINGLETONTYPEtree type_Ref tree_Ref
+                 | 49 TREE len_Nat 41 SELECTFROMTYPEtree type_Ref tree_Ref name_Ref
+                 | 49 TREE len_Nat 42 COMPOUNDTYPEtree type_Ref tree_Ref
+                 | 49 TREE len_Nat 43 APPLIEDTYPEtree type_Ref tree_Ref {tree_Ref}
+                 | 49 TREE len_Nat 44 TYPEBOUNDStree type_Ref tree_Ref tree_Ref
+                 | 49 TREE len_Nat 45 EXISTENTIALTYPEtree type_Ref tree_Ref {tree_Ref}
+                 | 50 MODIFIERS len_Nat flags_Long privateWithin_Ref
+  SymbolInfo     = name_Ref owner_Ref flags_LongNat [privateWithin_Ref] info_Ref
+  NameInfo       = &lt;character sequence of length len_Nat in Utf8 format&gt;
+  NumInfo        = &lt;len_Nat-byte signed number in big endian format&gt;
+  Ref            = Nat
+  AnnotInfoBody  = info_Ref {annotArg_Ref} {name_Ref constAnnotArg_Ref}
+  AnnotArg       = Tree | Constant
+  ConstAnnotArg  = Constant | AnnotInfo | AnnotArgArray</p>
+            <div class="fullcomment"><div class="comment cmt"><p>*************************************************
+Symbol table attribute format:
+  Symtab         = nentries_Nat {Entry}
+  Entry          = 1 TERMNAME len_Nat NameInfo
+                 | 2 TYPENAME len_Nat NameInfo
+                 | 3 NONEsym len_Nat
+                 | 4 TYPEsym len_Nat SymbolInfo
+                 | 5 ALIASsym len_Nat SymbolInfo
+                 | 6 CLASSsym len_Nat SymbolInfo [thistype_Ref]
+                 | 7 MODULEsym len_Nat SymbolInfo
+                 | 8 VALsym len_Nat [defaultGetter_Ref /* no longer needed*/ SymbolInfo [alias_Ref]
+                 | 9 EXTref len_Nat name_Ref [owner_Ref]
+                 | 10 EXTMODCLASSref len_Nat name_Ref [owner_Ref]
+                 | 11 NOtpe len_Nat
+                 | 12 NOPREFIXtpe len_Nat
+                 | 13 THIStpe len_Nat sym_Ref
+                 | 14 SINGLEtpe len_Nat type_Ref sym_Ref
+                 | 15 CONSTANTtpe len_Nat constant_Ref
+                 | 16 TYPEREFtpe len_Nat type_Ref sym_Ref {targ_Ref}
+                 | 17 TYPEBOUNDStpe len_Nat tpe_Ref tpe_Ref
+                 | 18 REFINEDtpe len_Nat classsym_Ref {tpe_Ref}
+                 | 19 CLASSINFOtpe len_Nat classsym_Ref {tpe_Ref}
+                 | 20 METHODtpe len_Nat tpe_Ref {sym_Ref}
+                 | 21 POLYTtpe len_Nat tpe_Ref {sym_Ref}
+                 | 22 IMPLICITMETHODtpe len_Nat tpe_Ref {sym_Ref} /* no longer needed */ *                  | 52 SUPERtpe len_Nat tpe_Ref tpe_Ref
+                 | 24 LITERALunit len_Nat
+                 | 25 LITERALboolean len_Nat value_Long
+                 | 26 LITERALbyte len_Nat value_Long
+                 | 27 LITERALshort len_Nat value_Long
+                 | 28 LITERALchar len_Nat value_Long
+                 | 29 LITERALint len_Nat value_Long
+                 | 30 LITERALlong len_Nat value_Long
+                 | 31 LITERALfloat len_Nat value_Long
+                 | 32 LITERALdouble len_Nat value_Long
+                 | 33 LITERALstring len_Nat name_Ref
+                 | 34 LITERALnull len_Nat
+                 | 35 LITERALclass len_Nat tpe_Ref
+                 | 36 LITERALenum len_Nat sym_Ref
+                 | 40 SYMANNOT len_Nat sym_Ref AnnotInfoBody
+                 | 41 CHILDREN len_Nat sym_Ref {sym_Ref}
+                 | 42 ANNOTATEDtpe len_Nat [sym_Ref /* no longer needed */ tpe_Ref {annotinfo_Ref}
+                 | 43 ANNOTINFO len_Nat AnnotInfoBody
+                 | 44 ANNOTARGARRAY len_Nat {constAnnotArg_Ref}
+                 | 47 DEBRUIJNINDEXtpe len_Nat level_Nat index_Nat
+                 | 48 EXISTENTIALtpe len_Nat type_Ref {symbol_Ref}
+                 | 49 TREE len_Nat 1 EMPTYtree
+                 | 49 TREE len_Nat 2 PACKAGEtree type_Ref sym_Ref mods_Ref name_Ref {tree_Ref}
+                 | 49 TREE len_Nat 3 CLASStree type_Ref sym_Ref mods_Ref name_Ref tree_Ref {tree_Ref}
+                 | 49 TREE len_Nat 4 MODULEtree type_Ref sym_Ref mods_Ref name_Ref tree_Ref
+                 | 49 TREE len_Nat 5 VALDEFtree type_Ref sym_Ref mods_Ref name_Ref tree_Ref tree_Ref
+                 | 49 TREE len_Nat 6 DEFDEFtree type_Ref sym_Ref mods_Ref name_Ref numtparams_Nat {tree_Ref} numparamss_Nat {numparams_Nat {tree_Ref}} tree_Ref tree_Ref
+                 | 49 TREE len_Nat 7 TYPEDEFtree type_Ref sym_Ref mods_Ref name_Ref tree_Ref {tree_Ref}
+                 | 49 TREE len_Nat 8 LABELtree type_Ref sym_Ref tree_Ref {tree_Ref}
+                 | 49 TREE len_Nat 9 IMPORTtree type_Ref sym_Ref tree_Ref {name_Ref name_Ref}
+                 | 49 TREE len_Nat 11 DOCDEFtree type_Ref sym_Ref string_Ref tree_Ref
+                 | 49 TREE len_Nat 12 TEMPLATEtree type_Ref sym_Ref numparents_Nat {tree_Ref} tree_Ref {tree_Ref}
+                 | 49 TREE len_Nat 13 BLOCKtree type_Ref tree_Ref {tree_Ref}
+                 | 49 TREE len_Nat 14 CASEtree type_Ref tree_Ref tree_Ref tree_Ref
+                 | 49 TREE len_Nat 15 SEQUENCEtree type_Ref {tree_Ref}
+                 | 49 TREE len_Nat 16 ALTERNATIVEtree type_Ref {tree_Ref}
+                 | 49 TREE len_Nat 17 STARtree type_Ref {tree_Ref}
+                 | 49 TREE len_Nat 18 BINDtree type_Ref sym_Ref name_Ref tree_Ref
+                 | 49 TREE len_Nat 19 UNAPPLYtree type_Ref tree_Ref {tree_Ref}
+                 | 49 TREE len_Nat 20 ARRAYVALUEtree type_Ref tree_Ref {tree_Ref}
+                 | 49 TREE len_Nat 21 FUNCTIONtree type_Ref sym_Ref tree_Ref {tree_Ref}
+                 | 49 TREE len_Nat 22 ASSIGNtree type_Ref tree_Ref tree_Ref
+                 | 49 TREE len_Nat 23 IFtree type_Ref tree_Ref tree_Ref tree_Ref
+                 | 49 TREE len_Nat 24 MATCHtree type_Ref tree_Ref {tree_Ref}
+                 | 49 TREE len_Nat 25 RETURNtree type_Ref sym_Ref tree_Ref
+                 | 49 TREE len_Nat 26 TREtree type_Ref tree_Ref tree_Ref {tree_Ref}
+                 | 49 TREE len_Nat 27 THROWtree type_Ref tree_Ref
+                 | 49 TREE len_Nat 28 NEWtree type_Ref tree_Ref
+                 | 49 TREE len_Nat 29 TYPEDtree type_Ref tree_Ref tree_Ref
+                 | 49 TREE len_Nat 30 TYPEAPPLYtree type_Ref tree_Ref {tree_Ref}
+                 | 49 TREE len_Nat 31 APPLYtree type_Ref tree_Ref {tree_Ref}
+                 | 49 TREE len_Nat 32 APPLYDYNAMICtree type_Ref sym_Ref tree_Ref {tree_Ref}
+                 | 49 TREE len_Nat 33 SUPERtree type_Ref sym_Ref tree_Ref name_Ref
+                 | 49 TREE len_Nat 34 THIStree type_Ref sym_Ref  name_Ref
+                 | 49 TREE len_Nat 35 SELECTtree type_Ref sym_Ref tree_Ref name_Ref
+                 | 49 TREE len_Nat 36 IDENTtree type_Ref sym_Ref name_Ref
+                 | 49 TREE len_Nat 37 LITERALtree type_Ref constant_Ref
+                 | 49 TREE len_Nat 38 TYPEtree type_Ref
+                 | 49 TREE len_Nat 39 ANNOTATEDtree type_Ref tree_Ref tree_Ref
+                 | 49 TREE len_Nat 40 SINGLETONTYPEtree type_Ref tree_Ref
+                 | 49 TREE len_Nat 41 SELECTFROMTYPEtree type_Ref tree_Ref name_Ref
+                 | 49 TREE len_Nat 42 COMPOUNDTYPEtree type_Ref tree_Ref
+                 | 49 TREE len_Nat 43 APPLIEDTYPEtree type_Ref tree_Ref {tree_Ref}
+                 | 49 TREE len_Nat 44 TYPEBOUNDStree type_Ref tree_Ref tree_Ref
+                 | 49 TREE len_Nat 45 EXISTENTIALTYPEtree type_Ref tree_Ref {tree_Ref}
+                 | 50 MODIFIERS len_Nat flags_Long privateWithin_Ref
+  SymbolInfo     = name_Ref owner_Ref flags_LongNat [privateWithin_Ref] info_Ref
+  NameInfo       = &lt;character sequence of length len_Nat in Utf8 format&gt;
+  NumInfo        = &lt;len_Nat-byte signed number in big endian format&gt;
+  Ref            = Nat
+  AnnotInfoBody  = info_Ref {annotArg_Ref} {name_Ref constAnnotArg_Ref}
+  AnnotArg       = Tree | Constant
+  ConstAnnotArg  = Constant | AnnotInfo | AnnotArgArray</p><p>  len is remaining length after <code>len'.
+</code></p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#MinorVersion">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">MinorVersion</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#NEWtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">NEWtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#NONEsym">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">NONEsym</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#NOPREFIXtpe">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">NOPREFIXtpe</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#NOtpe">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">NOtpe</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#PACKAGEtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">PACKAGEtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#POLYtpe">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">POLYtpe</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#REFINEDtpe">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">REFINEDtpe</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#RETURNtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">RETURNtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#SELECTFROMTYPEtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">SELECTFROMTYPEtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#SELECTtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">SELECTtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#SINGLETONTYPEtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">SINGLETONTYPEtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#SINGLEtpe">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">SINGLEtpe</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#STARtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">STARtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#SUPERtpe">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">SUPERtpe</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#SUPERtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">SUPERtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#SYMANNOT">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">SYMANNOT</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#TEMPLATEtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">TEMPLATEtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#TERMname">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">TERMname</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#THIStpe">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">THIStpe</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#THIStree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">THIStree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#THROWtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">THROWtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#TREE">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">TREE</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#TREtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">TREtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#TYPEAPPLYtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">TYPEAPPLYtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#TYPEBOUNDStpe">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">TYPEBOUNDStpe</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#TYPEBOUNDStree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">TYPEBOUNDStree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#TYPEDEFtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">TYPEDEFtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#TYPEDtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">TYPEDtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#TYPEREFtpe">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">TYPEREFtpe</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#TYPEname">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">TYPEname</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#TYPEsym">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">TYPEsym</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#TYPEtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">TYPEtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#UNAPPLYtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">UNAPPLYtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#VALDEFtree">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">VALDEFtree</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#VALsym">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">VALsym</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.Any#asInstanceOf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is used to cast the receiver object to be of type <code>T0</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is used to cast the receiver object to be of type <code>T0</code>.</p><p>Note that the success of a cast at runtime is modulo Scala's erasure semantics.  Therefore the expression<code>1.asInstanceOf[String]</code> will throw a <code>ClassCastException</code> at runtime, while the expression<code>List(1).asInstanceOf[List[String]]</code> will not.  In the latter example, because the type argument is erased as
+part of compilation it is not possible to check whether the contents of the list are of the requested typed.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the receiver object.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="prt" name="scala.AnyRef#clone">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: AnyRef</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method creates and returns a copy of the receiver object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method creates and returns a copy of the receiver object.</p><p>The default implementation of the <code>clone</code> method is platform dependent.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a copy of the receiver object.</p></dd></dl><div class="block">
+          attributes: protected 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#eq">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is used to test whether the argument (<code>arg0</code>) is a reference to the
+receiver object (<code>this</code>).</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is used to test whether the argument (<code>arg0</code>) is a reference to the
+receiver object (<code>this</code>).</p><p>The <code>eq</code> method implements an [http://en.wikipedia.org/wiki/Equivalence_relation equivalence relation] on
+non-null instances of <code>AnyRef</code>:
+ * It is reflexive: for any non-null instance <code>x</code> of type <code>AnyRef</code>, <code>x.eq(x)</code> returns <code>true</code>.
+ * It is symmetric: for any non-null instances <code>x</code> and <code>y</code> of type <code>AnyRef</code>, <code>x.eq(y)</code> returns <code>true</code> if and
+   only if <code>y.eq(x)</code> returns <code>true</code>.
+ * It is transitive: for any non-null instances <code>x</code>, <code>y</code>, and <code>z</code> of type <code>AnyRef</code> if <code>x.eq(y)</code> returns <code>true</code>   and <code>y.eq(z)</code> returns <code>true</code>, then <code>x.eq(z)</code> returns <code>true</code>.</p><p>Additionally, the <code>eq</code> method has three other properties.
+ * It is consistent: for any non-null instances <code>x</code> and <code>y</code> of type <code>AnyRef</code>, multiple invocations of
+   <code>x.eq(y)</code> consistently returns <code>true</code> or consistently returns <code>false</code>.
+ * For any non-null instance <code>x</code> of type <code>AnyRef</code>, <code>x.eq(null)</code> and <code>null.eq(x)</code> returns <code>false</code>.
+ * <code>null.eq(null)</code> returns <code>true</code>.</p><p>When overriding the <code>equals</code> or <code>hashCode</code> methods, it is important to ensure that their behavior is
+consistent with reference equality.  Therefore, if two objects are references to each other (<code>o1 eq o2</code>), they
+should be equal to each other (<code>o1 == o2</code>) and they should hash to the same value (<code>o1.hashCode == o2.hashCode</code>).
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for reference equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the argument is a reference to the receiver object; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#equals">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is used to compare the receiver object (<code>this</code>) with the argument object (<code>arg0</code>) for equivalence.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is used to compare the receiver object (<code>this</code>) with the argument object (<code>arg0</code>) for equivalence.</p><p>The default implementations of this method is an [http://en.wikipedia.org/wiki/Equivalence_relation equivalence
+relation]:
+ * It is reflexive: for any instance <code>x</code> of type <code>Any</code>, <code>x.equals(x)</code> should return <code>true</code>.
+ * It is symmetric: for any instances <code>x</code> and <code>y</code> of type <code>Any</code>, <code>x.equals(y)</code> should return <code>true</code> if and
+   only if <code>y.equals(x)</code> returns <code>true</code>.
+ * It is transitive: for any instances <code>x</code>, <code>y</code>, and <code>z</code> of type <code>AnyRef</code> if <code>x.equals(y)</code> returns <code>true</code> and
+   <code>y.equals(z)</code> returns <code>true</code>, then <code>x.equals(z)</code> should return <code>true</code>.</p><p>If you override this method, you should verify that your implementation remains an equivalence relation.
+Additionally, when overriding this method it is often necessary to override <code>hashCode</code> to ensure that objects
+that are &quot;equal&quot; (<code>o1.equals(o2)</code> returns <code>true</code>) hash to the same 
+scala.Int
+(<code>o1.hashCode.equals(o2.hashCode)</code>).
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the receiver object is equivalent to the argument; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          definition classes: AnyRef → Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="prt" name="scala.AnyRef#finalize">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is called by the garbage collector on the receiver object when garbage collection determines that
+there are no more references to the object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is called by the garbage collector on the receiver object when garbage collection determines that
+there are no more references to the object.</p><p>The details of when and if the <code>finalize</code> method are invoked, as well as the interaction between <code>finalize</code>and non-local returns and exceptions, are all platform dependent.</p></div><div class="block">
+          attributes: protected 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#firstSymTag">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">firstSymTag</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#getClass">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: java.lang.Class[_ &lt;: java.lang.Object]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a representation that corresponds to the dynamic class of the receiver object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a representation that corresponds to the dynamic class of the receiver object.</p><p>The nature of the representation is platform dependent.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a representation that corresponds to the dynamic class of the receiver object.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#hashCode">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a hash code value for the object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a hash code value for the object.</p><p>The default hashing algorithm is platform dependent.</p><p>Note that it is allowed for two objects to have identical hash codes (<code>o1.hashCode.equals(o2.hashCode)</code>) yet
+not be equal (<code>o1.equals(o2)</code> returns <code>false</code>).  A degenerate implementation could always return <code>0</code>.
+However, it is required that if two objects are equal (<code>o1.equals(o2)</code> returns <code>true</code>) that they have
+identical hash codes (<code>o1.hashCode.equals(o2.hashCode)</code>).  Therefore, when overriding this method, be sure
+to verify that the behavior is consistent with the <code>equals</code> method.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the hash code value for the object.</p></dd></dl><div class="block">
+          definition classes: AnyRef → Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.Any#isInstanceOf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is used to test whether the dynamic type of the receiver object is <code>T0</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is used to test whether the dynamic type of the receiver object is <code>T0</code>.</p><p>Note that the test result of the test is modulo Scala's erasure semantics.  Therefore the expression<code>1.isInstanceOf[String]</code> will return <code>false</code>, while the expression <code>List(1).isInstanceOf[List[String]]</code> will
+return <code>true</code>.  In the latter example, because the type argument is erased as part of compilation it is not
+possible to check whether the contents of the list are of the requested typed.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>true</code> if the receiver object is an instance of erasure of type <code>T0</code>; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#lastExtSymTag">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">lastExtSymTag</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.reflect.generic.PickleFormat#lastSymTag">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">lastSymTag</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#ne">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"><code>o.ne(arg0)</code> is the same as <code>!(o.eq(arg0))</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p><code>o.ne(arg0)</code> is the same as <code>!(o.eq(arg0))</code>.
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for reference dis-equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>false</code> if the argument is not a reference to the receiver object; <code>true</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#notify">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Wakes up a single thread that is waiting on the receiver object's monitor.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Wakes up a single thread that is waiting on the receiver object's monitor.</p></div><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#notifyAll">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Wakes up all threads that are waiting on the receiver object's monitor.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Wakes up all threads that are waiting on the receiver object's monitor.</p></div><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#synchronized">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: T0</span>)</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#toString">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a string representation of the object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a string representation of the object.</p><p>The default representation is platform dependent.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a string representation of the object.</p></dd></dl><div class="block">
+          definition classes: AnyRef → Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#wait">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#wait">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#wait">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li></ol>
+            </div>
+                
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

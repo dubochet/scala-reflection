@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>Scaladoc for scala.xml.dtd</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+          
+      <link href="../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+
+      <p id="owner"><a href="../../package.html" class="extype" name="scala">scala</a>.<a href="../package.html" class="extype" name="scala.xml">xml</a></p>
+
+      <div id="definition">
+        <img src="../../../lib/package_big.png" />
+        <h1>dtd</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">dtd</span>
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"></div>
+      
+      <div id="template">
+
+        <div id="mbrsel">
+          
+          <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+          </div>
+        </div>
+        
+                
+        
+        <div class="members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="scala.xml.dtd.AttListDecl">
+      <h4 class="signature"><a href="AttListDecl.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">AttListDecl</span><span class="params">(<span name="name">name: String</span>, <span name="attrs">attrs: List[AttrDecl]</span>)</span><span class="result"> extends MarkupDecl with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.xml.dtd.AttrDecl">
+      <h4 class="signature"><a href="AttrDecl.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">AttrDecl</span><span class="params">(<span name="name">name: String</span>, <span name="tpe">tpe: String</span>, <span name="default">default: DefaultDecl</span>)</span><span class="result"> extends Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">an attribute declaration.</p>
+    </li><li visbl="pub" name="scala.xml.dtd.ContentModel">
+      <h4 class="signature"><a href="ContentModel.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ContentModel</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: sealed abstract 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.xml.dtd.DEFAULT">
+      <h4 class="signature"><a href="DEFAULT.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">DEFAULT</span><span class="params">(<span name="fixed">fixed: Boolean</span>, <span name="attValue">attValue: String</span>)</span><span class="result"> extends DefaultDecl with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.xml.dtd.DFAContentModel">
+      <h4 class="signature"><a href="DFAContentModel.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">DFAContentModel</span><span class="result"> extends ContentModel</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: sealed abstract 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.xml.dtd.DTD">
+      <h4 class="signature"><a href="DTD.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">DTD</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A document type declaration.</p>
+    </li><li visbl="pub" name="scala.xml.dtd.Decl">
+      <h4 class="signature"><a href="Decl.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Decl</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: abstract 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.xml.dtd.DefaultDecl">
+      <h4 class="signature"><a href="DefaultDecl.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">DefaultDecl</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: abstract 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.xml.dtd.DocType">
+      <h4 class="signature"><a href="DocType.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">DocType</span><span class="params">(<span name="name">name: String</span>, <span name="extID">extID: ExternalID</span>, <span name="intSubset">intSubset: Seq[Decl]</span>)</span><span class="result"> extends Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">An XML node for document type declaration.</p>
+    </li><li visbl="pub" name="scala.xml.dtd.ELEMENTS">
+      <h4 class="signature"><a href="ELEMENTS.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ELEMENTS</span><span class="params">(<span name="r">r: RegExp</span>)</span><span class="result"> extends DFAContentModel with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.xml.dtd.ElemDecl">
+      <h4 class="signature"><a href="ElemDecl.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ElemDecl</span><span class="params">(<span name="name">name: String</span>, <span name="contentModel">contentModel: ContentModel</span>)</span><span class="result"> extends MarkupDecl with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">an element declaration
+</p>
+    </li><li visbl="pub" name="scala.xml.dtd.ElementValidator">
+      <h4 class="signature"><a href="ElementValidator.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ElementValidator</span><span class="result"> extends (Node) ⇒ Boolean</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">validate children and/or attributes of an element
+ exceptions are created but not thrown.</p>
+    </li><li visbl="pub" name="scala.xml.dtd.EntityDecl">
+      <h4 class="signature"><a href="EntityDecl.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">EntityDecl</span><span class="result"> extends MarkupDecl</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">an entity declaration</p>
+    </li><li visbl="pub" name="scala.xml.dtd.EntityDef">
+      <h4 class="signature"><a href="EntityDef.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">EntityDef</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: abstract 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.xml.dtd.ExtDef">
+      <h4 class="signature"><a href="ExtDef.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ExtDef</span><span class="params">(<span name="extID">extID: ExternalID</span>)</span><span class="result"> extends EntityDef with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.xml.dtd.ExternalID">
+      <h4 class="signature"><a href="ExternalID.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ExternalID</span><span class="result"> extends TokenTests</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">an ExternalIDs - either PublicID or SystemID
+</p>
+    </li><li visbl="pub" name="scala.xml.dtd.IntDef">
+      <h4 class="signature"><a href="IntDef.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">IntDef</span><span class="params">(<span name="value">value: String</span>)</span><span class="result"> extends EntityDef with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.xml.dtd.MIXED">
+      <h4 class="signature"><a href="MIXED.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">MIXED</span><span class="params">(<span name="r">r: RegExp</span>)</span><span class="result"> extends DFAContentModel with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.xml.dtd.MarkupDecl">
+      <h4 class="signature"><a href="MarkupDecl.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">MarkupDecl</span><span class="result"> extends Decl</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: abstract 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.xml.dtd.NotationDecl">
+      <h4 class="signature"><a href="NotationDecl.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">NotationDecl</span><span class="params">(<span name="name">name: String</span>, <span name="extID">extID: ExternalID</span>)</span><span class="result"> extends MarkupDecl with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">a notation declaration</p>
+    </li><li visbl="pub" name="scala.xml.dtd.PEReference">
+      <h4 class="signature"><a href="PEReference.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">PEReference</span><span class="params">(<span name="ent">ent: String</span>)</span><span class="result"> extends MarkupDecl with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">a parsed entity reference</p>
+    </li><li visbl="pub" name="scala.xml.dtd.ParameterEntityDecl">
+      <h4 class="signature"><a href="ParameterEntityDecl.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ParameterEntityDecl</span><span class="params">(<span name="name">name: String</span>, <span name="entdef">entdef: EntityDef</span>)</span><span class="result"> extends EntityDecl with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">a parameter entity declaration</p>
+    </li><li visbl="pub" name="scala.xml.dtd.ParsedEntityDecl">
+      <h4 class="signature"><a href="ParsedEntityDecl.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ParsedEntityDecl</span><span class="params">(<span name="name">name: String</span>, <span name="entdef">entdef: EntityDef</span>)</span><span class="result"> extends EntityDecl with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">a parsed general entity declaration</p>
+    </li><li visbl="pub" name="scala.xml.dtd.PublicID">
+      <h4 class="signature"><a href="PublicID.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">PublicID</span><span class="params">(<span name="publicId">publicId: String</span>, <span name="systemId">systemId: String</span>)</span><span class="result"> extends ExternalID with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">a public identifier (see http://www.</p>
+    </li><li visbl="pub" name="scala.xml.dtd.Scanner">
+      <h4 class="signature"><a href="Scanner.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Scanner</span><span class="result"> extends Tokens with TokenTests</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Scanner for regexps (content models in DTD element declarations)
+ todo: cleanup
+</p>
+    </li><li visbl="pub" name="scala.xml.dtd.SystemID">
+      <h4 class="signature"><a href="SystemID.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">SystemID</span><span class="params">(<span name="systemId">systemId: String</span>)</span><span class="result"> extends ExternalID with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">a system identifier
+</p>
+    </li><li visbl="pub" name="scala.xml.dtd.Tokens">
+      <h4 class="signature"><a href="Tokens.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Tokens</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.xml.dtd.UnparsedEntityDecl">
+      <h4 class="signature"><a href="UnparsedEntityDecl.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">UnparsedEntityDecl</span><span class="params">(<span name="name">name: String</span>, <span name="extID">extID: ExternalID</span>, <span name="notation">notation: String</span>)</span><span class="result"> extends EntityDecl with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">an unparsed entity declaration</p>
+    </li><li visbl="pub" name="scala.xml.dtd.ValidationException">
+      <h4 class="signature"><a href="ValidationException.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ValidationException</span><span class="params">(<span name="e">e: String</span>)</span><span class="result"> extends Exception with Product</span>
+      </span>
+      </a></h4>
+      
+    </li></ol>
+            </div>
+        
+        <div class="members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="scala.xml.dtd.ANY">
+      <h4 class="signature"><a href="ANY$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">ANY</span><span class="result"> extends ContentModel with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.xml.dtd.ContentModel">
+      <h4 class="signature"><a href="ContentModel$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">ContentModel</span><span class="result"> extends WordExp</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.xml.dtd.ContentModelParser">
+      <h4 class="signature"><a href="ContentModelParser$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">ContentModelParser</span><span class="result"> extends Scanner</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Parser for regexps (content models in DTD element declarations)</p>
+    </li><li visbl="pub" name="scala.xml.dtd.EMPTY">
+      <h4 class="signature"><a href="EMPTY$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">EMPTY</span><span class="result"> extends ContentModel with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.xml.dtd.IMPLIED">
+      <h4 class="signature"><a href="IMPLIED$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">IMPLIED</span><span class="result"> extends DefaultDecl with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.xml.dtd.MakeValidationException">
+      <h4 class="signature"><a href="MakeValidationException$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">MakeValidationException</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">no summary matey</p>
+    </li><li visbl="pub" name="scala.xml.dtd.PCDATA">
+      <h4 class="signature"><a href="PCDATA$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">PCDATA</span><span class="result"> extends ContentModel with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.xml.dtd.REQUIRED">
+      <h4 class="signature"><a href="REQUIRED$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">REQUIRED</span><span class="result"> extends DefaultDecl with Product</span>
+      </span>
+      </a></h4>
+      
+    </li></ol>
+            </div>
+                
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

@@ -1,0 +1,734 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>Scaladoc for scala.swing.event</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+          
+      <link href="../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+
+      <p id="owner"><a href="../../package.html" class="extype" name="scala">scala</a>.<a href="../package.html" class="extype" name="scala.swing">swing</a></p>
+
+      <div id="definition">
+        <img src="../../../lib/package_big.png" />
+        <h1>event</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">event</span>
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"></div>
+      
+      <div id="template">
+
+        <div id="mbrsel">
+          
+          <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+          </div>
+        </div>
+        
+                
+        
+        <div class="members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="scala.swing.event.ActionEvent">
+      <h4 class="signature"><a href="ActionEvent.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ActionEvent</span><span class="result"> extends ComponentEvent</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.AdjustingEvent">
+      <h4 class="signature"><a href="AdjustingEvent.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">AdjustingEvent</span><span class="result"> extends ComponentEvent</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   An event that indicates some editing operation that can be still in
+   progress.</p>
+    </li><li visbl="pub" name="scala.swing.event.BackgroundChanged">
+      <h4 class="signature"><a href="BackgroundChanged.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">BackgroundChanged</span><span class="params">(<span name="source">source: Component</span>)</span><span class="result"> extends ComponentEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.ButtonClicked">
+      <h4 class="signature"><a href="ButtonClicked.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ButtonClicked</span><span class="params">(<span name="source">source: AbstractButton</span>)</span><span class="result"> extends ActionEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.CaretUpdate">
+      <h4 class="signature"><a href="CaretUpdate.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">CaretUpdate</span><span class="params">(<span name="source">source: TextComponent</span>)</span><span class="result"> extends ComponentEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.ComponentAdded">
+      <h4 class="signature"><a href="ComponentAdded.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ComponentAdded</span><span class="params">(<span name="source">source: Container</span>, <span name="child">child: Component</span>)</span><span class="result"> extends ContainerEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.ComponentEvent">
+      <h4 class="signature"><a href="ComponentEvent.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">ComponentEvent</span><span class="result"> extends UIEvent</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.ComponentHidden">
+      <h4 class="signature"><a href="ComponentHidden.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name deprecated">ComponentHidden</span><span class="params">(<span name="source">source: Component</span>)</span><span class="result"> extends ComponentEvent with Product</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block"><ol>deprecated:
+          <li><p>Use UIElementHidden instead.</p></li>
+        </ol></div></div>
+          
+    </li><li visbl="pub" name="scala.swing.event.ComponentMoved">
+      <h4 class="signature"><a href="ComponentMoved.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name deprecated">ComponentMoved</span><span class="params">(<span name="source">source: Component</span>)</span><span class="result"> extends ComponentEvent with Product</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block"><ol>deprecated:
+          <li><p>Use UIElementMoved instead.</p></li>
+        </ol></div></div>
+          
+    </li><li visbl="pub" name="scala.swing.event.ComponentRemoved">
+      <h4 class="signature"><a href="ComponentRemoved.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ComponentRemoved</span><span class="params">(<span name="source">source: Container</span>, <span name="child">child: Component</span>)</span><span class="result"> extends ContainerEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.ComponentResized">
+      <h4 class="signature"><a href="ComponentResized.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name deprecated">ComponentResized</span><span class="params">(<span name="source">source: Component</span>)</span><span class="result"> extends ComponentEvent with Product</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block"><ol>deprecated:
+          <li><p>Use UIElementResized instead.</p></li>
+        </ol></div></div>
+          
+    </li><li visbl="pub" name="scala.swing.event.ComponentShown">
+      <h4 class="signature"><a href="ComponentShown.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name deprecated">ComponentShown</span><span class="params">(<span name="source">source: Component</span>)</span><span class="result"> extends ComponentEvent with Product</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block"><ol>deprecated:
+          <li><p>Use UIElementShown instead.</p></li>
+        </ol></div></div>
+          
+    </li><li visbl="pub" name="scala.swing.event.ContainerEvent">
+      <h4 class="signature"><a href="ContainerEvent.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ContainerEvent</span><span class="result"> extends UIEvent</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: abstract 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.swing.event.EditDone">
+      <h4 class="signature"><a href="EditDone.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">EditDone</span><span class="params">(<span name="source">source: TextField</span>)</span><span class="result"> extends ValueChanged with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.Event">
+      <h4 class="signature"><a href="Event.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Event</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.FocusEvent">
+      <h4 class="signature"><a href="FocusEvent.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">FocusEvent</span><span class="result"> extends ComponentEvent</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The other component is None if it is a non Swing, i.</p>
+    </li><li visbl="pub" name="scala.swing.event.FocusGained">
+      <h4 class="signature"><a href="FocusGained.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">FocusGained</span><span class="params">(<span name="source">source: Component</span>, <span name="other">other: Option[Component]</span>, <span name="temporary">temporary: Boolean</span>)</span><span class="result"> extends FocusEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.FocusLost">
+      <h4 class="signature"><a href="FocusLost.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">FocusLost</span><span class="params">(<span name="source">source: Component</span>, <span name="other">other: Option[Component]</span>, <span name="temporary">temporary: Boolean</span>)</span><span class="result"> extends FocusEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.FontChanged">
+      <h4 class="signature"><a href="FontChanged.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">FontChanged</span><span class="params">(<span name="source">source: Component</span>)</span><span class="result"> extends ComponentEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.ForegroundChanged">
+      <h4 class="signature"><a href="ForegroundChanged.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ForegroundChanged</span><span class="params">(<span name="source">source: Component</span>)</span><span class="result"> extends ComponentEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.InputEvent">
+      <h4 class="signature"><a href="InputEvent.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">InputEvent</span><span class="result"> extends ComponentEvent</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.KeyEvent">
+      <h4 class="signature"><a href="KeyEvent.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">KeyEvent</span><span class="result"> extends InputEvent</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: sealed abstract 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.swing.event.KeyPressed">
+      <h4 class="signature"><a href="KeyPressed.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">KeyPressed</span><span class="params">(<span name="source">source: Component</span>, <span name="key">key: Value</span>, <span name="modifiers">modifiers: Int</span>, <span name="location">location: Value</span>)</span><span class="params">(<span name="peer">peer: KeyEvent</span>)</span><span class="result"> extends KeyEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.KeyReleased">
+      <h4 class="signature"><a href="KeyReleased.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">KeyReleased</span><span class="params">(<span name="source">source: Component</span>, <span name="key">key: Value</span>, <span name="modifiers">modifiers: Int</span>, <span name="location">location: Value</span>)</span><span class="params">(<span name="peer">peer: KeyEvent</span>)</span><span class="result"> extends KeyEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.KeyTyped">
+      <h4 class="signature"><a href="KeyTyped.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">KeyTyped</span><span class="params">(<span name="source">source: Component</span>, <span name="char">char: Char</span>, <span name="modifiers">modifiers: Int</span>, <span name="location">location: Value</span>)</span><span class="params">(<span name="peer">peer: KeyEvent</span>)</span><span class="result"> extends KeyEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.ListChange">
+      <h4 class="signature"><a href="ListChange.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ListChange</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends ListEvent[A]</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: abstract 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.swing.event.ListChanged">
+      <h4 class="signature"><a href="ListChanged.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ListChanged</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends ListChange[A]</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.ListElementsAdded">
+      <h4 class="signature"><a href="ListElementsAdded.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ListElementsAdded</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends ListChange[A]</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.ListElementsRemoved">
+      <h4 class="signature"><a href="ListElementsRemoved.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ListElementsRemoved</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends ListChange[A]</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.ListEvent">
+      <h4 class="signature"><a href="ListEvent.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">ListEvent</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends ComponentEvent</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.ListSelectionChanged">
+      <h4 class="signature"><a href="ListSelectionChanged.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ListSelectionChanged</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends SelectionChanged with ListEvent[A]</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.ListSelectionEvent">
+      <h4 class="signature"><a href="ListSelectionEvent.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">ListSelectionEvent</span><span class="result"> extends SelectionEvent</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">An event that indicates a selection of a range of indices.</p>
+    </li><li visbl="pub" name="scala.swing.event.MouseButtonEvent">
+      <h4 class="signature"><a href="MouseButtonEvent.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">MouseButtonEvent</span><span class="result"> extends MouseEvent</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: sealed abstract 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.swing.event.MouseClicked">
+      <h4 class="signature"><a href="MouseClicked.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">MouseClicked</span><span class="params">(<span name="source">source: Component</span>, <span name="point">point: Point</span>, <span name="modifiers">modifiers: Int</span>, <span name="clicks">clicks: Int</span>, <span name="triggersPopup">triggersPopup: Boolean</span>)</span><span class="params">(<span name="peer">peer: MouseEvent</span>)</span><span class="result"> extends MouseButtonEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.MouseDragged">
+      <h4 class="signature"><a href="MouseDragged.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">MouseDragged</span><span class="params">(<span name="source">source: Component</span>, <span name="point">point: Point</span>, <span name="modifiers">modifiers: Int</span>)</span><span class="params">(<span name="peer">peer: MouseEvent</span>)</span><span class="result"> extends MouseMotionEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.MouseEntered">
+      <h4 class="signature"><a href="MouseEntered.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">MouseEntered</span><span class="params">(<span name="source">source: Component</span>, <span name="point">point: Point</span>, <span name="modifiers">modifiers: Int</span>)</span><span class="params">(<span name="peer">peer: MouseEvent</span>)</span><span class="result"> extends MouseMotionEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.MouseEvent">
+      <h4 class="signature"><a href="MouseEvent.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">MouseEvent</span><span class="result"> extends InputEvent</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: sealed abstract 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.swing.event.MouseExited">
+      <h4 class="signature"><a href="MouseExited.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">MouseExited</span><span class="params">(<span name="source">source: Component</span>, <span name="point">point: Point</span>, <span name="modifiers">modifiers: Int</span>)</span><span class="params">(<span name="peer">peer: MouseEvent</span>)</span><span class="result"> extends MouseMotionEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.MouseMotionEvent">
+      <h4 class="signature"><a href="MouseMotionEvent.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">MouseMotionEvent</span><span class="result"> extends MouseEvent</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: sealed abstract 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.swing.event.MouseMoved">
+      <h4 class="signature"><a href="MouseMoved.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">MouseMoved</span><span class="params">(<span name="source">source: Component</span>, <span name="point">point: Point</span>, <span name="modifiers">modifiers: Int</span>)</span><span class="params">(<span name="peer">peer: MouseEvent</span>)</span><span class="result"> extends MouseMotionEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.MousePressed">
+      <h4 class="signature"><a href="MousePressed.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">MousePressed</span><span class="params">(<span name="source">source: Component</span>, <span name="point">point: Point</span>, <span name="modifiers">modifiers: Int</span>, <span name="clicks">clicks: Int</span>, <span name="triggersPopup">triggersPopup: Boolean</span>)</span><span class="params">(<span name="peer">peer: MouseEvent</span>)</span><span class="result"> extends MouseButtonEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.MouseReleased">
+      <h4 class="signature"><a href="MouseReleased.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">MouseReleased</span><span class="params">(<span name="source">source: Component</span>, <span name="point">point: Point</span>, <span name="modifiers">modifiers: Int</span>, <span name="clicks">clicks: Int</span>, <span name="triggersPopup">triggersPopup: Boolean</span>)</span><span class="params">(<span name="peer">peer: MouseEvent</span>)</span><span class="result"> extends MouseButtonEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.MouseWheelMoved">
+      <h4 class="signature"><a href="MouseWheelMoved.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">MouseWheelMoved</span><span class="params">(<span name="source">source: Component</span>, <span name="point">point: Point</span>, <span name="modifiers">modifiers: Int</span>, <span name="rotation">rotation: Int</span>)</span><span class="params">(<span name="peer">peer: MouseEvent</span>)</span><span class="result"> extends MouseEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.SelectionChanged">
+      <h4 class="signature"><a href="SelectionChanged.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">SelectionChanged</span><span class="params">(<span name="source">source: Component</span>)</span><span class="result"> extends ComponentEvent with SelectionEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.SelectionEvent">
+      <h4 class="signature"><a href="SelectionEvent.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">SelectionEvent</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">An event that indicates a change in a selection such as in a list view or a table.</p>
+    </li><li visbl="pub" name="scala.swing.event.TableChange">
+      <h4 class="signature"><a href="TableChange.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">TableChange</span><span class="result"> extends TableEvent</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: abstract 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.swing.event.TableChanged">
+      <h4 class="signature"><a href="TableChanged.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">TableChanged</span><span class="params">(<span name="source">source: Table</span>)</span><span class="result"> extends TableChange with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The table structure, i.</p>
+    </li><li visbl="pub" name="scala.swing.event.TableColumnsSelected">
+      <h4 class="signature"><a href="TableColumnsSelected.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">TableColumnsSelected</span><span class="params">(<span name="source">source: Table</span>, <span name="range">range: Range</span>, <span name="adjusting">adjusting: Boolean</span>)</span><span class="result"> extends TableEvent with AdjustingEvent with ListSelectionEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.TableEvent">
+      <h4 class="signature"><a href="TableEvent.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">TableEvent</span><span class="result"> extends ComponentEvent</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: abstract 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.swing.event.TableResized">
+      <h4 class="signature"><a href="TableResized.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">TableResized</span><span class="result"> extends TableChange</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Any change that caused the table to change it's size
+</p>
+    </li><li visbl="pub" name="scala.swing.event.TableRowsAdded">
+      <h4 class="signature"><a href="TableRowsAdded.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">TableRowsAdded</span><span class="params">(<span name="source">source: Table</span>, <span name="range">range: Range</span>)</span><span class="result"> extends TableResized with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.TableRowsRemoved">
+      <h4 class="signature"><a href="TableRowsRemoved.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">TableRowsRemoved</span><span class="params">(<span name="source">source: Table</span>, <span name="range">range: Range</span>)</span><span class="result"> extends TableResized with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.TableRowsSelected">
+      <h4 class="signature"><a href="TableRowsSelected.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">TableRowsSelected</span><span class="params">(<span name="source">source: Table</span>, <span name="range">range: Range</span>, <span name="adjusting">adjusting: Boolean</span>)</span><span class="result"> extends TableEvent with AdjustingEvent with ListSelectionEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.TableStructureChanged">
+      <h4 class="signature"><a href="TableStructureChanged.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">TableStructureChanged</span><span class="params">(<span name="source">source: Table</span>)</span><span class="result"> extends TableChange with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The most general table change.</p>
+    </li><li visbl="pub" name="scala.swing.event.TableUpdated">
+      <h4 class="signature"><a href="TableUpdated.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">TableUpdated</span><span class="params">(<span name="source">source: Table</span>, <span name="range">range: Range</span>, <span name="column">column: Int</span>)</span><span class="result"> extends TableChange with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The size of the table stays the same, but the given range of rows might
+have changed but only in the given column.</p>
+    </li><li visbl="pub" name="scala.swing.event.UIElementHidden">
+      <h4 class="signature"><a href="UIElementHidden.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">UIElementHidden</span><span class="params">(<span name="source">source: UIElement</span>)</span><span class="result"> extends UIEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.UIElementMoved">
+      <h4 class="signature"><a href="UIElementMoved.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">UIElementMoved</span><span class="params">(<span name="source">source: UIElement</span>)</span><span class="result"> extends UIEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.UIElementResized">
+      <h4 class="signature"><a href="UIElementResized.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">UIElementResized</span><span class="params">(<span name="source">source: UIElement</span>)</span><span class="result"> extends UIEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.UIElementShown">
+      <h4 class="signature"><a href="UIElementShown.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">UIElementShown</span><span class="params">(<span name="source">source: UIElement</span>)</span><span class="result"> extends UIEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.UIEvent">
+      <h4 class="signature"><a href="UIEvent.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">UIEvent</span><span class="result"> extends Event</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.ValueChanged">
+      <h4 class="signature"><a href="ValueChanged.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ValueChanged</span><span class="result"> extends ComponentEvent</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.WindowActivated">
+      <h4 class="signature"><a href="WindowActivated.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">WindowActivated</span><span class="params">(<span name="source">source: Window</span>)</span><span class="result"> extends WindowEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.WindowClosed">
+      <h4 class="signature"><a href="WindowClosed.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">WindowClosed</span><span class="params">(<span name="source">source: Window</span>)</span><span class="result"> extends WindowEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.WindowClosing">
+      <h4 class="signature"><a href="WindowClosing.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">WindowClosing</span><span class="params">(<span name="source">source: Window</span>)</span><span class="result"> extends WindowEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.WindowDeactivated">
+      <h4 class="signature"><a href="WindowDeactivated.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">WindowDeactivated</span><span class="params">(<span name="source">source: Window</span>)</span><span class="result"> extends WindowEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.WindowDeiconified">
+      <h4 class="signature"><a href="WindowDeiconified.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">WindowDeiconified</span><span class="params">(<span name="source">source: Window</span>)</span><span class="result"> extends WindowEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.WindowEvent">
+      <h4 class="signature"><a href="WindowEvent.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">WindowEvent</span><span class="result"> extends UIEvent</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: abstract 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.swing.event.WindowIconified">
+      <h4 class="signature"><a href="WindowIconified.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">WindowIconified</span><span class="params">(<span name="source">source: Window</span>)</span><span class="result"> extends WindowEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.WindowOpened">
+      <h4 class="signature"><a href="WindowOpened.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">WindowOpened</span><span class="params">(<span name="source">source: Window</span>)</span><span class="result"> extends WindowEvent with Product</span>
+      </span>
+      </a></h4>
+      
+    </li></ol>
+            </div>
+        
+        <div class="members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="scala.swing.event.ActionEvent">
+      <h4 class="signature"><a href="ActionEvent$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">ActionEvent</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.Key">
+      <h4 class="signature"><a href="Key$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Key</span><span class="result"> extends Enumeration</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Enumeration of key codes used by key events.</p>
+    </li><li visbl="pub" name="scala.swing.event.ListChanged">
+      <h4 class="signature"><a href="ListChanged$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">ListChanged</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.ListElementsAdded">
+      <h4 class="signature"><a href="ListElementsAdded$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">ListElementsAdded</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.ListElementsRemoved">
+      <h4 class="signature"><a href="ListElementsRemoved$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">ListElementsRemoved</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.ListSelectionChanged">
+      <h4 class="signature"><a href="ListSelectionChanged$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">ListSelectionChanged</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.swing.event.ValueChanged">
+      <h4 class="signature"><a href="ValueChanged$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">ValueChanged</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li></ol>
+            </div>
+                
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

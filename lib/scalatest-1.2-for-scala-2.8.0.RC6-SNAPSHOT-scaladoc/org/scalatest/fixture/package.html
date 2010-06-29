@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>Scaladoc for org.scalatest.fixture</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+          
+      <link href="../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+
+      <p id="owner"><a href="../../package.html" class="extype" name="org">org</a>.<a href="../package.html" class="extype" name="org.scalatest">scalatest</a></p>
+
+      <div id="definition">
+        <img src="../../../lib/package_big.png" />
+        <h1>fixture</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">fixture</span>
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"></div>
+      
+      <div id="template">
+
+        <div id="mbrsel">
+          
+          <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+          </div>
+        </div>
+        
+                
+        
+        <div class="members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="org.scalatest.fixture.ConfigMapFixture">
+      <h4 class="signature"><a href="ConfigMapFixture.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">ConfigMapFixture</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Trait that when mixed into a <code>FixtureSuite</code> ensures the<code>configMap</code> passed to <code>runTest</code> is passed along
+as a fixture into each test.</p>
+    </li><li visbl="pub" name="org.scalatest.fixture.FixtureFeatureSpec">
+      <h4 class="signature"><a href="FixtureFeatureSpec.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">FixtureFeatureSpec</span><span class="result"> extends FixtureSuite</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A sister trait to <code>org.</p>
+    </li><li visbl="pub" name="org.scalatest.fixture.FixtureFlatSpec">
+      <h4 class="signature"><a href="FixtureFlatSpec.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">FixtureFlatSpec</span><span class="result"> extends FixtureSuite with ShouldVerb with MustVerb with CanVerb</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A sister trait to <code>org.</p>
+    </li><li visbl="pub" name="org.scalatest.fixture.FixtureFunSuite">
+      <h4 class="signature"><a href="FixtureFunSuite.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">FixtureFunSuite</span><span class="result"> extends FixtureSuite</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A sister trait to <code>org.</p>
+    </li><li visbl="pub" name="org.scalatest.fixture.FixtureSpec">
+      <h4 class="signature"><a href="FixtureSpec.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">FixtureSpec</span><span class="result"> extends FixtureSuite</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A sister trait to <code>org.</p>
+    </li><li visbl="pub" name="org.scalatest.fixture.FixtureSuite">
+      <h4 class="signature"><a href="FixtureSuite.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">FixtureSuite</span><span class="result"> extends Suite</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt"><code>Suite</code> that can pass a fixture object into its tests.</p>
+    </li><li visbl="pub" name="org.scalatest.fixture.FixtureWordSpec">
+      <h4 class="signature"><a href="FixtureWordSpec.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">FixtureWordSpec</span><span class="result"> extends FixtureSuite with ShouldVerb with MustVerb with CanVerb</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A sister trait to <code>org.</p>
+    </li><li visbl="pub" name="org.scalatest.fixture.MultipleFixtureFeatureSpec">
+      <h4 class="signature"><a href="MultipleFixtureFeatureSpec.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">MultipleFixtureFeatureSpec</span><span class="result"> extends FixtureFeatureSpec with ConfigMapFixture</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A sister trait to <code>org.</p>
+    </li><li visbl="pub" name="org.scalatest.fixture.MultipleFixtureFlatSpec">
+      <h4 class="signature"><a href="MultipleFixtureFlatSpec.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">MultipleFixtureFlatSpec</span><span class="result"> extends FixtureFlatSpec with ConfigMapFixture</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A sister trait to <code>org.</p>
+    </li><li visbl="pub" name="org.scalatest.fixture.MultipleFixtureFunSuite">
+      <h4 class="signature"><a href="MultipleFixtureFunSuite.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">MultipleFixtureFunSuite</span><span class="result"> extends FixtureFunSuite with ConfigMapFixture</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A sister trait to <code>org.</p>
+    </li><li visbl="pub" name="org.scalatest.fixture.MultipleFixtureSpec">
+      <h4 class="signature"><a href="MultipleFixtureSpec.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">MultipleFixtureSpec</span><span class="result"> extends FixtureSpec with ConfigMapFixture</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A sister trait to <code>org.</p>
+    </li><li visbl="pub" name="org.scalatest.fixture.MultipleFixtureWordSpec">
+      <h4 class="signature"><a href="MultipleFixtureWordSpec.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">MultipleFixtureWordSpec</span><span class="result"> extends FixtureWordSpec with ConfigMapFixture</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A sister trait to <code>org.</p>
+    </li></ol>
+            </div>
+        
+        
+                
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

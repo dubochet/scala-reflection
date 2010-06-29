@@ -1,0 +1,1234 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>Scaladoc for scala.swing.SwingWorker</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		      <script type="text/javascript" src="../../lib/jquery.js"></script>
+          
+      <link href="../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="type">
+
+      <p id="owner"><a href="../package.html" class="extype" name="scala">scala</a>.<a href="package.html" class="extype" name="scala.swing">swing</a></p>
+
+      <div id="definition">
+        <img src="../../lib/class_big.png" />
+        <h1>SwingWorker</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">SwingWorker</span><span class="result"> extends <a href="../actors/Actor.html" class="extype" name="scala.actors.Actor">Actor</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"><div class="block">
+          attributes: abstract 
+        </div><div class="block">
+            go to: <a href="SwingWorker$.html">companion</a>
+          </div><div class="block">
+            source: <a href="https://lampsvn.epfl.ch/trac/scala/browser/scala/trunk/src///swing/scala/swing/SwingWorker.scala">SwingWorker.scala</a>
+          </div></div>
+      
+      <div id="template">
+
+        <div id="mbrsel">
+          <div id="ancestors">
+                <span class="filtertype">Inherited</span>
+                <ol><li class="hideall">Hide All</li><li class="showall">Show all</li></ol>
+                <ol id="linearization"><li class="in" name="scala.actors.Actor">Actor</li><li class="in" name="scala.actors.InputChannel">InputChannel</li><li class="in" name="scala.actors.ActorCanReply">ActorCanReply</li><li class="in" name="scala.actors.ReplyReactor">ReplyReactor</li><li class="in" name="scala.actors.ReactorCanReply">ReactorCanReply</li><li class="in" name="scala.actors.Reactor">Reactor</li><li class="in" name="scala.actors.Combinators">Combinators</li><li class="in" name="scala.actors.AbstractActor">AbstractActor</li><li class="in" name="scala.actors.CanReply">CanReply</li><li class="in" name="scala.actors.OutputChannel">OutputChannel</li><li class="in" name="scala.AnyRef">AnyRef</li><li class="in" name="scala.Any">Any</li></ol>
+              </div>
+          <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+          </div>
+        </div>
+        
+        <div class="members" id="constructors">
+              <h3>Instance constructors</h3>
+              <ol><li visbl="pub" name="scala.swing.SwingWorker#this">
+      <h4 class="signature">
+      <span class="kind">new</span>
+      <span class="symbol">
+        <span class="name">SwingWorker</span><span class="params">()</span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>        
+        
+        <div class="members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="scala.actors.ReactorCanReply#Future">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">Future</span><span class="result"> = <a href="../actors/Future.html" class="extype" name="scala.actors.Future">Future</a>[P]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: ReactorCanReply → <a href="../actors/CanReply.html" class="extype" name="scala.actors.CanReply">CanReply</a>
+        </div></div>
+          
+    </li></ol>
+            </div>
+        
+        <div class="members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="scala.actors.ReplyReactor#!">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">!</span><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Sends <code>msg</code> to this actor (asynchronous).</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Sends <code>msg</code> to this actor (asynchronous).
+</p></div><dl class="paramcmts block"><dt class="param">msg</dt><dd class="cmt"><p>the message to send
+</p></dd></dl><div class="block">
+          definition classes: <a href="../actors/ReplyReactor.html" class="extype" name="scala.actors.ReplyReactor">ReplyReactor</a> → <a href="../actors/Reactor.html" class="extype" name="scala.actors.Reactor">Reactor</a> → <a href="../actors/OutputChannel.html" class="extype" name="scala.actors.OutputChannel">OutputChannel</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.actors.ActorCanReply#!!">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">!!</span><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <a href="../actors/Future.html" class="extype" name="scala.actors.Future">Future</a>[<span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Sends <code>msg</code> to this actor and
+immediately returns a future representing the reply value.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Sends <code>msg</code> to this actor and
+immediately returns a future representing the reply value.
+</p></div><dl class="paramcmts block"><dt class="param">msg</dt><dd class="cmt"><p>the message to be sent</p></dd><dt>returns</dt><dd class="cmt"><p>the future
+</p></dd></dl><div class="block">
+          definition classes: ActorCanReply → ReactorCanReply → <a href="../actors/CanReply.html" class="extype" name="scala.actors.CanReply">CanReply</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.actors.ActorCanReply#!!">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">!!</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Any">Any</span></span>, <span name="handler">handler: <a href="../PartialFunction.html" class="extype" name="scala.PartialFunction">PartialFunction</a>[<span class="extype" name="scala.Any">Any</span>, A]</span>)</span><span class="result">: <a href="../actors/Future.html" class="extype" name="scala.actors.Future">Future</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Sends <code>msg</code> to this actor and
+immediately returns a future representing the reply value.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Sends <code>msg</code> to this actor and
+immediately returns a future representing the reply value.
+The reply is post-processed using the partial function<code>handler</code>. This also allows to recover a more
+precise type for the reply value.
+</p></div><dl class="paramcmts block"><dt class="param">msg</dt><dd class="cmt"><p>the message to be sent</p></dd><dt class="param">handler</dt><dd class="cmt"><p>the function to be applied to the response</p></dd><dt>returns</dt><dd class="cmt"><p>the future
+</p></dd></dl><div class="block">
+          definition classes: ActorCanReply → ReactorCanReply → <a href="../actors/CanReply.html" class="extype" name="scala.actors.CanReply">CanReply</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#!=">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">!=</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.Any#!=">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"><code>o != arg0</code> is the same as <code>!(o == (arg0))</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p><code>o != arg0</code> is the same as <code>!(o == (arg0))</code>.
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for dis-equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>false</code> if the receiver object is equivalent to the argument; <code>true</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.actors.ActorCanReply#!?">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">!?</span><span class="params">(<span name="msec">msec: <span class="extype" name="scala.Long">Long</span></span>, <span name="msg">msg: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <a href="../Option.html" class="extype" name="scala.Option">Option</a>[<span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Sends <code>msg</code> to this actor and
+awaits reply (synchronous) within <code>msec</code>milliseconds.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Sends <code>msg</code> to this actor and
+awaits reply (synchronous) within <code>msec</code>milliseconds.
+</p></div><dl class="paramcmts block"><dt class="param">msec</dt><dd class="cmt"><p>the time span before timeout</p></dd><dt class="param">msg</dt><dd class="cmt"><p>the message to be sent</p></dd><dt>returns</dt><dd class="cmt"><p><code>None</code> in case of timeout, otherwise
+             <code>Some(x)</code> where <code>x</code> is the reply
+</p></dd></dl><div class="block">
+          definition classes: ActorCanReply → ReactorCanReply → <a href="../actors/CanReply.html" class="extype" name="scala.actors.CanReply">CanReply</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.actors.ActorCanReply#!?">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">!?</span><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Any">Any</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Sends <code>msg</code> to this actor and
+awaits reply (synchronous).</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Sends <code>msg</code> to this actor and
+awaits reply (synchronous).
+</p></div><dl class="paramcmts block"><dt class="param">msg</dt><dd class="cmt"><p>the message to be sent</p></dd><dt>returns</dt><dd class="cmt"><p>the reply
+</p></dd></dl><div class="block">
+          definition classes: ActorCanReply → ReactorCanReply → <a href="../actors/CanReply.html" class="extype" name="scala.actors.CanReply">CanReply</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef###">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef → Any
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#$asInstanceOf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">$asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">()</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#$isInstanceOf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">$isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#==">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">==</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"><code>o == arg0</code> is the same as <code>if (o eq null) arg0 eq null else o.equals(arg0)</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p><code>o == arg0</code> is the same as <code>if (o eq null) arg0 eq null else o.equals(arg0)</code>.
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the receiver object is equivalent to the argument; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.Any#==">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"><code>o == arg0</code> is the same as <code>o.equals(arg0)</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p><code>o == arg0</code> is the same as <code>o.equals(arg0)</code>.
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the receiver object is equivalent to the argument; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.actors.Actor#?">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">?</span><span class="result">: <span class="extype" name="scala.Any">Any</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Receives the next message from this actor's mailbox.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Receives the next message from this actor's mailbox.
+</p></div><div class="block">
+          definition classes: <a href="../actors/Actor.html" class="extype" name="scala.actors.Actor">Actor</a> → <a href="../actors/InputChannel.html" class="extype" name="scala.actors.InputChannel">InputChannel</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.actors.Reactor#act">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">act</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">The actor's behavior is specified by implementing this method.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>The actor's behavior is specified by implementing this method.
+</p></div><div class="block">
+          attributes: abstract 
+        </div><div class="block">
+          definition classes: <a href="../actors/Reactor.html" class="extype" name="scala.actors.Reactor">Reactor</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.Any#asInstanceOf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is used to cast the receiver object to be of type <code>T0</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is used to cast the receiver object to be of type <code>T0</code>.</p><p>Note that the success of a cast at runtime is modulo Scala's erasure semantics.  Therefore the expression<code>1.asInstanceOf[String]</code> will throw a <code>ClassCastException</code> at runtime, while the expression<code>List(1).asInstanceOf[List[String]]</code> will not.  In the latter example, because the type argument is erased as
+part of compilation it is not possible to check whether the contents of the list are of the requested typed.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the receiver object.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.swing.SwingWorker#cancelled">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">cancelled</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="scala.swing.SwingWorker#cancelled_=">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">cancelled_=</span><span class="params">(<span name="b">b: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+    </li><li visbl="prt" name="scala.AnyRef#clone">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: AnyRef</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method creates and returns a copy of the receiver object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method creates and returns a copy of the receiver object.</p><p>The default implementation of the <code>clone</code> method is platform dependent.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a copy of the receiver object.</p></dd></dl><div class="block">
+          attributes: protected 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.actors.Combinators#continue">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">continue</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Continues with the execution of the closure registered as
+continuation following <code>andThen</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Continues with the execution of the closure registered as
+continuation following <code>andThen</code>. Continues with the execution
+of the next loop iteration when invoked inside the body of <code>loop</code>or <code>loopWhile</code>.
+</p></div><div class="block">
+          definition classes: Combinators
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.swing.SwingWorker#done">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">done</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="scala.AnyRef#eq">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is used to test whether the argument (<code>arg0</code>) is a reference to the
+receiver object (<code>this</code>).</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is used to test whether the argument (<code>arg0</code>) is a reference to the
+receiver object (<code>this</code>).</p><p>The <code>eq</code> method implements an [http://en.wikipedia.org/wiki/Equivalence_relation equivalence relation] on
+non-null instances of <code>AnyRef</code>:
+ * It is reflexive: for any non-null instance <code>x</code> of type <code>AnyRef</code>, <code>x.eq(x)</code> returns <code>true</code>.
+ * It is symmetric: for any non-null instances <code>x</code> and <code>y</code> of type <code>AnyRef</code>, <code>x.eq(y)</code> returns <code>true</code> if and
+   only if <code>y.eq(x)</code> returns <code>true</code>.
+ * It is transitive: for any non-null instances <code>x</code>, <code>y</code>, and <code>z</code> of type <code>AnyRef</code> if <code>x.eq(y)</code> returns <code>true</code>   and <code>y.eq(z)</code> returns <code>true</code>, then <code>x.eq(z)</code> returns <code>true</code>.</p><p>Additionally, the <code>eq</code> method has three other properties.
+ * It is consistent: for any non-null instances <code>x</code> and <code>y</code> of type <code>AnyRef</code>, multiple invocations of
+   <code>x.eq(y)</code> consistently returns <code>true</code> or consistently returns <code>false</code>.
+ * For any non-null instance <code>x</code> of type <code>AnyRef</code>, <code>x.eq(null)</code> and <code>null.eq(x)</code> returns <code>false</code>.
+ * <code>null.eq(null)</code> returns <code>true</code>.</p><p>When overriding the <code>equals</code> or <code>hashCode</code> methods, it is important to ensure that their behavior is
+consistent with reference equality.  Therefore, if two objects are references to each other (<code>o1 eq o2</code>), they
+should be equal to each other (<code>o1 == o2</code>) and they should hash to the same value (<code>o1.hashCode == o2.hashCode</code>).
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for reference equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the argument is a reference to the receiver object; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#equals">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is used to compare the receiver object (<code>this</code>) with the argument object (<code>arg0</code>) for equivalence.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is used to compare the receiver object (<code>this</code>) with the argument object (<code>arg0</code>) for equivalence.</p><p>The default implementations of this method is an [http://en.wikipedia.org/wiki/Equivalence_relation equivalence
+relation]:
+ * It is reflexive: for any instance <code>x</code> of type <code>Any</code>, <code>x.equals(x)</code> should return <code>true</code>.
+ * It is symmetric: for any instances <code>x</code> and <code>y</code> of type <code>Any</code>, <code>x.equals(y)</code> should return <code>true</code> if and
+   only if <code>y.equals(x)</code> returns <code>true</code>.
+ * It is transitive: for any instances <code>x</code>, <code>y</code>, and <code>z</code> of type <code>AnyRef</code> if <code>x.equals(y)</code> returns <code>true</code> and
+   <code>y.equals(z)</code> returns <code>true</code>, then <code>x.equals(z)</code> should return <code>true</code>.</p><p>If you override this method, you should verify that your implementation remains an equivalence relation.
+Additionally, when overriding this method it is often necessary to override <code>hashCode</code> to ensure that objects
+that are &quot;equal&quot; (<code>o1.equals(o2)</code> returns <code>true</code>) hash to the same 
+scala.Int
+(<code>o1.hashCode.equals(o2.hashCode)</code>).
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the receiver object is equivalent to the argument; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          definition classes: AnyRef → Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="prt" name="scala.actors.Reactor#exceptionHandler">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">exceptionHandler</span><span class="result">: <a href="../PartialFunction.html" class="extype" name="scala.PartialFunction">PartialFunction</a>[<span class="extype" name="java.lang.Exception">Exception</span>, <span class="extype" name="scala.Unit">Unit</span>]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This partial function is applied to exceptions that propagate out of
+this actor's body.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This partial function is applied to exceptions that propagate out of
+this actor's body.
+</p></div><div class="block">
+          attributes: protected[<a href="../actors/package.html" class="extype" name="scala.actors">actors</a>] 
+        </div><div class="block">
+          definition classes: <a href="../actors/Reactor.html" class="extype" name="scala.actors.Reactor">Reactor</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="prt" name="scala.actors.Actor#exit">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">exit</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Nothing">Nothing</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Terminates with exit reason <code>'normal</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Terminates with exit reason <code>'normal</code>.
+</p></div><div class="block">
+          attributes: protected[<a href="../actors/package.html" class="extype" name="scala.actors">actors</a>] 
+        </div><div class="block">
+          definition classes: <a href="../actors/Actor.html" class="extype" name="scala.actors.Actor">Actor</a> → <a href="../actors/Reactor.html" class="extype" name="scala.actors.Reactor">Reactor</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="prt" name="scala.actors.Actor#exit">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">exit</span><span class="params">(<span name="reason">reason: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Nothing">Nothing</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">  Terminates execution of <code>self</code> with the following
+  effect on linked actors:</p>
+            <div class="fullcomment"><div class="comment cmt"><p>  Terminates execution of <code>self</code> with the following
+  effect on linked actors:</p><p>  For each linked actor <code>a</code> with
+  <code>trapExit</code> set to <code>true</code>, send message
+  <code>Exit(self, reason)</code> to <code>a</code>.</p><p>  For each linked actor <code>a</code> with
+  <code>trapExit</code> set to <code>false</code> (default),
+  call <code>a.exit(reason)</code> if
+  <code>reason != 'normal</code>.</p></div><div class="block">
+          attributes: protected[<a href="../actors/package.html" class="extype" name="scala.actors">actors</a>] 
+        </div><div class="block">
+          definition classes: <a href="../actors/Actor.html" class="extype" name="scala.actors.Actor">Actor</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="prt" name="scala.AnyRef#finalize">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is called by the garbage collector on the receiver object when garbage collection determines that
+there are no more references to the object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is called by the garbage collector on the receiver object when garbage collection determines that
+there are no more references to the object.</p><p>The details of when and if the <code>finalize</code> method are invoked, as well as the interaction between <code>finalize</code>and non-local returns and exceptions, are all platform dependent.</p></div><div class="block">
+          attributes: protected 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.actors.ReplyReactor#forward">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">forward</span><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Forwards <code>msg</code> to this actor (asynchronous).</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Forwards <code>msg</code> to this actor (asynchronous).
+</p></div><dl class="paramcmts block"><dt class="param">msg</dt><dd class="cmt"><p>the message to forward
+</p></dd></dl><div class="block">
+          definition classes: <a href="../actors/ReplyReactor.html" class="extype" name="scala.actors.ReplyReactor">ReplyReactor</a> → <a href="../actors/Reactor.html" class="extype" name="scala.actors.Reactor">Reactor</a> → <a href="../actors/OutputChannel.html" class="extype" name="scala.actors.OutputChannel">OutputChannel</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#getClass">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: java.lang.Class[_ &lt;: java.lang.Object]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a representation that corresponds to the dynamic class of the receiver object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a representation that corresponds to the dynamic class of the receiver object.</p><p>The nature of the representation is platform dependent.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a representation that corresponds to the dynamic class of the receiver object.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.actors.Actor#getState">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">getState</span><span class="result">: <a href="../Enumeration$Value.html" class="extype" name="scala.Enumeration.Value">Value</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns the execution state of this actor.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns the execution state of this actor.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the execution state
+</p></dd></dl><div class="block">
+          definition classes: <a href="../actors/Actor.html" class="extype" name="scala.actors.Actor">Actor</a> → <a href="../actors/ReplyReactor.html" class="extype" name="scala.actors.ReplyReactor">ReplyReactor</a> → <a href="../actors/Reactor.html" class="extype" name="scala.actors.Reactor">Reactor</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#hashCode">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a hash code value for the object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a hash code value for the object.</p><p>The default hashing algorithm is platform dependent.</p><p>Note that it is allowed for two objects to have identical hash codes (<code>o1.hashCode.equals(o2.hashCode)</code>) yet
+not be equal (<code>o1.equals(o2)</code> returns <code>false</code>).  A degenerate implementation could always return <code>0</code>.
+However, it is required that if two objects are equal (<code>o1.equals(o2)</code> returns <code>true</code>) that they have
+identical hash codes (<code>o1.hashCode.equals(o2.hashCode)</code>).  Therefore, when overriding this method, be sure
+to verify that the behavior is consistent with the <code>equals</code> method.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the hash code value for the object.</p></dd></dl><div class="block">
+          definition classes: AnyRef → Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.Any#isInstanceOf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is used to test whether the dynamic type of the receiver object is <code>T0</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is used to test whether the dynamic type of the receiver object is <code>T0</code>.</p><p>Note that the test result of the test is modulo Scala's erasure semantics.  Therefore the expression<code>1.isInstanceOf[String]</code> will return <code>false</code>, while the expression <code>List(1).isInstanceOf[List[String]]</code> will
+return <code>true</code>.  In the latter example, because the type argument is erased as part of compilation it is not
+possible to check whether the contents of the list are of the requested typed.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>true</code> if the receiver object is an instance of erasure of type <code>T0</code>; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.actors.Actor#link">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">link</span><span class="params">(<span name="body">body: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <a href="../actors/Actor.html" class="extype" name="scala.actors.Actor">Actor</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Links <code>self</code> to the actor defined by <code>body</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Links <code>self</code> to the actor defined by <code>body</code>.
+</p></div><dl class="paramcmts block"><dt class="param">body</dt><dd class="cmt"><p>the body of the actor to link to</p></dd><dt>returns</dt><dd class="cmt"><p>the parameter actor
+</p></dd></dl><div class="block">
+          definition classes: <a href="../actors/Actor.html" class="extype" name="scala.actors.Actor">Actor</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.actors.Actor#link">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">link</span><span class="params">(<span name="to">to: <a href="../actors/AbstractActor.html" class="extype" name="scala.actors.AbstractActor">AbstractActor</a></span>)</span><span class="result">: <a href="../actors/AbstractActor.html" class="extype" name="scala.actors.AbstractActor">AbstractActor</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Links <code>self</code> to actor <code>to</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Links <code>self</code> to actor <code>to</code>.
+</p></div><dl class="paramcmts block"><dt class="param">to</dt><dd class="cmt"><p>the actor to link to</p></dd><dt>returns</dt><dd class="cmt"><p>the parameter actor
+</p></dd></dl><div class="block">
+          definition classes: <a href="../actors/Actor.html" class="extype" name="scala.actors.Actor">Actor</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.actors.Combinators#loop">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">loop</span><span class="params">(<span name="body">body: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Repeatedly executes <code>body</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Repeatedly executes <code>body</code>.
+</p></div><dl class="paramcmts block"><dt class="param">body</dt><dd class="cmt"><p>the block to be executed
+</p></dd></dl><div class="block">
+          definition classes: Combinators
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.actors.Combinators#loopWhile">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">loopWhile</span><span class="params">(<span name="cond">cond: ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="params">(<span name="body">body: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Repeatedly executes <code>body</code> while the condition <code>cond</code> is <code>true</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Repeatedly executes <code>body</code> while the condition <code>cond</code> is <code>true</code>.
+</p></div><dl class="paramcmts block"><dt class="param">cond</dt><dd class="cmt"><p>the condition to test</p></dd><dt class="param">body</dt><dd class="cmt"><p>the block to be executed
+</p></dd></dl><div class="block">
+          definition classes: Combinators
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="prt" name="scala.actors.Reactor#mailboxSize">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">mailboxSize</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: protected[<a href="../actors/package.html" class="extype" name="scala.actors">actors</a>] 
+        </div><div class="block">
+          definition classes: <a href="../actors/Reactor.html" class="extype" name="scala.actors.Reactor">Reactor</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.actors.Reactor#mkBody">
+      <h4 class="signature">
+      <span class="kind">implicit def</span>
+      <span class="symbol">
+        <span class="name">mkBody</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="body">body: ⇒ A</span>)</span><span class="result">: <span class="extype" name="scala.actors.Actor.Body">Body</span>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Enables the composition of suspendable closures using <code>andThen</code>,<code>loop</code>, <code>loopWhile</code>, etc.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Enables the composition of suspendable closures using <code>andThen</code>,<code>loop</code>, <code>loopWhile</code>, etc.
+</p></div><div class="block">
+          attributes: implicit 
+        </div><div class="block">
+          definition classes: <a href="../actors/Reactor.html" class="extype" name="scala.actors.Reactor">Reactor</a> → Combinators
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#ne">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"><code>o.ne(arg0)</code> is the same as <code>!(o.eq(arg0))</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p><code>o.ne(arg0)</code> is the same as <code>!(o.eq(arg0))</code>.
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for reference dis-equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>false</code> if the argument is not a reference to the receiver object; <code>true</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#notify">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Wakes up a single thread that is waiting on the receiver object's monitor.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Wakes up a single thread that is waiting on the receiver object's monitor.</p></div><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#notifyAll">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Wakes up all threads that are waiting on the receiver object's monitor.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Wakes up all threads that are waiting on the receiver object's monitor.</p></div><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.swing.SwingWorker#queue">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">queue</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="scala.actors.Actor#react">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">react</span><span class="params">(<span name="handler">handler: <a href="../PartialFunction.html" class="extype" name="scala.PartialFunction">PartialFunction</a>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Unit">Unit</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Nothing">Nothing</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Receives a message from this actor's mailbox.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Receives a message from this actor's mailbox.</p><p>This method never returns. Therefore, the rest of the computation
+has to be contained in the actions of the partial function.
+</p></div><div class="block">
+          definition classes: <a href="../actors/Actor.html" class="extype" name="scala.actors.Actor">Actor</a> → <a href="../actors/InputChannel.html" class="extype" name="scala.actors.InputChannel">InputChannel</a> → <a href="../actors/ReplyReactor.html" class="extype" name="scala.actors.ReplyReactor">ReplyReactor</a> → <a href="../actors/Reactor.html" class="extype" name="scala.actors.Reactor">Reactor</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.actors.Actor#reactWithin">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">reactWithin</span><span class="params">(<span name="msec">msec: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="params">(<span name="handler">handler: <a href="../PartialFunction.html" class="extype" name="scala.PartialFunction">PartialFunction</a>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Unit">Unit</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Nothing">Nothing</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Receives a message from this actor's mailbox within
+a certain time span.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Receives a message from this actor's mailbox within
+a certain time span.</p><p>This method never returns. Therefore, the rest of the computation
+has to be contained in the actions of the partial function.
+</p></div><dl class="paramcmts block"><dt class="param">msec</dt><dd class="cmt"><p>the time span before timeout</p></dd></dl><div class="block">
+          definition classes: <a href="../actors/Actor.html" class="extype" name="scala.actors.Actor">Actor</a> → <a href="../actors/InputChannel.html" class="extype" name="scala.actors.InputChannel">InputChannel</a> → <a href="../actors/ReplyReactor.html" class="extype" name="scala.actors.ReplyReactor">ReplyReactor</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.actors.Actor#receive">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">receive</span><span class="tparams">[<span name="R">R</span>]</span><span class="params">(<span name="f">f: <a href="../PartialFunction.html" class="extype" name="scala.PartialFunction">PartialFunction</a>[<span class="extype" name="scala.Any">Any</span>, R]</span>)</span><span class="result">: R</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Receives a message from this actor's mailbox.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Receives a message from this actor's mailbox.
+</p></div><dl class="paramcmts block"><dt class="param">f</dt><dd class="cmt"><p>a partial function with message patterns and actions</p></dd><dt>returns</dt><dd class="cmt"><p>result of processing the received value
+</p></dd></dl><div class="block">
+          definition classes: <a href="../actors/Actor.html" class="extype" name="scala.actors.Actor">Actor</a> → <a href="../actors/InputChannel.html" class="extype" name="scala.actors.InputChannel">InputChannel</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.actors.Actor#receiveWithin">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">receiveWithin</span><span class="tparams">[<span name="R">R</span>]</span><span class="params">(<span name="msec">msec: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="params">(<span name="f">f: <a href="../PartialFunction.html" class="extype" name="scala.PartialFunction">PartialFunction</a>[<span class="extype" name="scala.Any">Any</span>, R]</span>)</span><span class="result">: R</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Receives a message from this actor's mailbox within
+a certain time span.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Receives a message from this actor's mailbox within
+a certain time span.
+</p></div><dl class="paramcmts block"><dt class="param">msec</dt><dd class="cmt"><p>the time span before timeout</p></dd><dt class="param">f</dt><dd class="cmt"><p>a partial function with message patterns and actions</p></dd><dt>returns</dt><dd class="cmt"><p>result of processing the received value
+</p></dd></dl><div class="block">
+          definition classes: <a href="../actors/Actor.html" class="extype" name="scala.actors.Actor">Actor</a> → <a href="../actors/InputChannel.html" class="extype" name="scala.actors.InputChannel">InputChannel</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.actors.Reactor#receiver">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">receiver</span><span class="result">: <a href="../actors/Actor.html" class="extype" name="scala.actors.Actor">Actor</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns the <code>Actor</code> that is receiving from this actor.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns the <code>Actor</code> that is receiving from this actor.
+</p></div><div class="block">
+          definition classes: <a href="../actors/Reactor.html" class="extype" name="scala.actors.Reactor">Reactor</a> → <a href="../actors/OutputChannel.html" class="extype" name="scala.actors.OutputChannel">OutputChannel</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="prt" name="scala.actors.ReplyReactor#reply">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">reply</span><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Replies with <code>msg</code> to the sender.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Replies with <code>msg</code> to the sender.
+</p></div><div class="block">
+          attributes: protected[<a href="../actors/package.html" class="extype" name="scala.actors">actors</a>] 
+        </div><div class="block">
+          definition classes: <a href="../actors/ReplyReactor.html" class="extype" name="scala.actors.ReplyReactor">ReplyReactor</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.actors.Reactor#restart">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">restart</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Restarts this actor.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Restarts this actor.
+</p></div><div class="block">
+          definition classes: <a href="../actors/Reactor.html" class="extype" name="scala.actors.Reactor">Reactor</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="prt" name="scala.actors.Actor#scheduler">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">scheduler</span><span class="result">: <a href="../actors/IScheduler.html" class="extype" name="scala.actors.IScheduler">IScheduler</a></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: protected[<a href="../actors/package.html" class="extype" name="scala.actors">actors</a>] 
+        </div><div class="block">
+          definition classes: <a href="../actors/Actor.html" class="extype" name="scala.actors.Actor">Actor</a> → <a href="../actors/Reactor.html" class="extype" name="scala.actors.Reactor">Reactor</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.actors.Reactor#send">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">send</span><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Any">Any</span></span>, <span name="replyTo">replyTo: <a href="../actors/OutputChannel.html" class="extype" name="scala.actors.OutputChannel">OutputChannel</a>[<span class="extype" name="scala.Any">Any</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Sends <code>msg</code> to this actor (asynchronous) supplying
+explicit reply destination.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Sends <code>msg</code> to this actor (asynchronous) supplying
+explicit reply destination.
+</p></div><dl class="paramcmts block"><dt class="param">msg</dt><dd class="cmt"><p>the message to send</p></dd><dt class="param">replyTo</dt><dd class="cmt"><p>the reply destination
+</p></dd></dl><div class="block">
+          definition classes: <a href="../actors/Reactor.html" class="extype" name="scala.actors.Reactor">Reactor</a> → <a href="../actors/OutputChannel.html" class="extype" name="scala.actors.OutputChannel">OutputChannel</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="prt" name="scala.actors.ReplyReactor#sender">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">sender</span><span class="result">: <a href="../actors/OutputChannel.html" class="extype" name="scala.actors.OutputChannel">OutputChannel</a>[<span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns the actor which sent the last received message.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns the actor which sent the last received message.
+</p></div><div class="block">
+          attributes: protected[<a href="../actors/package.html" class="extype" name="scala.actors">actors</a>] 
+        </div><div class="block">
+          definition classes: <a href="../actors/ReplyReactor.html" class="extype" name="scala.actors.ReplyReactor">ReplyReactor</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.actors.Actor#start">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">start</span><span class="params">()</span><span class="result">: <a href="../actors/Actor.html" class="extype" name="scala.actors.Actor">Actor</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Starts this actor.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Starts this actor. This method is idempotent.
+</p></div><div class="block">
+          definition classes: <a href="../actors/Actor.html" class="extype" name="scala.actors.Actor">Actor</a> → <a href="../actors/Reactor.html" class="extype" name="scala.actors.Reactor">Reactor</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#synchronized">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: T0</span>)</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#toString">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a string representation of the object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a string representation of the object.</p><p>The default representation is platform dependent.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a string representation of the object.</p></dd></dl><div class="block">
+          definition classes: AnyRef → Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.actors.Actor#trapExit">
+      <h4 class="signature">
+      <span class="kind">var</span>
+      <span class="symbol">
+        <span class="name">trapExit</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../actors/Actor.html" class="extype" name="scala.actors.Actor">Actor</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.actors.Actor#unlink">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">unlink</span><span class="params">(<span name="from">from: <a href="../actors/AbstractActor.html" class="extype" name="scala.actors.AbstractActor">AbstractActor</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Unlinks <code>self</code> from actor <code>from</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Unlinks <code>self</code> from actor <code>from</code>.
+</p></div><div class="block">
+          definition classes: <a href="../actors/Actor.html" class="extype" name="scala.actors.Actor">Actor</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#wait">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#wait">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#wait">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li></ol>
+            </div>
+                
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

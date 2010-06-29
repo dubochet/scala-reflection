@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>Scaladoc for scala.actors.scheduler</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+          
+      <link href="../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+
+      <p id="owner"><a href="../../package.html" class="extype" name="scala">scala</a>.<a href="../package.html" class="extype" name="scala.actors">actors</a></p>
+
+      <div id="definition">
+        <img src="../../../lib/package_big.png" />
+        <h1>scheduler</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">scheduler</span>
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"></div>
+      
+      <div id="template">
+
+        <div id="mbrsel">
+          
+          <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+          </div>
+        </div>
+        
+                
+        
+        <div class="members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="scala.actors.scheduler.ActorGC">
+      <h4 class="signature"><a href="ActorGC.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">ActorGC</span><span class="result"> extends TerminationMonitor</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">ActorGC keeps track of the number of live actors being managed by a
+a scheduler so that it can shutdown when all of the actors it manages have
+either been explicitly terminated or garbage collected.</p>
+    </li><li visbl="pub" name="scala.actors.scheduler.ExecutorScheduler">
+      <h4 class="signature"><a href="ExecutorScheduler.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">ExecutorScheduler</span><span class="result"> extends Thread with IScheduler with TerminationService with ThreadPoolRunner</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The <code>ExecutorScheduler</code> class uses an<code>ExecutorService</code> to execute <code>Actor</code>s.</p>
+    </li><li visbl="pub" name="scala.actors.scheduler.ForkJoinScheduler">
+      <h4 class="signature"><a href="ForkJoinScheduler.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ForkJoinScheduler</span><span class="result"> extends Runnable with IScheduler with TerminationMonitor</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The <code>ForkJoinScheduler</code> is backed by a lightweight
+ fork-join task execution framework.</p>
+    </li><li visbl="pub" name="scala.actors.scheduler.ResizableThreadPoolScheduler">
+      <h4 class="signature"><a href="ResizableThreadPoolScheduler.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ResizableThreadPoolScheduler</span><span class="result"> extends Thread with IScheduler with TerminationMonitor</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This scheduler class uses a <code>ThreadPoolExecutor</code>to execute <code>Actor</code>s.</p>
+    </li><li visbl="pub" name="scala.actors.scheduler.SingleThreadedScheduler">
+      <h4 class="signature"><a href="SingleThreadedScheduler.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">SingleThreadedScheduler</span><span class="result"> extends IScheduler</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This scheduler executes actor tasks on the current thread.</p>
+    </li></ol>
+            </div>
+        
+        <div class="members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="scala.actors.scheduler.DaemonScheduler">
+      <h4 class="signature"><a href="DaemonScheduler$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">DaemonScheduler</span><span class="result"> extends DelegatingScheduler</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Default scheduler for actors with daemon semantics, such as those backing futures.</p>
+    </li><li visbl="pub" name="scala.actors.scheduler.ExecutorScheduler">
+      <h4 class="signature"><a href="ExecutorScheduler$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">ExecutorScheduler</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The <code>ExecutorScheduler</code> object is used to create<code>ExecutorScheduler</code> instances.</p>
+    </li></ol>
+            </div>
+                
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>Scaladoc for scala.util.parsing.input</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		      <script type="text/javascript" src="../../../../lib/jquery.js"></script>
+          
+      <link href="../../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+
+      <p id="owner"><a href="../../../package.html" class="extype" name="scala">scala</a>.<a href="../../package.html" class="extype" name="scala.util">util</a>.<a href="../package.html" class="extype" name="scala.util.parsing">parsing</a></p>
+
+      <div id="definition">
+        <img src="../../../../lib/package_big.png" />
+        <h1>input</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">input</span>
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"></div>
+      
+      <div id="template">
+
+        <div id="mbrsel">
+          
+          <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+          </div>
+        </div>
+        
+                
+        
+        <div class="members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="scala.util.parsing.input.CharArrayReader">
+      <h4 class="signature"><a href="CharArrayReader.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">CharArrayReader</span><span class="result"> extends CharSequenceReader</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A character array reader reads a stream of characters (keeping track of their positions)
+from an array.</p>
+    </li><li visbl="pub" name="scala.util.parsing.input.CharSequenceReader">
+      <h4 class="signature"><a href="CharSequenceReader.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">CharSequenceReader</span><span class="result"> extends Reader[Char]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A character array reader reads a stream of characters (keeping track of their positions)
+from an array.</p>
+    </li><li visbl="pub" name="scala.util.parsing.input.OffsetPosition">
+      <h4 class="signature"><a href="OffsetPosition.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">OffsetPosition</span><span class="params">(<span name="source">source: CharSequence</span>, <span name="offset">offset: Int</span>)</span><span class="result"> extends Position with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   <code>OffsetPosition</code> is a standard class for positions
+   represented as offsets into a source <code></code>document<i>.</i></p>
+    </li><li visbl="pub" name="scala.util.parsing.input.PagedSeqReader">
+      <h4 class="signature"><a href="PagedSeqReader.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">PagedSeqReader</span><span class="result"> extends Reader[Char]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A character array reader reads a stream of characters (keeping track of their positions)
+from an array.</p>
+    </li><li visbl="pub" name="scala.util.parsing.input.Position">
+      <h4 class="signature"><a href="Position.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Position</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   <code>Position</code> is the base trait for objects describing a
+   position in a <code></code>document<i>.</i></p>
+    </li><li visbl="pub" name="scala.util.parsing.input.Positional">
+      <h4 class="signature"><a href="Positional.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Positional</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A trait for objects that have a source position.</p>
+    </li><li visbl="pub" name="scala.util.parsing.input.Reader">
+      <h4 class="signature"><a href="Reader.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Reader</span><span class="tparams">[<span name="T">+T</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">An interface for streams of values that have positions.</p>
+    </li><li visbl="pub" name="scala.util.parsing.input.StreamReader">
+      <h4 class="signature"><a href="StreamReader.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">StreamReader</span><span class="result"> extends PagedSeqReader</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A StreamReader reads from a character sequence, typically created as a PagedSeq
+ from a java.</p>
+    </li></ol>
+            </div>
+        
+        <div class="members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="scala.util.parsing.input.CharArrayReader">
+      <h4 class="signature"><a href="CharArrayReader$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">CharArrayReader</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">An object encapsulating basic character constants
+</p>
+    </li><li visbl="pub" name="scala.util.parsing.input.CharSequenceReader">
+      <h4 class="signature"><a href="CharSequenceReader$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">CharSequenceReader</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">An object encapsulating basic character constants
+</p>
+    </li><li visbl="pub" name="scala.util.parsing.input.NoPosition">
+      <h4 class="signature"><a href="NoPosition$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">NoPosition</span><span class="result"> extends Position</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Undefined position
+</p>
+    </li><li visbl="pub" name="scala.util.parsing.input.PagedSeqReader">
+      <h4 class="signature"><a href="PagedSeqReader$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">PagedSeqReader</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">An object encapsulating basic character constants
+</p>
+    </li><li visbl="pub" name="scala.util.parsing.input.StreamReader">
+      <h4 class="signature"><a href="StreamReader$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">StreamReader</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">An object to create a StreamReader from a <code>java.</p>
+    </li></ol>
+            </div>
+                
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

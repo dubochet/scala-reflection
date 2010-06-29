@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>Scaladoc for org.scalatest.verb</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+          
+      <link href="../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+
+      <p id="owner"><a href="../../package.html" class="extype" name="org">org</a>.<a href="../package.html" class="extype" name="org.scalatest">scalatest</a></p>
+
+      <div id="definition">
+        <img src="../../../lib/package_big.png" />
+        <h1>verb</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">verb</span>
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"></div>
+      
+      <div id="template">
+
+        <div id="mbrsel">
+          
+          <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+          </div>
+        </div>
+        
+                
+        
+        <div class="members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="org.scalatest.verb.BehaveWord">
+      <h4 class="signature"><a href="BehaveWord.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">BehaveWord</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Class that supports shared test registration via instances referenced from the <code>behave</code> field of <code>Spec</code>s,<code>FlatSpec</code>s, and <code>WordSpec</code>s as well as instance of their sister traits,<code>FixtureSpec</code>, <code>FixtureFlatSpec</code>, and <code>FixtureWordSpec</code>.</p>
+    </li><li visbl="pub" name="org.scalatest.verb.CanVerb">
+      <h4 class="signature"><a href="CanVerb.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">CanVerb</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Provides an implicit conversion that adds <code>can</code> methods to <code>String</code>to support the syntax of <code>FlatSpec</code>, <code>WordSpec</code>, <code>FixtureFlatSpec</code>,
+and <code>FixtureWordSpec</code>.</p>
+    </li><li visbl="pub" name="org.scalatest.verb.MustVerb">
+      <h4 class="signature"><a href="MustVerb.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">MustVerb</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Provides an implicit conversion that adds <code>must</code> methods to <code>String</code>to support the syntax of <code>FlatSpec</code>, <code>WordSpec</code>, <code>FixtureFlatSpec</code>,
+and <code>FixtureWordSpec</code>.</p>
+    </li><li visbl="pub" name="org.scalatest.verb.ResultOfAfterWordApplication">
+      <h4 class="signature"><a href="ResultOfAfterWordApplication.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ResultOfAfterWordApplication</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Class that supports the use of <em>after words</em> in <code>WordSpec</code>and <code>FixtureWordSpec</code>.</p>
+    </li><li visbl="pub" name="org.scalatest.verb.ResultOfStringPassedToVerb">
+      <h4 class="signature"><a href="ResultOfStringPassedToVerb.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ResultOfStringPassedToVerb</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Abstract class that supports test registration in <code>FlatSpec</code>and <code>FixtureFlatSpec</code>.</p>
+    </li><li visbl="pub" name="org.scalatest.verb.ResultOfTaggedAsInvocation">
+      <h4 class="signature"><a href="ResultOfTaggedAsInvocation.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ResultOfTaggedAsInvocation</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Supports the registration of tagged tests in shorthand form in <code>FlatSpec</code>and <code>FixtureFlatSpec</code>.</p>
+    </li><li visbl="pub" name="org.scalatest.verb.ShouldVerb">
+      <h4 class="signature"><a href="ShouldVerb.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">ShouldVerb</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Provides an implicit conversion that adds <code>should</code> methods to <code>String</code>to support the syntax of <code>FlatSpec</code>, <code>WordSpec</code>, <code>FixtureFlatSpec</code>,
+and <code>FixtureWordSpec</code>.</p>
+    </li><li visbl="pub" name="org.scalatest.verb.StringVerbBlockRegistration">
+      <h4 class="signature"><a href="StringVerbBlockRegistration.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">StringVerbBlockRegistration</span><span class="result"> extends (String, String, () ⇒ Unit) ⇒ Unit</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Class that provides a role-specific type for an implicit conversion used to support
+the registration of subject descriptions in <code>WordSpec</code> and <code>FixtureWordSpec</code>.</p>
+    </li></ol>
+            </div>
+        
+        
+                
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

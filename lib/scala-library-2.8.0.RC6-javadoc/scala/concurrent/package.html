@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>Scaladoc for scala.concurrent</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		      <script type="text/javascript" src="../../lib/jquery.js"></script>
+          
+      <link href="../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+
+      <p id="owner"><a href="../package.html" class="extype" name="scala">scala</a></p>
+
+      <div id="definition">
+        <img src="../../lib/package_big.png" />
+        <h1>concurrent</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">concurrent</span>
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"></div>
+      
+      <div id="template">
+
+        <div id="mbrsel">
+          
+          <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+          </div>
+        </div>
+        
+                
+        
+        <div class="members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="scala.concurrent.Channel">
+      <h4 class="signature"><a href="Channel.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Channel</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class .</p>
+    </li><li visbl="pub" name="scala.concurrent.DelayedLazyVal">
+      <h4 class="signature"><a href="DelayedLazyVal.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">DelayedLazyVal</span><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A <code>DelayedLazyVal</code> is a wrapper for lengthy
+ computations which have a valid partially computed result.</p>
+    </li><li visbl="pub" name="scala.concurrent.FutureTaskRunner">
+      <h4 class="signature"><a href="FutureTaskRunner.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">FutureTaskRunner</span><span class="result"> extends TaskRunner</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The <code>FutureTaskRunner</code> trait.</p>
+    </li><li visbl="pub" name="scala.concurrent.LinkedListQueueCreator">
+      <h4 class="signature"><a href="LinkedListQueueCreator.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">LinkedListQueueCreator</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Efficient queue module creator based on linked lists.</p>
+    </li><li visbl="pub" name="scala.concurrent.ListQueueCreator">
+      <h4 class="signature"><a href="ListQueueCreator.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">ListQueueCreator</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Inefficient but simple queue module creator.</p>
+    </li><li visbl="pub" name="scala.concurrent.Lock">
+      <h4 class="signature"><a href="Lock.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Lock</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class .</p>
+    </li><li visbl="pub" name="scala.concurrent.MailBox">
+      <h4 class="signature"><a href="MailBox.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">MailBox</span><span class="result"> extends ListQueueCreator</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class .</p>
+    </li><li visbl="pub" name="scala.concurrent.ManagedBlocker">
+      <h4 class="signature"><a href="ManagedBlocker.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">ManagedBlocker</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The <code>ManagedBlocker</code> trait.</p>
+    </li><li visbl="pub" name="scala.concurrent.QueueModule">
+      <h4 class="signature"><a href="QueueModule.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">QueueModule</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Module for dealing with queues.</p>
+    </li><li visbl="pub" name="scala.concurrent.SyncChannel">
+      <h4 class="signature"><a href="SyncChannel.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">SyncChannel</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A <code>SyncChannel</code> allows one to exchange data
+ synchronously between a reader and a writer thread.</p>
+    </li><li visbl="pub" name="scala.concurrent.SyncVar">
+      <h4 class="signature"><a href="SyncVar.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">SyncVar</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The class <code>SyncVar</code> .</p>
+    </li><li visbl="pub" name="scala.concurrent.TaskRunner">
+      <h4 class="signature"><a href="TaskRunner.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">TaskRunner</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The <code>TaskRunner</code> trait.</p>
+    </li><li visbl="pub" name="scala.concurrent.ThreadPoolRunner">
+      <h4 class="signature"><a href="ThreadPoolRunner.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">ThreadPoolRunner</span><span class="result"> extends FutureTaskRunner</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The <code>ThreadPoolRunner</code> trait uses
+ a <code>java.</p>
+    </li><li visbl="pub" name="scala.concurrent.ThreadRunner">
+      <h4 class="signature"><a href="ThreadRunner.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ThreadRunner</span><span class="result"> extends FutureTaskRunner</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The <code>ThreadRunner</code> trait.</p>
+    </li></ol>
+            </div>
+        
+        <div class="members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="scala.concurrent.JavaConversions">
+      <h4 class="signature"><a href="JavaConversions$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">JavaConversions</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The <code>JavaConversions</code> object.</p>
+    </li><li visbl="pub" name="scala.concurrent.TIMEOUT">
+      <h4 class="signature"><a href="TIMEOUT$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">TIMEOUT</span><span class="result"> extends Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The message sent to a message box when the period specified in<code>receiveWithin</code> expires.</p>
+    </li><li visbl="pub" name="scala.concurrent.TaskRunners">
+      <h4 class="signature"><a href="TaskRunners$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">TaskRunners</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The <code>TaskRunners</code> object.</p>
+    </li><li visbl="pub" name="scala.concurrent.ops">
+      <h4 class="signature"><a href="ops$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">ops</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The object <code>ops</code> .</p>
+    </li><li visbl="pub" name="scala.concurrent.pilib">
+      <h4 class="signature"><a href="pilib$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">pilib</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   Library for using Pi-calculus concurrent primitives in
+   <a href="http://scala-lang.org/" target="_top">Scala</a>.</p>
+    </li></ol>
+            </div>
+                
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

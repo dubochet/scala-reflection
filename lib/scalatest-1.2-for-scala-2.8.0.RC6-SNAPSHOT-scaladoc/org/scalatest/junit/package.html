@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>Scaladoc for org.scalatest.junit</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+          
+      <link href="../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+
+      <p id="owner"><a href="../../package.html" class="extype" name="org">org</a>.<a href="../package.html" class="extype" name="org.scalatest">scalatest</a></p>
+
+      <div id="definition">
+        <img src="../../../lib/package_big.png" />
+        <h1>junit</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">junit</span>
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"></div>
+      
+      <div id="template">
+
+        <div id="mbrsel">
+          
+          <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+          </div>
+        </div>
+        
+                
+        
+        <div class="members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="org.scalatest.junit.AssertionsForJUnit">
+      <h4 class="signature"><a href="AssertionsForJUnit.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">AssertionsForJUnit</span><span class="result"> extends Assertions</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Trait that contains ScalaTest's basic assertion methods, suitable for use with JUnit.</p>
+    </li><li visbl="pub" name="org.scalatest.junit.JUnit3Suite">
+      <h4 class="signature"><a href="JUnit3Suite.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">JUnit3Suite</span><span class="result"> extends TestCase with Suite with AssertionsForJUnit</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A <code>Suite</code> that is also a <code>junit.</p>
+    </li><li visbl="pub" name="org.scalatest.junit.JUnitRunner">
+      <h4 class="signature"><a href="JUnitRunner.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">JUnitRunner</span><span class="result"> extends Runner</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A JUnit <code>Runner</code> that knows how to run any ScalaTest <code>Suite</code>(or <code>Spec</code>, which extends <code>Suite</code>).</p>
+    </li><li visbl="pub" name="org.scalatest.junit.JUnitSuite">
+      <h4 class="signature"><a href="JUnitSuite.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">JUnitSuite</span><span class="result"> extends Suite with AssertionsForJUnit</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A suite of tests that can be run with either JUnit or ScalaTest.</p>
+    </li><li visbl="pub" name="org.scalatest.junit.JUnitTestFailedError">
+      <h4 class="signature"><a href="JUnitTestFailedError.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">JUnitTestFailedError</span><span class="result"> extends AssertionFailedError with StackDepth</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Exception that indicates a test failed.</p>
+    </li><li visbl="pub" name="org.scalatest.junit.JUnitWrapperSuite">
+      <h4 class="signature"><a href="JUnitWrapperSuite.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">JUnitWrapperSuite</span><span class="result"> extends Suite</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A wrapper to allow JUnit tests to be run by the ScalaTest runner.</p>
+    </li><li visbl="pub" name="org.scalatest.junit.MustMatchersForJUnit">
+      <h4 class="signature"><a href="MustMatchersForJUnit.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">MustMatchersForJUnit</span><span class="result"> extends MustMatchers with AssertionsForJUnit</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Trait that makes ScalaTest's <code>MustMatchers</code> DSL syntax available for use with JUnit.</p>
+    </li><li visbl="pub" name="org.scalatest.junit.ShouldMatchersForJUnit">
+      <h4 class="signature"><a href="ShouldMatchersForJUnit.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">ShouldMatchersForJUnit</span><span class="result"> extends ShouldMatchers with AssertionsForJUnit</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Trait that makes ScalaTest's <code>ShouldMatchers</code> DSL syntax available for use with JUnit.</p>
+    </li></ol>
+            </div>
+        
+        <div class="members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="org.scalatest.junit.AssertionsForJUnit">
+      <h4 class="signature"><a href="AssertionsForJUnit$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">AssertionsForJUnit</span><span class="result"> extends AssertionsForJUnit</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Companion object that facilitates the importing of <code>AssertionsForJUnit</code> members as
+an alternative to mixing it in.</p>
+    </li><li visbl="pub" name="org.scalatest.junit.MustMatchersForJUnit">
+      <h4 class="signature"><a href="MustMatchersForJUnit$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">MustMatchersForJUnit</span><span class="result"> extends MustMatchersForJUnit</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Companion object that facilitates the importing of <code>MustMatchersForJUnit</code> members as
+an alternative to mixing it in.</p>
+    </li><li visbl="pub" name="org.scalatest.junit.ShouldMatchersForJUnit">
+      <h4 class="signature"><a href="ShouldMatchersForJUnit$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">ShouldMatchersForJUnit</span><span class="result"> extends ShouldMatchersForJUnit</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Companion object that facilitates the importing of <code>ShouldMatchersForJUnit</code> members as
+an alternative to mixing it in.</p>
+    </li></ol>
+            </div>
+                
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

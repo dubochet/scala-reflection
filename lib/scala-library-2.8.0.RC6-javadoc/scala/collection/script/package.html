@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>Scaladoc for scala.collection.script</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+          
+      <link href="../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+
+      <p id="owner"><a href="../../package.html" class="extype" name="scala">scala</a>.<a href="../package.html" class="extype" name="scala.collection">collection</a></p>
+
+      <div id="definition">
+        <img src="../../../lib/package_big.png" />
+        <h1>script</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">script</span>
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"></div>
+      
+      <div id="template">
+
+        <div id="mbrsel">
+          
+          <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+          </div>
+        </div>
+        
+                
+        
+        <div class="members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="scala.collection.script.Include">
+      <h4 class="signature"><a href="Include.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Include</span><span class="tparams">[<span name="A">+A</span>]</span><span class="params">(<span name="location">location: Location</span>, <span name="elem">elem: A</span>)</span><span class="result"> extends Message[A] with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This observable update refers to inclusion operations that add new elements
+ to collection classes.</p>
+    </li><li visbl="pub" name="scala.collection.script.Index">
+      <h4 class="signature"><a href="Index.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Index</span><span class="params">(<span name="n">n: Int</span>)</span><span class="result"> extends Location with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.collection.script.Location">
+      <h4 class="signature"><a href="Location.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Location</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Class <code>Location</code> describes locations in messages implemented by
+ class <a href="Message.html" target="contentFrame"><code>Message</code></a>.</p>
+    </li><li visbl="pub" name="scala.collection.script.Message">
+      <h4 class="signature"><a href="Message.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Message</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Class <code>Message</code> represents messages that are issued by observable
+ collection classes whenever a data structure is changed.</p>
+    </li><li visbl="pub" name="scala.collection.script.Remove">
+      <h4 class="signature"><a href="Remove.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Remove</span><span class="tparams">[<span name="A">+A</span>]</span><span class="params">(<span name="location">location: Location</span>, <span name="elem">elem: A</span>)</span><span class="result"> extends Message[A] with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This observable update refers to removal operations of elements
+ from collection classes.</p>
+    </li><li visbl="pub" name="scala.collection.script.Reset">
+      <h4 class="signature"><a href="Reset.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Reset</span><span class="tparams">[<span name="A">+A</span>]</span><span class="params">()</span><span class="result"> extends Message[A] with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This command refers to reset operations.</p>
+    </li><li visbl="pub" name="scala.collection.script.Script">
+      <h4 class="signature"><a href="Script.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Script</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends ArrayBuffer[Message[A]] with Message[A]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Objects of this class represent compound messages consisting
+ of a sequence of other messages.</p>
+    </li><li visbl="pub" name="scala.collection.script.Scriptable">
+      <h4 class="signature"><a href="Scriptable.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Scriptable</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Classes that mix in the <code>Scriptable</code> class allow
+ messages to be sent to objects of that class.</p>
+    </li><li visbl="pub" name="scala.collection.script.Update">
+      <h4 class="signature"><a href="Update.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Update</span><span class="tparams">[<span name="A">+A</span>]</span><span class="params">(<span name="location">location: Location</span>, <span name="elem">elem: A</span>)</span><span class="result"> extends Message[A] with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This observable update refers to destructive modification operations
+ of elements from collection classes.</p>
+    </li></ol>
+            </div>
+        
+        <div class="members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="scala.collection.script.End">
+      <h4 class="signature"><a href="End$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">End</span><span class="result"> extends Location with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.collection.script.NoLo">
+      <h4 class="signature"><a href="NoLo$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">NoLo</span><span class="result"> extends Location with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.collection.script.Start">
+      <h4 class="signature"><a href="Start$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Start</span><span class="result"> extends Location with Product</span>
+      </span>
+      </a></h4>
+      
+    </li></ol>
+            </div>
+                
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

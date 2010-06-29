@@ -1,0 +1,902 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>Scaladoc for org.scalatest.concurrent.ConductorMethods</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+          
+      <link href="../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="type">
+
+      <p id="owner"><a href="../../package.html" class="extype" name="org">org</a>.<a href="../package.html" class="extype" name="org.scalatest">scalatest</a>.<a href="package.html" class="extype" name="org.scalatest.concurrent">concurrent</a></p>
+
+      <div id="definition">
+        <img src="../../../lib/trait_big.png" />
+        <h1>ConductorMethods</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">ConductorMethods</span><span class="result"> extends <a href="../AbstractSuite.html" class="extype" name="org.scalatest.AbstractSuite">AbstractSuite</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"><div class="comment cmt"><p>Trait that provides each test with access to a new <code>Conductor</code>via methods.</p><p>Here's an example of the use of this trait to test the <code>ArrayBlockingQueue</code>concurrency abstraction from <code>java.util.concurrent</code>:</p><p><pre>import org.scalatest.FunSuite
+import org.scalatest.concurrent.ConductorMethods
+import org.scalatest.matchers.ShouldMatchers
+import java.util.concurrent.ArrayBlockingQueue</p><p>class ArrayBlockingQueueSuite extends FunSuite with ConductorMethods with ShouldMatchers {</p><p>  test(&quot;calling put on a full queue blocks the producer thread&quot;) {</p><p>    val buf = new ArrayBlockingQueue[Int](1)</p><p>    thread(&quot;producer&quot;) {
+      buf put 42
+      buf put 17
+      beat should be (1)
+    }</p><p>    thread(&quot;consumer&quot;) {
+      waitForBeat(1)
+      buf.take should be (42)
+      buf.take should be (17)
+    }</p><p>    whenFinished {
+      buf should be ('empty)
+    }
+  }</p><p>  test(&quot;calling take on an empty queue blocks the consumer thread&quot;) {</p><p>    val buf = new ArrayBlockingQueue[Int](1)</p><p>    thread(&quot;producer&quot;) {
+      waitForBeat(1)
+      buf put 42
+      buf put 17
+    }</p><p>    thread(&quot;consumer&quot;) {
+      buf.take should be (42)
+      buf.take should be (17)
+      beat should be (1)
+    }</p><p>    whenFinished {
+      buf should be ('empty)
+    }
+  }
+}</pre></p><p>For an explanation of how these tests work, see the documentation for <a href="Conductor.html"><code>Conductor</code></a>.</p></div>
+            
+            
+            
+            <div class="block"><ol>authors:
+                  <li><p>Bill Venners
+</p></li>, <li><p>Josh Cough</p></li>
+                </ol></div>
+          </div>
+      
+      <div id="template">
+
+        <div id="mbrsel">
+          <div id="ancestors">
+                <span class="filtertype">Inherited</span>
+                <ol><li class="hideall">Hide All</li><li class="showall">Show all</li></ol>
+                <ol id="linearization"><li class="in" name="org.scalatest.AbstractSuite">AbstractSuite</li><li class="in" name="scala.AnyRef">AnyRef</li><li class="in" name="scala.Any">Any</li></ol>
+              </div>
+          <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+          </div>
+        </div>
+        
+                
+        
+        
+        
+        <div class="members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="scala.AnyRef#!=">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">!=</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.Any#!=">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"><code>o != arg0</code> is the same as <code>!(o == (arg0))</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p><code>o != arg0</code> is the same as <code>!(o == (arg0))</code>.
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for dis-equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>false</code> if the receiver object is equivalent to the argument; <code>true</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef###">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef → Any
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#$asInstanceOf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">$asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">()</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#$isInstanceOf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">$isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#==">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">==</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"><code>o == arg0</code> is the same as <code>if (o eq null) arg0 eq null else o.equals(arg0)</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p><code>o == arg0</code> is the same as <code>if (o eq null) arg0 eq null else o.equals(arg0)</code>.
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the receiver object is equivalent to the argument; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.Any#==">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"><code>o == arg0</code> is the same as <code>o.equals(arg0)</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p><code>o == arg0</code> is the same as <code>o.equals(arg0)</code>.
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the receiver object is equivalent to the argument; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.Any#asInstanceOf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is used to cast the receiver object to be of type <code>T0</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is used to cast the receiver object to be of type <code>T0</code>.</p><p>Note that the success of a cast at runtime is modulo Scala's erasure semantics.  Therefore the expression<code>1.asInstanceOf[String]</code> will throw a <code>ClassCastException</code> at runtime, while the expression<code>List(1).asInstanceOf[List[String]]</code> will not.  In the latter example, because the type argument is erased as
+part of compilation it is not possible to check whether the contents of the list are of the requested typed.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the receiver object.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="prt" name="org.scalatest.concurrent.ConductorMethods#beat">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">beat</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Gets the current value of the clock.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Gets the current value of the clock. Primarily useful in assert statements.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the current tick value
+</p></dd></dl><div class="block">
+          attributes: protected 
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="prt" name="scala.AnyRef#clone">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: AnyRef</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method creates and returns a copy of the receiver object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method creates and returns a copy of the receiver object.</p><p>The default implementation of the <code>clone</code> method is platform dependent.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a copy of the receiver object.</p></dd></dl><div class="block">
+          attributes: protected 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#eq">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is used to test whether the argument (<code>arg0</code>) is a reference to the
+receiver object (<code>this</code>).</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is used to test whether the argument (<code>arg0</code>) is a reference to the
+receiver object (<code>this</code>).</p><p>The <code>eq</code> method implements an [http://en.wikipedia.org/wiki/Equivalence_relation equivalence relation] on
+non-null instances of <code>AnyRef</code>:
+ * It is reflexive: for any non-null instance <code>x</code> of type <code>AnyRef</code>, <code>x.eq(x)</code> returns <code>true</code>.
+ * It is symmetric: for any non-null instances <code>x</code> and <code>y</code> of type <code>AnyRef</code>, <code>x.eq(y)</code> returns <code>true</code> if and
+   only if <code>y.eq(x)</code> returns <code>true</code>.
+ * It is transitive: for any non-null instances <code>x</code>, <code>y</code>, and <code>z</code> of type <code>AnyRef</code> if <code>x.eq(y)</code> returns <code>true</code>   and <code>y.eq(z)</code> returns <code>true</code>, then <code>x.eq(z)</code> returns <code>true</code>.</p><p>Additionally, the <code>eq</code> method has three other properties.
+ * It is consistent: for any non-null instances <code>x</code> and <code>y</code> of type <code>AnyRef</code>, multiple invocations of
+   <code>x.eq(y)</code> consistently returns <code>true</code> or consistently returns <code>false</code>.
+ * For any non-null instance <code>x</code> of type <code>AnyRef</code>, <code>x.eq(null)</code> and <code>null.eq(x)</code> returns <code>false</code>.
+ * <code>null.eq(null)</code> returns <code>true</code>.</p><p>When overriding the <code>equals</code> or <code>hashCode</code> methods, it is important to ensure that their behavior is
+consistent with reference equality.  Therefore, if two objects are references to each other (<code>o1 eq o2</code>), they
+should be equal to each other (<code>o1 == o2</code>) and they should hash to the same value (<code>o1.hashCode == o2.hashCode</code>).
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for reference equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the argument is a reference to the receiver object; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#equals">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is used to compare the receiver object (<code>this</code>) with the argument object (<code>arg0</code>) for equivalence.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is used to compare the receiver object (<code>this</code>) with the argument object (<code>arg0</code>) for equivalence.</p><p>The default implementations of this method is an [http://en.wikipedia.org/wiki/Equivalence_relation equivalence
+relation]:
+ * It is reflexive: for any instance <code>x</code> of type <code>Any</code>, <code>x.equals(x)</code> should return <code>true</code>.
+ * It is symmetric: for any instances <code>x</code> and <code>y</code> of type <code>Any</code>, <code>x.equals(y)</code> should return <code>true</code> if and
+   only if <code>y.equals(x)</code> returns <code>true</code>.
+ * It is transitive: for any instances <code>x</code>, <code>y</code>, and <code>z</code> of type <code>AnyRef</code> if <code>x.equals(y)</code> returns <code>true</code> and
+   <code>y.equals(z)</code> returns <code>true</code>, then <code>x.equals(z)</code> should return <code>true</code>.</p><p>If you override this method, you should verify that your implementation remains an equivalence relation.
+Additionally, when overriding this method it is often necessary to override <code>hashCode</code> to ensure that objects
+that are &quot;equal&quot; (<code>o1.equals(o2)</code> returns <code>true</code>) hash to the same 
+scala.Int
+(<code>o1.hashCode.equals(o2.hashCode)</code>).
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the receiver object is equivalent to the argument; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          definition classes: AnyRef → Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="org.scalatest.AbstractSuite#expectedTestCount">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">expectedTestCount</span><span class="params">(<span name="filter">filter: <a href="../Filter.html" class="extype" name="org.scalatest.Filter">Filter</a></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">The total number of tests that are expected to run when this <code>Suite</code>'s <code>run</code> method is invoked.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>The total number of tests that are expected to run when this <code>Suite</code>'s <code>run</code> method is invoked.
+</p></div><dl class="paramcmts block"><dt class="param">filter</dt><dd class="cmt"><p>a <code>Filter</code> with which to filter tests to count based on their tags
+</p></dd></dl><div class="block">
+          attributes: abstract 
+        </div><div class="block">
+          definition classes: <a href="../AbstractSuite.html" class="extype" name="org.scalatest.AbstractSuite">AbstractSuite</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="prt" name="scala.AnyRef#finalize">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is called by the garbage collector on the receiver object when garbage collection determines that
+there are no more references to the object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is called by the garbage collector on the receiver object when garbage collection determines that
+there are no more references to the object.</p><p>The details of when and if the <code>finalize</code> method are invoked, as well as the interaction between <code>finalize</code>and non-local returns and exceptions, are all platform dependent.</p></div><div class="block">
+          attributes: protected 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#getClass">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: java.lang.Class[_ &lt;: java.lang.Object]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a representation that corresponds to the dynamic class of the receiver object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a representation that corresponds to the dynamic class of the receiver object.</p><p>The nature of the representation is platform dependent.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a representation that corresponds to the dynamic class of the receiver object.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#hashCode">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a hash code value for the object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a hash code value for the object.</p><p>The default hashing algorithm is platform dependent.</p><p>Note that it is allowed for two objects to have identical hash codes (<code>o1.hashCode.equals(o2.hashCode)</code>) yet
+not be equal (<code>o1.equals(o2)</code> returns <code>false</code>).  A degenerate implementation could always return <code>0</code>.
+However, it is required that if two objects are equal (<code>o1.equals(o2)</code> returns <code>true</code>) that they have
+identical hash codes (<code>o1.hashCode.equals(o2.hashCode)</code>).  Therefore, when overriding this method, be sure
+to verify that the behavior is consistent with the <code>equals</code> method.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the hash code value for the object.</p></dd></dl><div class="block">
+          definition classes: AnyRef → Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="prt" name="org.scalatest.concurrent.ConductorMethods#isConductorFrozen">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">isConductorFrozen</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Check if the clock has been frozen by any threads.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Check if the clock has been frozen by any threads. (The only way a thread
+can freeze the clock is by calling withClockFrozen.)
+</p></div><div class="block">
+          attributes: protected 
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.Any#isInstanceOf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is used to test whether the dynamic type of the receiver object is <code>T0</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is used to test whether the dynamic type of the receiver object is <code>T0</code>.</p><p>Note that the test result of the test is modulo Scala's erasure semantics.  Therefore the expression<code>1.isInstanceOf[String]</code> will return <code>false</code>, while the expression <code>List(1).isInstanceOf[List[String]]</code> will
+return <code>true</code>.  In the latter example, because the type argument is erased as part of compilation it is not
+possible to check whether the contents of the list are of the requested typed.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>true</code> if the receiver object is an instance of erasure of type <code>T0</code>; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#ne">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"><code>o.ne(arg0)</code> is the same as <code>!(o.eq(arg0))</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p><code>o.ne(arg0)</code> is the same as <code>!(o.eq(arg0))</code>.
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for reference dis-equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>false</code> if the argument is not a reference to the receiver object; <code>true</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="org.scalatest.AbstractSuite#nestedSuites">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">nestedSuites</span><span class="result">: <span class="extype" name="scala.collection.immutable.List">List</span>[<a href="../Suite.html" class="extype" name="org.scalatest.Suite">Suite</a>]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">A <code>List</code> of this <code>Suite</code> object's nested <code>Suite</code>s.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>A <code>List</code> of this <code>Suite</code> object's nested <code>Suite</code>s. If this <code>Suite</code> contains no nested <code>Suite</code>s,
+this method returns an empty <code>List</code>.
+</p></div><div class="block">
+          attributes: abstract 
+        </div><div class="block">
+          definition classes: <a href="../AbstractSuite.html" class="extype" name="org.scalatest.AbstractSuite">AbstractSuite</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#notify">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Wakes up a single thread that is waiting on the receiver object's monitor.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Wakes up a single thread that is waiting on the receiver object's monitor.</p></div><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#notifyAll">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Wakes up all threads that are waiting on the receiver object's monitor.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Wakes up all threads that are waiting on the receiver object's monitor.</p></div><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="org.scalatest.AbstractSuite#run">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">run</span><span class="params">(<span name="testName">testName: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="java.lang.String">String</span>]</span>, <span name="reporter">reporter: <a href="../Reporter.html" class="extype" name="org.scalatest.Reporter">Reporter</a></span>, <span name="stopper">stopper: <a href="../Stopper.html" class="extype" name="org.scalatest.Stopper">Stopper</a></span>, <span name="filter">filter: <a href="../Filter.html" class="extype" name="org.scalatest.Filter">Filter</a></span>, <span name="configMap">configMap: <span class="extype" name="scala.collection.immutable.Map">Map</span>[<span class="extype" name="java.lang.String">String</span>, <span class="extype" name="scala.Any">Any</span>]</span>, <span name="distributor">distributor: <span class="extype" name="scala.Option">Option</span>[<a href="../Distributor.html" class="extype" name="org.scalatest.Distributor">Distributor</a>]</span>, <span name="tracker">tracker: <a href="../Tracker.html" class="extype" name="org.scalatest.Tracker">Tracker</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Runs this suite of tests.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Runs this suite of tests.
+</p></div><dl class="paramcmts block"><dt class="param">testName</dt><dd class="cmt"><p>an optional name of one test to execute. If <code>None</code>, all relevant tests should be executed.
+                I.e., <code>None</code> acts like a wildcard that means execute all relevant tests in this <code>Suite</code>.</p></dd><dt class="param">reporter</dt><dd class="cmt"><p>the <code>Reporter</code> to which results will be reported</p></dd><dt class="param">stopper</dt><dd class="cmt"><p>the <code>Stopper</code> that will be consulted to determine whether to stop execution early.</p></dd><dt class="param">filter</dt><dd class="cmt"><p>a <code>Filter</code> with which to filter tests based on their tags</p></dd><dt class="param">configMap</dt><dd class="cmt"><p>a <code>Map</code> of key-value pairs that can be used by the executing <code>Suite</code> of tests.</p></dd><dt class="param">distributor</dt><dd class="cmt"><p>an optional <code>Distributor</code>, into which to put nested <code>Suite</code>s to be executed
+             by another entity, such as concurrently by a pool of threads. If <code>None</code>, nested <code>Suite</code>s will be executed sequentially.</p></dd><dt class="param">tracker</dt><dd class="cmt"><p>a <code>Tracker</code> tracking <code>Ordinal</code>s being fired by the current thread.
+</p></dd></dl><div class="block">
+          attributes: abstract 
+        </div><div class="block">
+          definition classes: <a href="../AbstractSuite.html" class="extype" name="org.scalatest.AbstractSuite">AbstractSuite</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="prt" name="org.scalatest.AbstractSuite#runNestedSuites">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">runNestedSuites</span><span class="params">(<span name="reporter">reporter: <a href="../Reporter.html" class="extype" name="org.scalatest.Reporter">Reporter</a></span>, <span name="stopper">stopper: <a href="../Stopper.html" class="extype" name="org.scalatest.Stopper">Stopper</a></span>, <span name="filter">filter: <a href="../Filter.html" class="extype" name="org.scalatest.Filter">Filter</a></span>, <span name="configMap">configMap: <span class="extype" name="scala.collection.immutable.Map">Map</span>[<span class="extype" name="java.lang.String">String</span>, <span class="extype" name="scala.Any">Any</span>]</span>, <span name="distributor">distributor: <span class="extype" name="scala.Option">Option</span>[<a href="../Distributor.html" class="extype" name="org.scalatest.Distributor">Distributor</a>]</span>, <span name="tracker">tracker: <a href="../Tracker.html" class="extype" name="org.scalatest.Tracker">Tracker</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Runs zero to many of this suite's nested suites.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Runs zero to many of this suite's nested suites.
+</p></div><dl class="paramcmts block"><dt class="param">reporter</dt><dd class="cmt"><p>the <code>Reporter</code> to which results will be reported</p></dd><dt class="param">stopper</dt><dd class="cmt"><p>the <code>Stopper</code> that will be consulted to determine whether to stop execution early.</p></dd><dt class="param">filter</dt><dd class="cmt"><p>a <code>Filter</code> with which to filter tests based on their tags</p></dd><dt class="param">configMap</dt><dd class="cmt"><p>a <code>Map</code> of key-value pairs that can be used by the executing <code>Suite</code> of tests.</p></dd><dt class="param">distributor</dt><dd class="cmt"><p>an optional <code>Distributor</code>, into which to put nested <code>Suite</code>s to be run
+             by another entity, such as concurrently by a pool of threads. If <code>None</code>, nested <code>Suite</code>s will be run sequentially.</p></dd><dt class="param">tracker</dt><dd class="cmt"><p>a <code>Tracker</code> tracking <code>Ordinal</code>s being fired by the current thread.
+</p></dd></dl><div class="block">
+          attributes: protected abstract 
+        </div><div class="block">
+          definition classes: <a href="../AbstractSuite.html" class="extype" name="org.scalatest.AbstractSuite">AbstractSuite</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="prt" name="org.scalatest.AbstractSuite#runTest">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">runTest</span><span class="params">(<span name="testName">testName: <span class="extype" name="java.lang.String">String</span></span>, <span name="reporter">reporter: <a href="../Reporter.html" class="extype" name="org.scalatest.Reporter">Reporter</a></span>, <span name="stopper">stopper: <a href="../Stopper.html" class="extype" name="org.scalatest.Stopper">Stopper</a></span>, <span name="configMap">configMap: <span class="extype" name="scala.collection.immutable.Map">Map</span>[<span class="extype" name="java.lang.String">String</span>, <span class="extype" name="scala.Any">Any</span>]</span>, <span name="tracker">tracker: <a href="../Tracker.html" class="extype" name="org.scalatest.Tracker">Tracker</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Runs a test.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Runs a test.
+</p></div><dl class="paramcmts block"><dt class="param">testName</dt><dd class="cmt"><p>the name of one test to execute.</p></dd><dt class="param">reporter</dt><dd class="cmt"><p>the <code>Reporter</code> to which results will be reported</p></dd><dt class="param">stopper</dt><dd class="cmt"><p>the <code>Stopper</code> that will be consulted to determine whether to stop execution early.</p></dd><dt class="param">configMap</dt><dd class="cmt"><p>a <code>Map</code> of key-value pairs that can be used by the executing <code>Suite</code> of tests.</p></dd><dt class="param">tracker</dt><dd class="cmt"><p>a <code>Tracker</code> tracking <code>Ordinal</code>s being fired by the current thread.
+</p></dd></dl><div class="block">
+          attributes: protected abstract 
+        </div><div class="block">
+          definition classes: <a href="../AbstractSuite.html" class="extype" name="org.scalatest.AbstractSuite">AbstractSuite</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="prt" name="org.scalatest.AbstractSuite#runTests">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">runTests</span><span class="params">(<span name="testName">testName: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="java.lang.String">String</span>]</span>, <span name="reporter">reporter: <a href="../Reporter.html" class="extype" name="org.scalatest.Reporter">Reporter</a></span>, <span name="stopper">stopper: <a href="../Stopper.html" class="extype" name="org.scalatest.Stopper">Stopper</a></span>, <span name="filter">filter: <a href="../Filter.html" class="extype" name="org.scalatest.Filter">Filter</a></span>, <span name="configMap">configMap: <span class="extype" name="scala.collection.immutable.Map">Map</span>[<span class="extype" name="java.lang.String">String</span>, <span class="extype" name="scala.Any">Any</span>]</span>, <span name="distributor">distributor: <span class="extype" name="scala.Option">Option</span>[<a href="../Distributor.html" class="extype" name="org.scalatest.Distributor">Distributor</a>]</span>, <span name="tracker">tracker: <a href="../Tracker.html" class="extype" name="org.scalatest.Tracker">Tracker</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Runs zero to many of this suite's tests.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Runs zero to many of this suite's tests.
+</p></div><dl class="paramcmts block"><dt class="param">testName</dt><dd class="cmt"><p>an optional name of one test to run. If <code>None</code>, all relevant tests should be run.
+                I.e., <code>None</code> acts like a wildcard that means run all relevant tests in this <code>Suite</code>.</p></dd><dt class="param">reporter</dt><dd class="cmt"><p>the <code>Reporter</code> to which results will be reported</p></dd><dt class="param">stopper</dt><dd class="cmt"><p>the <code>Stopper</code> that will be consulted to determine whether to stop execution early.</p></dd><dt class="param">filter</dt><dd class="cmt"><p>a <code>Filter</code> with which to filter tests based on their tags</p></dd><dt class="param">configMap</dt><dd class="cmt"><p>a <code>Map</code> of key-value pairs that can be used by the executing <code>Suite</code> of tests.</p></dd><dt class="param">distributor</dt><dd class="cmt"><p>an optional <code>Distributor</code>, into which instances of this <code>Suite</code> class
+             that are responsible for executing individual tests contained in this </code>Suite</code>, or groups of this <code>Suite</code>'s
+             tests, may be placed so as to be run
+             by another entity, such as concurrently by a pool of threads.</p></dd><dt class="param">tracker</dt><dd class="cmt"><p>a <code>Tracker</code> tracking <code>Ordinal</code>s being fired by the current thread.</p></dd></dl><div class="block">
+          attributes: protected abstract 
+        </div><div class="block">
+          definition classes: <a href="../AbstractSuite.html" class="extype" name="org.scalatest.AbstractSuite">AbstractSuite</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#synchronized">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: T0</span>)</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="org.scalatest.AbstractSuite#tags">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">tags</span><span class="result">: <span class="extype" name="scala.collection.immutable.Map">Map</span>[<span class="extype" name="java.lang.String">String</span>, <span class="extype" name="scala.collection.immutable.Set">Set</span>[<span class="extype" name="java.lang.String">String</span>]]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">A <code>Map</code> whose keys are <code>String</code> tag names with which tests in this <code>Suite</code> are marked, and
+whose values are the <code>Set</code> of test names marked with each tag.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>A <code>Map</code> whose keys are <code>String</code> tag names with which tests in this <code>Suite</code> are marked, and
+whose values are the <code>Set</code> of test names marked with each tag.  If this <code>Suite</code> contains no tags, this
+method returns an empty <code>Map</code>.</p><p>Subclasses may implement this method to define and/or discover tags in a custom manner, but overriding method implementations
+should never return an empty <code>Set</code> as a value. If a tag has no tests, its name should not appear as a key in the
+returned <code>Map</code>.</p></div><div class="block">
+          attributes: abstract 
+        </div><div class="block">
+          definition classes: <a href="../AbstractSuite.html" class="extype" name="org.scalatest.AbstractSuite">AbstractSuite</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="org.scalatest.AbstractSuite#testNames">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">testNames</span><span class="result">: <span class="extype" name="scala.collection.immutable.Set">Set</span>[<span class="extype" name="java.lang.String">String</span>]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">An <code>Set</code> of test names.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>An <code>Set</code> of test names. If this <code>Suite</code> contains no tests, this method returns an empty <code>Set</code>.</p><p>Although subclass and subtrait implementations of this method may return a <code>Set</code> whose iterator produces <code>String</code>test names in a well-defined order, the contract of this method does not required a defined order. Subclasses are free to
+implement this method and return test names in either a defined or undefined order.</p></div><div class="block">
+          attributes: abstract 
+        </div><div class="block">
+          definition classes: <a href="../AbstractSuite.html" class="extype" name="org.scalatest.AbstractSuite">AbstractSuite</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="prt" name="org.scalatest.concurrent.ConductorMethods#thread">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">thread</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="name">name: <span class="extype" name="java.lang.String">String</span></span>)</span><span class="params">(<span name="f">f: ⇒ T</span>)</span><span class="result">: <span class="extype" name="java.lang.Thread">Thread</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Create a new thread that will execute the given function.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Create a new thread that will execute the given function.
+If the test is started, then the thread will run the function immediately.
+If it is not yet started, the Thread will wait to run the function until
+all threads are up and ready to go.</p></div><dl class="paramcmts block"><dt class="param">name</dt><dd class="cmt"><p>the name of the thread</p></dd><dt class="param">f</dt><dd class="cmt"><p>the function to be executed by the thread
+</p></dd></dl><div class="block">
+          attributes: protected 
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="prt" name="org.scalatest.concurrent.ConductorMethods#thread">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">thread</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="f">f: ⇒ T</span>)</span><span class="result">: <span class="extype" name="java.lang.Thread">Thread</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Create a new thread that will execute the given function.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Create a new thread that will execute the given function.
+If the test is started, then the thread will run the function immediately.
+If it is not yet started, the Thread will wait to run the function until
+all threads are up and ready to go.</p></div><dl class="paramcmts block"><dt class="param">f</dt><dd class="cmt"><p>the function to be executed by the thread
+</p></dd></dl><div class="block">
+          attributes: protected 
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#toString">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a string representation of the object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a string representation of the object.</p><p>The default representation is platform dependent.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a string representation of the object.</p></dd></dl><div class="block">
+          definition classes: AnyRef → Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#wait">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#wait">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#wait">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="prt" name="org.scalatest.concurrent.ConductorMethods#waitForBeat">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">waitForBeat</span><span class="params">(<span name="beat">beat: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Force the current thread to block until the thread clock reaches the
+specified value, at which point the current thread is unblocked.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Force the current thread to block until the thread clock reaches the
+specified value, at which point the current thread is unblocked.</p></div><div class="block">
+          attributes: protected 
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="prt" name="org.scalatest.concurrent.ConductorMethods#whenFinished">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">whenFinished</span><span class="params">(<span name="fun">fun: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Register a function to be executed after the simulation has finished.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Register a function to be executed after the simulation has finished.
+</p></div><div class="block">
+          attributes: protected 
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="prt" name="org.scalatest.concurrent.ConductorMethods#withConductorFrozen">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">withConductorFrozen</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="f">f: ⇒ T</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Run the passed function, ensuring the clock does not advance while the function is running
+(has not yet returned or thrown an exception).</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Run the passed function, ensuring the clock does not advance while the function is running
+(has not yet returned or thrown an exception).
+</p></div><div class="block">
+          attributes: protected 
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="org.scalatest.concurrent.ConductorMethods#withFixture">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">withFixture</span><span class="params">(<span name="test">test: <a href="../Suite$NoArgTest.html" class="extype" name="org.scalatest.Suite.NoArgTest">NoArgTest</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Creates and initializes a private instance variable with a new Conductor,
+ensuring it is visible to any thread, invokes the passed test function,
+and invokes <code>conduct</code> on the <code>Conductor</code>, if it
+was not already invoked by the test.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Creates and initializes a private instance variable with a new Conductor,
+ensuring it is visible to any thread, invokes the passed test function,
+and invokes <code>conduct</code> on the <code>Conductor</code>, if it
+was not already invoked by the test.@param test the no-arg test function to run with a fixture</p></div><div class="block">
+          definition classes: <a href="" class="extype" name="org.scalatest.concurrent.ConductorMethods">ConductorMethods</a> → <a href="../AbstractSuite.html" class="extype" name="org.scalatest.AbstractSuite">AbstractSuite</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li></ol>
+            </div>
+                
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

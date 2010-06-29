@@ -1,0 +1,2637 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>Scaladoc for scala.collection.JavaConversions.JEnumerationWrapper</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		      <script type="text/javascript" src="../../lib/jquery.js"></script>
+          
+      <link href="../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="type">
+
+      <p id="owner"><a href="../package.html" class="extype" name="scala">scala</a>.<a href="package.html" class="extype" name="scala.collection">collection</a>.<a href="JavaConversions$.html" class="extype" name="scala.collection.JavaConversions">JavaConversions</a></p>
+
+      <div id="definition">
+        <img src="../../lib/class_big.png" />
+        <h1>JEnumerationWrapper</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">JEnumerationWrapper</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="underlying">underlying: <span class="extype" name="java.util.Enumeration">Enumeration</span>[A]</span>)</span><span class="result"> extends <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[A] with <a href="../Product.html" class="extype" name="scala.Product">Product</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"><div class="block">
+            go to: <a href="JavaConversions$$JEnumerationWrapper$.html">companion</a>
+          </div><div class="block">
+            source: <a href="https://lampsvn.epfl.ch/trac/scala/browser/scala/trunk/src///library/scala/collection/JavaConversions.scala">JavaConversions.scala</a>
+          </div></div>
+      
+      <div id="template">
+
+        <div id="mbrsel">
+          <div id="ancestors">
+                <span class="filtertype">Inherited</span>
+                <ol><li class="hideall">Hide All</li><li class="showall">Show all</li></ol>
+                <ol id="linearization"><li class="in" name="scala.Product">Product</li><li class="in" name="scala.Equals">Equals</li><li class="in" name="scala.collection.Iterator">Iterator</li><li class="in" name="scala.collection.TraversableOnce">TraversableOnce</li><li class="in" name="scala.AnyRef">AnyRef</li><li class="in" name="scala.Any">Any</li></ol>
+              </div>
+          <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+          </div>
+        </div>
+        
+        <div class="members" id="constructors">
+              <h3>Instance constructors</h3>
+              <ol><li visbl="pub" name="scala.collection.JavaConversions.JEnumerationWrapper#this">
+      <h4 class="signature">
+      <span class="kind">new</span>
+      <span class="symbol">
+        <span class="name">JEnumerationWrapper</span><span class="params">(<span name="underlying">underlying: <span class="extype" name="java.util.Enumeration">Enumeration</span>[A]</span>)</span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>        
+        
+        <div class="members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="scala.collection.Iterator.GroupedIterator">
+      <h4 class="signature"><a href="Iterator$GroupedIterator.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">GroupedIterator</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="result"> extends Iterator[Seq[B]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A flexible iterator for transforming an <code>Iterator[A]</code> into an
+ Iterator[Seq[A]], with configurable sequence size, step, and
+ strategy for dealing with elements which don't fit evenly.</p>
+    </li></ol>
+            </div>
+        
+        <div class="members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="scala.AnyRef#!=">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">!=</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.Any#!=">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"><code>o != arg0</code> is the same as <code>!(o == (arg0))</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p><code>o != arg0</code> is the same as <code>!(o == (arg0))</code>.
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for dis-equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>false</code> if the receiver object is equivalent to the argument; <code>true</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef###">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef → Any
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#$asInstanceOf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">$asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">()</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#$isInstanceOf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">$isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#++">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">++</span><span class="params">(<span name="that">that: ⇒ <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[A]</span>)</span><span class="result">: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">[use case] Concatenates this iterator with another.</p>
+            <div class="fullcomment">[use case] <div class="comment cmt"><p>Concatenates this iterator with another.</p></div><dl class="paramcmts block"><dt class="param">that</dt><dd class="cmt"><p>the other iterator</p></dd><dt>returns</dt><dd class="cmt"><p>a new iterator that first yields the values produced by this
+ iterator followed by the values produced by iterator <code>that</code>.
+</p></dd></dl><div class="block">
+          attributes: abstract 
+        </div><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#++">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">++</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span name="that">that: ⇒ <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[B]</span>)</span><span class="result">: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[B]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Concatenates this iterator with another.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Concatenates this iterator with another.</p></div><dl class="paramcmts block"><dt class="param">that</dt><dd class="cmt"><p>the other iterator</p></dd><dt>returns</dt><dd class="cmt"><p>a new iterator that first yields the values produced by this
+ iterator followed by the values produced by iterator <code>that</code>.
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#/:">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">/:</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="z">z: B</span>)</span><span class="params">(<span name="op">op: (B, A) ⇒ B</span>)</span><span class="result">: B</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Applies a binary operator to a start value and all elements of this traversable or iterator, going left to right.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Applies a binary operator to a start value and all elements of this traversable or iterator, going left to right.</p><p> Note: <code>/:</code> is alternate syntax for <code>foldLeft</code>; <code>z /: xs</code> is the same as <code>xs foldLeft z</code>.</p><p> Note: will not terminate for infinite iterators.</p><p>   Note: might return different results for different runs, unless the underlying collection type is ordered
+   or the operator is associative and commutative.</p><pre>
+</pre></div><dl class="paramcmts block"><dt class="tparam">B</dt><dd class="cmt"><p>the result type of the binary operator.</p></dd><dt class="param">z</dt><dd class="cmt"><p>the start value.</p></dd><dt class="param">op</dt><dd class="cmt"><p>the binary operator.</p></dd><dt>returns</dt><dd class="cmt"><p>the result of inserting <code>op</code> between consecutive elements of this traversable or iterator,
+          going left to right with the start value <code>z</code> on the left:
+            op(...op(op(z, x<sub>1</sub>), x<sub>2</sub>), ..., x<sub>n</sub>)
+          where <code>x,,1,,, ..., x,,n,,</code> are the elements of this traversable or iterator.
+</p></dd></dl><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#:\">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">:\</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="z">z: B</span>)</span><span class="params">(<span name="op">op: (A, B) ⇒ B</span>)</span><span class="result">: B</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Applies a binary operator to all elements of this traversable or iterator and a start value, going right to left.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Applies a binary operator to all elements of this traversable or iterator and a start value, going right to left.</p><p> Note: <code>:\</code> is alternate syntax for <code>foldRight</code>; <code>xs :\ z</code> is the same as <code>xs foldRight z</code>.</p><p> Note: will not terminate for infinite iterators.</p><p>   Note: might return different results for different runs, unless the underlying collection type is ordered
+   or the operator is associative and commutative.</p><pre>
+</pre></div><dl class="paramcmts block"><dt class="tparam">B</dt><dd class="cmt"><p>the result type of the binary operator.</p></dd><dt class="param">z</dt><dd class="cmt"><p>the start value</p></dd><dt class="param">op</dt><dd class="cmt"><p>the binary operator</p></dd><dt>returns</dt><dd class="cmt"><p>the result of inserting <code>op</code> between consecutive elements of this traversable or iterator,
+          going right to left with the start value <code>z</code> on the right:
+            op(x<sub>1</sub>, op(x<sub>2</sub>, ... op(x<sub>n</sub>, z)...))
+          where <code>x,,1,,, ..., x,,n,,</code> are the elements of this traversable or iterator.
+</p></dd></dl><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#==">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">==</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"><code>o == arg0</code> is the same as <code>if (o eq null) arg0 eq null else o.equals(arg0)</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p><code>o == arg0</code> is the same as <code>if (o eq null) arg0 eq null else o.equals(arg0)</code>.
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the receiver object is equivalent to the argument; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.Any#==">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"><code>o == arg0</code> is the same as <code>o.equals(arg0)</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p><code>o == arg0</code> is the same as <code>o.equals(arg0)</code>.
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the receiver object is equivalent to the argument; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#addString">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">addString</span><span class="params">(<span name="b">b: <a href="mutable/StringBuilder.html" class="extype" name="scala.collection.mutable.StringBuilder">StringBuilder</a></span>)</span><span class="result">: <a href="mutable/StringBuilder.html" class="extype" name="scala.collection.mutable.StringBuilder">StringBuilder</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Appends all elements of this traversable or iterator to a string builder.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Appends all elements of this traversable or iterator to a string builder.
+ The written text consists of the string representations (w.r.t. the method <code>toString</code>)
+ of all elements of this traversable or iterator without any separator string.
+</p></div><dl class="paramcmts block"><dt class="param">b</dt><dd class="cmt"><p>the string builder to which elements are appended.</p></dd><dt>returns</dt><dd class="cmt"><p>the string builder <code>b</code> to which elements were appended.
+</p></dd></dl><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#addString">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">addString</span><span class="params">(<span name="b">b: <a href="mutable/StringBuilder.html" class="extype" name="scala.collection.mutable.StringBuilder">StringBuilder</a></span>, <span name="sep">sep: <span class="extype" name="java.lang.String">String</span></span>)</span><span class="result">: <a href="mutable/StringBuilder.html" class="extype" name="scala.collection.mutable.StringBuilder">StringBuilder</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Appends all elements of this traversable or iterator to a string builder using a separator string.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Appends all elements of this traversable or iterator to a string builder using a separator string.
+ The written text consists of the string representations (w.r.t. the method <code>toString</code>)
+ of all elements of this traversable or iterator, separated by the string <code>sep</code>.
+</p></div><dl class="paramcmts block"><dt class="param">b</dt><dd class="cmt"><p>the string builder to which elements are appended.</p></dd><dt class="param">sep</dt><dd class="cmt"><p>the separator string.</p></dd><dt>returns</dt><dd class="cmt"><p>the string builder <code>b</code> to which elements were appended.
+</p></dd></dl><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#addString">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">addString</span><span class="params">(<span name="b">b: <a href="mutable/StringBuilder.html" class="extype" name="scala.collection.mutable.StringBuilder">StringBuilder</a></span>, <span name="start">start: <span class="extype" name="java.lang.String">String</span></span>, <span name="sep">sep: <span class="extype" name="java.lang.String">String</span></span>, <span name="end">end: <span class="extype" name="java.lang.String">String</span></span>)</span><span class="result">: <a href="mutable/StringBuilder.html" class="extype" name="scala.collection.mutable.StringBuilder">StringBuilder</a></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Appends all elements of this traversable or iterator to a string builder using start, end, and separator strings.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Appends all elements of this traversable or iterator to a string builder using start, end, and separator strings.
+ The written text begins with the string <code>start</code> and ends with the string
+ <code>end</code>. Inside, the string representations (w.r.t. the method <code>toString</code>)
+ of all elements of this traversable or iterator are separated by the string <code>sep</code>.
+</p></div><dl class="paramcmts block"><dt class="param">b</dt><dd class="cmt"><p>the string builder to which elements are appended.</p></dd><dt class="param">start</dt><dd class="cmt"><p>the starting string.</p></dd><dt class="param">sep</dt><dd class="cmt"><p>the separator string.</p></dd><dt class="param">end</dt><dd class="cmt"><p>the ending string.</p></dd><dt>returns</dt><dd class="cmt"><p>the string builder <code>b</code> to which elements were appended.
+</p></dd></dl><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#append">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name deprecated">append</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span name="that">that: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[B]</span>)</span><span class="result">: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[B]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a new iterator that first yields the elements of this
+ iterator followed by the elements provided by iterator <code>that</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a new iterator that first yields the elements of this
+ iterator followed by the elements provided by iterator <code>that</code>.
+</p></div><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div><div class="block"><ol>deprecated:
+          <li><p>use <code>++</code></p></li>
+        </ol></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.Any#asInstanceOf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is used to cast the receiver object to be of type <code>T0</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is used to cast the receiver object to be of type <code>T0</code>.</p><p>Note that the success of a cast at runtime is modulo Scala's erasure semantics.  Therefore the expression<code>1.asInstanceOf[String]</code> will throw a <code>ClassCastException</code> at runtime, while the expression<code>List(1).asInstanceOf[List[String]]</code> will not.  In the latter example, because the type argument is erased as
+part of compilation it is not possible to check whether the contents of the list are of the requested typed.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the receiver object.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#buffered">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">buffered</span><span class="result">: <a href="BufferedIterator.html" class="extype" name="scala.collection.BufferedIterator">BufferedIterator</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Creates a buffered iterator from this iterator.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Creates a buffered iterator from this iterator.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a buffered iterator producing the same values as this iterator.
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            <div class="block"><ol>see also:
+                  <li><p>BufferedIterator</p></li>
+                </ol></div>
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.JavaConversions.JEnumerationWrapper#canEqual">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">canEqual</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">A method that should be called from every well-designed equals method
+ that is open to be overridden in a subclass.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>A method that should be called from every well-designed equals method
+ that is open to be overridden in a subclass. See Programming in Scala,
+ Chapter 28 for discussion and design.
+</p></div><div class="block">
+          definition classes: <a href="" class="extype" name="scala.collection.JavaConversions.JEnumerationWrapper">JEnumerationWrapper</a> → <a href="../Equals.html" class="extype" name="scala.Equals">Equals</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="prt" name="scala.AnyRef#clone">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: AnyRef</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method creates and returns a copy of the receiver object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method creates and returns a copy of the receiver object.</p><p>The default implementation of the <code>clone</code> method is platform dependent.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a copy of the receiver object.</p></dd></dl><div class="block">
+          attributes: protected 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#collect">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">collect</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="pf">pf: <a href="../PartialFunction.html" class="extype" name="scala.PartialFunction">PartialFunction</a>[A, B]</span>)</span><span class="result">: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[B]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Creates an iterator by transforming values
+ produced by this iterator with a partial function, dropping those
+ values for which the partial function is not defined.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Creates an iterator by transforming values
+ produced by this iterator with a partial function, dropping those
+ values for which the partial function is not defined.</p></div><dl class="paramcmts block"><dt class="param">pf</dt><dd class="cmt"><p>the partial function which filters and maps the iterator.</p></dd><dt>returns</dt><dd class="cmt"><p>a new iterator which yields each value <code>x</code> produced by this iterator for
+         which <code>pf</code> is defined the image <code>pf(x)</code>.
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#contains">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">contains</span><span class="params">(<span name="elem">elem: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Tests whether this iterator contains a given value as an element.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Tests whether this iterator contains a given value as an element.</p><p> Note: may not terminate for infinite iterators.
+</p></div><dl class="paramcmts block"><dt class="param">elem</dt><dd class="cmt"><p>the element to test.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if this iterator produces some value that is
+              is equal (wrt <code>==</code>) to <code>elem</code>, <code>false</code> otherwise.
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#copyToArray">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">copyToArray</span><span class="params">(<span name="xs">xs: <a href="../Array.html" class="extype" name="scala.Array">Array</a>[A]</span>, <span name="start">start: <span class="extype" name="scala.Int">Int</span></span>, <span name="len">len: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">[use case] Copies selected values produced by this iterator to an array.</p>
+            <div class="fullcomment">[use case] <div class="comment cmt"><p>Copies selected values produced by this iterator to an array.
+ Fills the given array <code>xs</code> with at most <code>len</code> values produced by this
+ iterator, after skipping <code>start</code> values.
+ Copying will stop once either the end of the current iterator is reached,
+ or the end of the array is reached, or <code>len</code> elements have been copied.</p></div><dl class="paramcmts block"><dt class="param">xs</dt><dd class="cmt"><p>the array to fill.</p></dd><dt class="param">start</dt><dd class="cmt"><p>the starting index.</p></dd><dt class="param">len</dt><dd class="cmt"><p>the maximal number of elements to copy.
+</p></dd></dl><div class="block">
+          attributes: abstract 
+        </div><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#copyToArray">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">copyToArray</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span name="xs">xs: <a href="../Array.html" class="extype" name="scala.Array">Array</a>[B]</span>, <span name="start">start: <span class="extype" name="scala.Int">Int</span></span>, <span name="len">len: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Copies selected values produced by this iterator to an array.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Copies selected values produced by this iterator to an array.
+ Fills the given array <code>xs</code> with at most <code>len</code> values produced by this
+ iterator, after skipping <code>start</code> values.
+ Copying will stop once either the end of the current iterator is reached,
+ or the end of the array is reached, or <code>len</code> elements have been copied.</p><p> Note: will not terminate for infinite iterators.
+</p></div><dl class="paramcmts block"><dt class="tparam">B</dt><dd class="cmt"><p>the type of the elements of the array.</p></dd><dt class="param">xs</dt><dd class="cmt"><p>the array to fill.</p></dd><dt class="param">start</dt><dd class="cmt"><p>the starting index.</p></dd><dt class="param">len</dt><dd class="cmt"><p>the maximal number of elements to copy.</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a> → <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#copyToArray">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">copyToArray</span><span class="params">(<span name="xs">xs: <a href="../Array.html" class="extype" name="scala.Array">Array</a>[A]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">[use case] Copies values of this traversable or iterator to an array.</p>
+            <div class="fullcomment">[use case] <div class="comment cmt"><p>Copies values of this traversable or iterator to an array.
+ Fills the given array <code>xs</code> with values of this traversable or iterator.
+ Copying will stop once either the end of the current traversable or iterator is reached,
+ or the end of the array is reached.</p></div><dl class="paramcmts block"><dt class="param">xs</dt><dd class="cmt"><p>the array to fill.
+</p></dd></dl><div class="block">
+          attributes: abstract 
+        </div><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#copyToArray">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">copyToArray</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span name="xs">xs: <a href="../Array.html" class="extype" name="scala.Array">Array</a>[B]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Copies values of this traversable or iterator to an array.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Copies values of this traversable or iterator to an array.
+ Fills the given array <code>xs</code> with values of this traversable or iterator.
+ Copying will stop once either the end of the current traversable or iterator is reached,
+ or the end of the array is reached.</p><p> Note: will not terminate for infinite iterators.
+</p></div><dl class="paramcmts block"><dt class="tparam">B</dt><dd class="cmt"><p>the type of the elements of the array.</p></dd><dt class="param">xs</dt><dd class="cmt"><p>the array to fill.</p></dd></dl><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#copyToArray">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">copyToArray</span><span class="params">(<span name="xs">xs: <a href="../Array.html" class="extype" name="scala.Array">Array</a>[A]</span>, <span name="start">start: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">[use case] Copies values of this traversable or iterator to an array.</p>
+            <div class="fullcomment">[use case] <div class="comment cmt"><p>Copies values of this traversable or iterator to an array.
+ Fills the given array <code>xs</code> with values of this traversable or iterator, after skipping <code>start</code> values.
+ Copying will stop once either the end of the current traversable or iterator is reached,
+ or the end of the array is reached.</p></div><dl class="paramcmts block"><dt class="param">xs</dt><dd class="cmt"><p>the array to fill.</p></dd><dt class="param">start</dt><dd class="cmt"><p>the starting index.
+</p></dd></dl><div class="block">
+          attributes: abstract 
+        </div><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#copyToArray">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">copyToArray</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span name="xs">xs: <a href="../Array.html" class="extype" name="scala.Array">Array</a>[B]</span>, <span name="start">start: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Copies values of this traversable or iterator to an array.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Copies values of this traversable or iterator to an array.
+ Fills the given array <code>xs</code> with values of this traversable or iterator, after skipping <code>start</code> values.
+ Copying will stop once either the end of the current traversable or iterator is reached,
+ or the end of the array is reached.</p><p> Note: will not terminate for infinite iterators.
+</p></div><dl class="paramcmts block"><dt class="tparam">B</dt><dd class="cmt"><p>the type of the elements of the array.</p></dd><dt class="param">xs</dt><dd class="cmt"><p>the array to fill.</p></dd><dt class="param">start</dt><dd class="cmt"><p>the starting index.</p></dd></dl><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#copyToBuffer">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">copyToBuffer</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span name="dest">dest: <a href="mutable/Buffer.html" class="extype" name="scala.collection.mutable.Buffer">Buffer</a>[B]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Copies all elements of this traversable or iterator to a buffer.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Copies all elements of this traversable or iterator to a buffer.</p><p> Note: will not terminate for infinite iterators.</p></div><dl class="paramcmts block"><dt class="param">dest</dt><dd class="cmt"><p>The buffer to which elements are copied.
+</p></dd></dl><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#count">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">count</span><span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Counts the number of elements in the traversable or iterator which satisfy a predicate.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Counts the number of elements in the traversable or iterator which satisfy a predicate.
+</p></div><dl class="paramcmts block"><dt class="param">p</dt><dd class="cmt"><p>the predicate  used to test elements.</p></dd><dt>returns</dt><dd class="cmt"><p>the number of elements satisfying the predicate <code>p</code>.
+</p></dd></dl><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#counted">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name deprecated">counted</span><span class="result">: <a href="../CountedIterator.html" class="extype" name="scala.CountedIterator">CountedIterator</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a counted iterator from this iterator.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a counted iterator from this iterator.
+</p></div><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div><div class="block"><ol>deprecated:
+          <li><p>use zipWithIndex in Iterator</p></li>
+        </ol></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#drop">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">drop</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Advances this iterator past the first <i>n</i> elements,
+ or the length of the iterator, whichever is smaller.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Advances this iterator past the first <i>n</i> elements,
+ or the length of the iterator, whichever is smaller.
+</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>the number of elements to drop</p></dd><dt>returns</dt><dd class="cmt"><p>an iterator which produces all values of the current iterator, except
+          it omits the first <code>n</code> values.
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#dropWhile">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">dropWhile</span><span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Skips longest sequence of elements of this iterator which satisfy given
+ predicate <code>p</code>, and returns an iterator of the remaining elements.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Skips longest sequence of elements of this iterator which satisfy given
+ predicate <code>p</code>, and returns an iterator of the remaining elements.
+</p></div><dl class="paramcmts block"><dt class="param">p</dt><dd class="cmt"><p>the predicate used to skip elements.</p></dd><dt>returns</dt><dd class="cmt"><p>an iterator consisting of the remaining elements
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#duplicate">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">duplicate</span><span class="result">: (<a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[A], <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[A])</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Creates two new iterators that both iterate over the same elements
+ as this iterator (in the same order).</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Creates two new iterators that both iterate over the same elements
+ as this iterator (in the same order).  The duplicate iterators are
+ considered equal if they are positioned at the same element.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a pair of iterators
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#eq">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is used to test whether the argument (<code>arg0</code>) is a reference to the
+receiver object (<code>this</code>).</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is used to test whether the argument (<code>arg0</code>) is a reference to the
+receiver object (<code>this</code>).</p><p>The <code>eq</code> method implements an [http://en.wikipedia.org/wiki/Equivalence_relation equivalence relation] on
+non-null instances of <code>AnyRef</code>:
+ * It is reflexive: for any non-null instance <code>x</code> of type <code>AnyRef</code>, <code>x.eq(x)</code> returns <code>true</code>.
+ * It is symmetric: for any non-null instances <code>x</code> and <code>y</code> of type <code>AnyRef</code>, <code>x.eq(y)</code> returns <code>true</code> if and
+   only if <code>y.eq(x)</code> returns <code>true</code>.
+ * It is transitive: for any non-null instances <code>x</code>, <code>y</code>, and <code>z</code> of type <code>AnyRef</code> if <code>x.eq(y)</code> returns <code>true</code>   and <code>y.eq(z)</code> returns <code>true</code>, then <code>x.eq(z)</code> returns <code>true</code>.</p><p>Additionally, the <code>eq</code> method has three other properties.
+ * It is consistent: for any non-null instances <code>x</code> and <code>y</code> of type <code>AnyRef</code>, multiple invocations of
+   <code>x.eq(y)</code> consistently returns <code>true</code> or consistently returns <code>false</code>.
+ * For any non-null instance <code>x</code> of type <code>AnyRef</code>, <code>x.eq(null)</code> and <code>null.eq(x)</code> returns <code>false</code>.
+ * <code>null.eq(null)</code> returns <code>true</code>.</p><p>When overriding the <code>equals</code> or <code>hashCode</code> methods, it is important to ensure that their behavior is
+consistent with reference equality.  Therefore, if two objects are references to each other (<code>o1 eq o2</code>), they
+should be equal to each other (<code>o1 == o2</code>) and they should hash to the same value (<code>o1.hashCode == o2.hashCode</code>).
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for reference equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the argument is a reference to the receiver object; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.JavaConversions.JEnumerationWrapper#equals">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">The equality method defined in <code>AnyRef</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>The equality method defined in <code>AnyRef</code>.@return     <code>true</code> if the receiver object is equivalent to the argument; <code>false</code> otherwise. */</p></div><div class="block">
+          definition classes: <a href="" class="extype" name="scala.collection.JavaConversions.JEnumerationWrapper">JEnumerationWrapper</a> → <a href="../Equals.html" class="extype" name="scala.Equals">Equals</a> → AnyRef → Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#exists">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">exists</span><span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Tests whether a predicate holds for some of the values produced by this iterator.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Tests whether a predicate holds for some of the values produced by this iterator.</p><p> Note: may not terminate for infinite iterators.
+</p></div><dl class="paramcmts block"><dt class="param">p</dt><dd class="cmt"><p>the predicate used to test elements.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the given predicate <code>p</code> holds for some of the values
+                produced by this iterator, otherwise <code>false</code>.
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a> → <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#filter">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">filter</span><span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns an iterator over all the elements of this iterator that
+ satisfy the predicate <code>p</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns an iterator over all the elements of this iterator that
+ satisfy the predicate <code>p</code>. The order of the elements
+ is preserved.
+</p></div><dl class="paramcmts block"><dt class="param">p</dt><dd class="cmt"><p>the predicate used to test values.</p></dd><dt>returns</dt><dd class="cmt"><p>an iterator which produces those values of this iterator which satisfy the predicate <code>p</code>.
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#filterNot">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">filterNot</span><span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Creates an iterator over all the elements of this iterator which
+ do not satisfy a predicate p.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Creates an iterator over all the elements of this iterator which
+ do not satisfy a predicate p.
+</p></div><dl class="paramcmts block"><dt class="param">p</dt><dd class="cmt"><p>the predicate used to test values.</p></dd><dt>returns</dt><dd class="cmt"><p>an iterator which produces those values of this iterator which do not satisfy the predicate <code>p</code>.
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="prt" name="scala.AnyRef#finalize">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is called by the garbage collector on the receiver object when garbage collection determines that
+there are no more references to the object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is called by the garbage collector on the receiver object when garbage collection determines that
+there are no more references to the object.</p><p>The details of when and if the <code>finalize</code> method are invoked, as well as the interaction between <code>finalize</code>and non-local returns and exceptions, are all platform dependent.</p></div><div class="block">
+          attributes: protected 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#find">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">find</span><span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="../Option.html" class="extype" name="scala.Option">Option</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Finds the first value produced by the iterator satisfying a
+ predicate, if any.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Finds the first value produced by the iterator satisfying a
+ predicate, if any.</p><p> Note: may not terminate for infinite iterators.
+</p></div><dl class="paramcmts block"><dt class="param">p</dt><dd class="cmt"><p>the predicate used to test values.</p></dd><dt>returns</dt><dd class="cmt"><p>an option value containing the first value produced by the iterator that satisfies
+          predicate <code>p</code>, or <code>None</code> if none exists.
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a> → <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#findIndexOf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name deprecated">findIndexOf</span><span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns index of the first element satisfying a predicate, or -1.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns index of the first element satisfying a predicate, or -1.</p></div><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div><div class="block"><ol>deprecated:
+          <li><p>use <code>indexWhere</code> instead</p></li>
+        </ol></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#flatMap">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">flatMap</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="f">f: (A) ⇒ <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[B]</span>)</span><span class="result">: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[B]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Creates a new iterator by applying a function to all values produced by this iterator
+ and concatenating the results.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Creates a new iterator by applying a function to all values produced by this iterator
+ and concatenating the results.
+</p></div><dl class="paramcmts block"><dt class="param">f</dt><dd class="cmt"><p>the function to apply on each element.</p></dd><dt>returns</dt><dd class="cmt"><p>the iterator resulting from applying the given iterator-valued function
+               <code>f</code> to each value produced by this iterator and concatenating the results.
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#foldLeft">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">foldLeft</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="z">z: B</span>)</span><span class="params">(<span name="op">op: (B, A) ⇒ B</span>)</span><span class="result">: B</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Applies a binary operator to a start value and all elements of this traversable or iterator, going left to right.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Applies a binary operator to a start value and all elements of this traversable or iterator, going left to right.</p><p> Note: will not terminate for infinite iterators.</p><p>   Note: might return different results for different runs, unless the underlying collection type is ordered
+   or the operator is associative and commutative.</p><pre>
+</pre></div><dl class="paramcmts block"><dt class="tparam">B</dt><dd class="cmt"><p>the result type of the binary operator.</p></dd><dt class="param">z</dt><dd class="cmt"><p>the start value.</p></dd><dt class="param">op</dt><dd class="cmt"><p>the binary operator.</p></dd><dt>returns</dt><dd class="cmt"><p>the result of inserting <code>op</code> between consecutive elements of this traversable or iterator,
+          going left to right with the start value <code>z</code> on the left:
+            op(...op(z, x<sub>1</sub>), x<sub>2</sub>, ..., x<sub>n</sub>)
+          where <code>x,,1,,, ..., x,,n,,</code> are the elements of this traversable or iterator.
+</p></dd></dl><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#foldRight">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">foldRight</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="z">z: B</span>)</span><span class="params">(<span name="op">op: (A, B) ⇒ B</span>)</span><span class="result">: B</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Applies a binary operator to all elements of this traversable or iterator and a start value, going right to left.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Applies a binary operator to all elements of this traversable or iterator and a start value, going right to left.</p><p> Note: will not terminate for infinite iterators.</p><p>   Note: might return different results for different runs, unless the underlying collection type is ordered
+   or the operator is associative and commutative.</p><pre>
+</pre></div><dl class="paramcmts block"><dt class="tparam">B</dt><dd class="cmt"><p>the result type of the binary operator.</p></dd><dt class="param">z</dt><dd class="cmt"><p>the start value.</p></dd><dt class="param">op</dt><dd class="cmt"><p>the binary operator.</p></dd><dt>returns</dt><dd class="cmt"><p>the result of inserting <code>op</code> between consecutive elements of this traversable or iterator,
+          going right to left with the start value <code>z</code> on the right:
+            op(x<sub>1</sub>, op(x<sub>2</sub>, ... op(x<sub>n</sub>, z)...))
+          where <code>x,,1,,, ..., x,,n,,</code> are the elements of this traversable or iterator.
+</p></dd></dl><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#forall">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">forall</span><span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Tests whether a predicate holds for all values produced by this iterator.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Tests whether a predicate holds for all values produced by this iterator.</p><p> Note: may not terminate for infinite iterators.
+</p></div><dl class="paramcmts block"><dt class="param">p</dt><dd class="cmt"><p>the predicate used to test elements.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the given predicate <code>p</code> holds for all values
+                produced by this iterator, otherwise <code>false</code>.
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a> → <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#foreach">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">foreach</span><span class="params">(<span name="f">f: (A) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">[use case] Applies a function <code>f</code> to all values produced by this iterator.</p>
+            <div class="fullcomment">[use case] <div class="comment cmt"><p>Applies a function <code>f</code> to all values produced by this iterator.</p></div><dl class="paramcmts block"><dt class="param">f</dt><dd class="cmt"><p>the function that is applied for its side-effect to every element.
+             The result of function <code>f</code> is discarded.</p></dd></dl><div class="block">
+          attributes: abstract 
+        </div><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#foreach">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">foreach</span><span class="tparams">[<span name="U">U</span>]</span><span class="params">(<span name="f">f: (A) ⇒ U</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Applies a function <code>f</code> to all values produced by this iterator.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Applies a function <code>f</code> to all values produced by this iterator.
+</p></div><dl class="paramcmts block"><dt class="tparam">U</dt><dd class="cmt"><p>the type parameter describing the result of function <code>f</code>.
+             This result will always be ignored. Typically <code>U</code> is <code>Unit</code>,
+             but this is not necessary.</p></dd><dt class="param">f</dt><dd class="cmt"><p>the function that is applied for its side-effect to every element.
+             The result of function <code>f</code> is discarded.
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a> → <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#getClass">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: java.lang.Class[_ &lt;: java.lang.Object]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a representation that corresponds to the dynamic class of the receiver object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a representation that corresponds to the dynamic class of the receiver object.</p><p>The nature of the representation is platform dependent.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a representation that corresponds to the dynamic class of the receiver object.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#grouped">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">grouped</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span name="size">size: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="Iterator$GroupedIterator.html" class="extype" name="scala.collection.Iterator.GroupedIterator">GroupedIterator</a>[B]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns an iterator which groups this iterator into fixed size
+ blocks.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns an iterator which groups this iterator into fixed size
+ blocks.  Example usages:</p><p> <pre>   // Returns List(List(1, 2, 3), List(4, 5, 6), List(7)))
+   (1 to 7).iterator grouped 3 toList
+   // Returns List(List(1, 2, 3), List(4, 5, 6))
+   (1 to 7).iterator grouped 3 withPartial false toList
+   // Returns List(List(1, 2, 3), List(4, 5, 6), List(7, 20, 25)
+   // Illustrating that withPadding's argument is by-name.
+   val it2 = Iterator.iterate(20)(_ + 5)
+   (1 to 7).iterator grouped 3 withPadding it2.next toList
+ </pre></p></div><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#hasDefiniteSize">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">hasDefiniteSize</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Tests whether this Iterator has a known size.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Tests whether this Iterator has a known size.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>true</code> for empty Iterators, <code>false</code> otherwise.
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a> → <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.JavaConversions.JEnumerationWrapper#hasNext">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">hasNext</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Tests whether this iterator can provide another element.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Tests whether this iterator can provide another element.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>true</code> if a subsequent call to <code>next</code> will yield an element,
+          <code>false</code> otherwise.
+</p></dd></dl><div class="block">
+          definition classes: <a href="" class="extype" name="scala.collection.JavaConversions.JEnumerationWrapper">JEnumerationWrapper</a> → <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.JavaConversions.JEnumerationWrapper#hashCode">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a hash code value for the object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a hash code value for the object.</p><p>The default hashing algorithm is platform dependent.</p><p>Note that it is allowed for two objects to have identical hash codes (<code>o1.hashCode.equals(o2.hashCode)</code>) yet
+not be equal (<code>o1.equals(o2)</code> returns <code>false</code>).  A degenerate implementation could always return <code>0</code>.
+However, it is required that if two objects are equal (<code>o1.equals(o2)</code> returns <code>true</code>) that they have
+identical hash codes (<code>o1.hashCode.equals(o2.hashCode)</code>).  Therefore, when overriding this method, be sure
+to verify that the behavior is consistent with the <code>equals</code> method.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the hash code value for the object.</p></dd></dl><div class="block">
+          definition classes: <a href="" class="extype" name="scala.collection.JavaConversions.JEnumerationWrapper">JEnumerationWrapper</a> → AnyRef → Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#indexOf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">indexOf</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span name="elem">elem: B</span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns the index of the first occurrence of the specified
+ object in this iterable object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns the index of the first occurrence of the specified
+ object in this iterable object.</p><p> Note: may not terminate for infinite iterators.
+</p></div><dl class="paramcmts block"><dt class="param">elem</dt><dd class="cmt"><p>element to search for.</p></dd><dt>returns</dt><dd class="cmt"><p>the index of the first occurrence of <code>elem</code> in the values produced by this iterator,
+         or -1 if such an element does not exist until the end of the iterator is reached.
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#indexWhere">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">indexWhere</span><span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns the index of the first produced value satisfying a predicate, or -1.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns the index of the first produced value satisfying a predicate, or -1.</p><p> Note: may not terminate for infinite iterators.</p></div><dl class="paramcmts block"><dt class="param">p</dt><dd class="cmt"><p>the predicate to test values</p></dd><dt>returns</dt><dd class="cmt"><p>the index of the first produced value satisfying <code>p</code>,
+          or -1 if such an element does not exist until the end of the iterator is reached.
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#isEmpty">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">isEmpty</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Tests whether this iterator is empty.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Tests whether this iterator is empty.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>true</code> if hasNext is false, <code>false</code> otherwise.
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a> → <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.Any#isInstanceOf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is used to test whether the dynamic type of the receiver object is <code>T0</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is used to test whether the dynamic type of the receiver object is <code>T0</code>.</p><p>Note that the test result of the test is modulo Scala's erasure semantics.  Therefore the expression<code>1.isInstanceOf[String]</code> will return <code>false</code>, while the expression <code>List(1).isInstanceOf[List[String]]</code> will
+return <code>true</code>.  In the latter example, because the type argument is erased as part of compilation it is not
+possible to check whether the contents of the list are of the requested typed.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>true</code> if the receiver object is an instance of erasure of type <code>T0</code>; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#isTraversableAgain">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">isTraversableAgain</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Tests whether this Iterator can be repeatedly traversed.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Tests whether this Iterator can be repeatedly traversed.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>false</code></p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a> → <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#length">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">length</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns the number of elements in this iterator.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns the number of elements in this iterator.</p><p> Note: will not terminate for infinite iterators.</p><p> Note: The iterator is at its end after this method returns.
+</p></div><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#map">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">map</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="f">f: (A) ⇒ B</span>)</span><span class="result">: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[B]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Creates a new iterator that maps all produced values of this iterator
+ to new values using a transformation function.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Creates a new iterator that maps all produced values of this iterator
+ to new values using a transformation function.</p></div><dl class="paramcmts block"><dt class="param">f</dt><dd class="cmt"><p>the transformation function</p></dd><dt>returns</dt><dd class="cmt"><p>a new iterator which transforms every value produced by this
+         iterator by applying the function <code>f</code> to it.
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#max">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">max</span><span class="result">: A</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">[use case] Finds the largest element.</p>
+            <div class="fullcomment">[use case] <div class="comment cmt"><p>Finds the largest element.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the largest element of this traversable or iterator.
+</p></dd></dl><div class="block">
+          attributes: abstract 
+        </div><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#max">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">max</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="cmp">cmp: <a href="../math/Ordering.html" class="extype" name="scala.math.Ordering">Ordering</a>[B]</span>)</span><span class="result">: A</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Finds the largest element.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Finds the largest element.
+</p></div><dl class="paramcmts block"><dt class="tparam">B</dt><dd class="cmt"><p>The type over which the ordering is defined.</p></dd><dt class="param">cmp</dt><dd class="cmt"><p>An ordering to be used for comparing elements.</p></dd><dt>returns</dt><dd class="cmt"><p>the largest element of this traversable or iterator with respect to the ordering <code>cmp</code>.</p></dd></dl><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#min">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">min</span><span class="result">: A</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">[use case] Finds the smallest element.</p>
+            <div class="fullcomment">[use case] <div class="comment cmt"><p>Finds the smallest element.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the smallest element of this traversable or iterator
+</p></dd></dl><div class="block">
+          attributes: abstract 
+        </div><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#min">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">min</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="cmp">cmp: <a href="../math/Ordering.html" class="extype" name="scala.math.Ordering">Ordering</a>[B]</span>)</span><span class="result">: A</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Finds the smallest element.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Finds the smallest element.
+</p></div><dl class="paramcmts block"><dt class="tparam">B</dt><dd class="cmt"><p>The type over which the ordering is defined.</p></dd><dt class="param">cmp</dt><dd class="cmt"><p>An ordering to be used for comparing elements.</p></dd><dt>returns</dt><dd class="cmt"><p>the smallest element of this traversable or iterator with respect to the ordering <code>cmp</code>.</p></dd></dl><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#mkString">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">mkString</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Displays all elements of this traversable or iterator in a string.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Displays all elements of this traversable or iterator in a string.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a string representation of this traversable or iterator. In the resulting string
+         the string representations (w.r.t. the method <code>toString</code>)
+         of all elements of this traversable or iterator follow each other without any separator string.
+</p></dd></dl><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#mkString">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">mkString</span><span class="params">(<span name="sep">sep: <span class="extype" name="java.lang.String">String</span></span>)</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Displays all elements of this traversable or iterator in a string using a separator string.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Displays all elements of this traversable or iterator in a string using a separator string.
+</p></div><dl class="paramcmts block"><dt class="param">sep</dt><dd class="cmt"><p>the separator string.</p></dd><dt>returns</dt><dd class="cmt"><p>a string representation of this traversable or iterator. In the resulting string
+              the string representations (w.r.t. the method <code>toString</code>)
+              of all elements of this traversable or iterator are separated by the string <code>sep</code>.
+</p></dd></dl><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#mkString">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">mkString</span><span class="params">(<span name="start">start: <span class="extype" name="java.lang.String">String</span></span>, <span name="sep">sep: <span class="extype" name="java.lang.String">String</span></span>, <span name="end">end: <span class="extype" name="java.lang.String">String</span></span>)</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Displays all elements of this traversable or iterator in a string using start, end, and separator strings.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Displays all elements of this traversable or iterator in a string using start, end, and separator strings.
+</p></div><dl class="paramcmts block"><dt class="param">start</dt><dd class="cmt"><p>the starting string.</p></dd><dt class="param">sep</dt><dd class="cmt"><p>the separator string.</p></dd><dt class="param">end</dt><dd class="cmt"><p>the ending string.</p></dd><dt>returns</dt><dd class="cmt"><p>a string representation of this traversable or iterator. The resulting string
+              begins with the string <code>start</code> and ends with the string
+              <code>end</code>. Inside, the string representations (w.r.t. the method <code>toString</code>)
+              of all elements of this traversable or iterator are separated by the string <code>sep</code>.
+</p></dd></dl><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#ne">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"><code>o.ne(arg0)</code> is the same as <code>!(o.eq(arg0))</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p><code>o.ne(arg0)</code> is the same as <code>!(o.eq(arg0))</code>.
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for reference dis-equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>false</code> if the argument is not a reference to the receiver object; <code>true</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.JavaConversions.JEnumerationWrapper#next">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">next</span><span class="params">()</span><span class="result">: A</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Produces the next element of this iterator.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Produces the next element of this iterator.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the next element of this iterator, if <code>hasNext</code> is <code>true</code>,
+          undefined behavior otherwise.
+</p></dd></dl><div class="block">
+          definition classes: <a href="" class="extype" name="scala.collection.JavaConversions.JEnumerationWrapper">JEnumerationWrapper</a> → <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#nonEmpty">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">nonEmpty</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Tests whether the traversable or iterator is not empty.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Tests whether the traversable or iterator is not empty.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>true</code> if the traversable or iterator contains at least one element, <code>false</code> otherwise.
+</p></dd></dl><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#notify">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Wakes up a single thread that is waiting on the receiver object's monitor.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Wakes up a single thread that is waiting on the receiver object's monitor.</p></div><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#notifyAll">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Wakes up all threads that are waiting on the receiver object's monitor.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Wakes up all threads that are waiting on the receiver object's monitor.</p></div><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#padTo">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">padTo</span><span class="params">(<span name="len">len: <span class="extype" name="scala.Int">Int</span></span>, <span name="elem">elem: A</span>)</span><span class="result">: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">[use case] Appends an element value to this iterator until a given target length is reached.</p>
+            <div class="fullcomment">[use case] <div class="comment cmt"><p>Appends an element value to this iterator until a given target length is reached.</p></div><dl class="paramcmts block"><dt class="param">len</dt><dd class="cmt"><p>the target length</p></dd><dt class="param">elem</dt><dd class="cmt"><p>the padding value</p></dd><dt>returns</dt><dd class="cmt"><p>a new iterator consisting of producing all values of this iterator,
+         followed by the minimal number of occurrences of <code>elem</code> so
+         that the number of produced values is at least <code>len</code>.
+</p></dd></dl><div class="block">
+          attributes: abstract 
+        </div><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#padTo">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">padTo</span><span class="tparams">[<span name="A1">A1 &gt;: A</span>]</span><span class="params">(<span name="len">len: <span class="extype" name="scala.Int">Int</span></span>, <span name="elem">elem: A1</span>)</span><span class="result">: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[A1]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Appends an element value to this iterator until a given target length is reached.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Appends an element value to this iterator until a given target length is reached.</p></div><dl class="paramcmts block"><dt class="param">len</dt><dd class="cmt"><p>the target length</p></dd><dt class="param">elem</dt><dd class="cmt"><p>the padding value</p></dd><dt>returns</dt><dd class="cmt"><p>a new iterator consisting of producing all values of this iterator,
+         followed by the minimal number of occurrences of <code>elem</code> so
+         that the number of produced values is at least <code>len</code>.
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#partition">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">partition</span><span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: (<a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[A], <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[A])</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Partitions this iterator in two iterators according to a predicate.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Partitions this iterator in two iterators according to a predicate.
+</p></div><dl class="paramcmts block"><dt class="param">p</dt><dd class="cmt"><p>the predicate on which to partition</p></dd><dt>returns</dt><dd class="cmt"><p>a pair of iterators: the iterator that satisfies the predicate
+          <code>p</code> and the iterator that does not.
+          The relative order of the elements in the resulting iterators
+          is the same as in the original iterator.
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#patch">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">patch</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span name="from">from: <span class="extype" name="scala.Int">Int</span></span>, <span name="patchElems">patchElems: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[B]</span>, <span name="replaced">replaced: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[B]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns this iterator with patched values.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns this iterator with patched values.</p></div><dl class="paramcmts block"><dt class="param">from</dt><dd class="cmt"><p>The start index from which to patch</p></dd><dt class="param">replaced</dt><dd class="cmt"><p>The number of values in the original iterator that are replaced by the patch.
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#product">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">product</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">[use case] Multiplies up the elements of this collection.</p>
+            <div class="fullcomment">[use case] <div class="comment cmt"><p>Multiplies up the elements of this collection.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the product of all elements in this traversable or iterator of numbers of type <code>Int</code>.
+  Instead of <code>Int</code>, any other type <code>T</code> with an implicit <code>Numeric[T]</code> implementation
+  can be used as element type of the traversable or iterator and as result type of <code>product</code>.
+  Examples of such types are: <code>Long</code>, <code>Float</code>, <code>Double</code>, <code>BigInt</code>.
+</p></dd></dl><div class="block">
+          attributes: abstract 
+        </div><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#product">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">product</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="num">num: <a href="../math/Numeric.html" class="extype" name="scala.math.Numeric">Numeric</a>[B]</span>)</span><span class="result">: B</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Multiplies up the elements of this collection.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Multiplies up the elements of this collection.
+</p></div><dl class="paramcmts block"><dt class="tparam">B</dt><dd class="cmt"><p>the result type of the <code>*</code> operator.</p></dd><dt class="param">num</dt><dd class="cmt"><p>an implicit parameter defining a set of numeric operations
+                which includes the <code>*</code> operator to be used in forming the product.</p></dd><dt>returns</dt><dd class="cmt"><p>the product of all elements of this traversable or iterator with respect to the <code>*</code> operator in <code>num</code>.</p></dd></dl><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.JavaConversions.JEnumerationWrapper#productArity">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">productArity</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">return k for a product <code>A(x_1,.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>return k for a product <code>A(x_1,...,x_k)</code></p></div><div class="block">
+          definition classes: <a href="" class="extype" name="scala.collection.JavaConversions.JEnumerationWrapper">JEnumerationWrapper</a> → <a href="../Product.html" class="extype" name="scala.Product">Product</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.JavaConversions.JEnumerationWrapper#productElement">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">productElement</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Any">Any</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">For a product <code>A(x_1,.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>For a product <code>A(x_1,...,x_k)</code>, returns <code>x_(n+1)</code> for <code>0 &amp;lt;= n &amp;lt; k</code></p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>The element <code>n</code> elements after the first element
+</p></dd></dl><div class="block">
+          definition classes: <a href="" class="extype" name="scala.collection.JavaConversions.JEnumerationWrapper">JEnumerationWrapper</a> → <a href="../Product.html" class="extype" name="scala.Product">Product</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.Product#productElements">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name deprecated">productElements</span><span class="result">: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[<span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../Product.html" class="extype" name="scala.Product">Product</a>
+        </div><div class="block"><ol>deprecated:
+          <li><p>use productIterator instead</p></li>
+        </ol></div></div>
+          
+    </li><li visbl="pub" name="scala.Product#productIterator">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">productIterator</span><span class="result">: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[<span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">An iterator that returns all fields of this product</p>
+            <div class="fullcomment"><div class="comment cmt"><p>An iterator that returns all fields of this product</p></div><div class="block">
+          definition classes: <a href="../Product.html" class="extype" name="scala.Product">Product</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.JavaConversions.JEnumerationWrapper#productPrefix">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">productPrefix</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"> By default the empty string.</p>
+            <div class="fullcomment"><div class="comment cmt"><p> By default the empty string. Implementations may override this
+ method in order to prepend a string prefix to the result of the
+ toString methods.
+</p></div><div class="block">
+          definition classes: <a href="" class="extype" name="scala.collection.JavaConversions.JEnumerationWrapper">JEnumerationWrapper</a> → <a href="../Product.html" class="extype" name="scala.Product">Product</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#readInto">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name deprecated">readInto</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span name="xs">xs: <a href="../Array.html" class="extype" name="scala.Array">Array</a>[B]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div><div class="block"><ol>deprecated:
+          <li><p>use copyToArray instead</p></li>
+        </ol></div></div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#readInto">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name deprecated">readInto</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span name="xs">xs: <a href="../Array.html" class="extype" name="scala.Array">Array</a>[B]</span>, <span name="start">start: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div><div class="block"><ol>deprecated:
+          <li><p>use copyToArray instead</p></li>
+        </ol></div></div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#readInto">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name deprecated">readInto</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span name="xs">xs: <a href="../Array.html" class="extype" name="scala.Array">Array</a>[B]</span>, <span name="start">start: <span class="extype" name="scala.Int">Int</span></span>, <span name="sz">sz: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Fills the given array <code>xs</code> with the elements of
+ this sequence starting at position <code>start</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Fills the given array <code>xs</code> with the elements of
+ this sequence starting at position <code>start</code>.  Like <code>copyToArray</code>,
+ but designed to accomodate IO stream operations.</p><p> <b>Note:</b>   the array must be large enough to hold <code>sz</code> elements.</p></div><dl class="paramcmts block"><dt class="param">xs</dt><dd class="cmt"><p>the array to fill.</p></dd><dt class="param">start</dt><dd class="cmt"><p>the starting index.</p></dd><dt class="param">sz</dt><dd class="cmt"><p>the maximum number of elements to be read.
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div><div class="block"><ol>deprecated:
+          <li><p>use copyToArray instead</p></li>
+        </ol></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#reduceLeft">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">reduceLeft</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span name="op">op: (B, A) ⇒ B</span>)</span><span class="result">: B</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Applies a binary operator to all elements of this traversable or iterator, going left to right.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Applies a binary operator to all elements of this traversable or iterator, going left to right.</p><p> Note: will not terminate for infinite iterators.</p><p>   Note: might return different results for different runs, unless the underlying collection type is ordered
+   or the operator is associative and commutative.</p><pre>
+</pre></div><dl class="paramcmts block"><dt class="tparam">B</dt><dd class="cmt"><p>the result type of the binary operator.</p></dd><dt class="param">op</dt><dd class="cmt"><p>the binary operator.</p></dd><dt>returns</dt><dd class="cmt"><p>the result of inserting <code>op</code> between consecutive elements of this traversable or iterator,
+          going left to right:
+            op(...(op(x<sub>1</sub>, x<sub>2</sub>), ... ) , x<sub>n</sub>)
+          where <code>x,,1,,, ..., x,,n,,</code> are the elements of this traversable or iterator.</p></dd></dl><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#reduceLeftOption">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">reduceLeftOption</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span name="op">op: (B, A) ⇒ B</span>)</span><span class="result">: <a href="../Option.html" class="extype" name="scala.Option">Option</a>[B]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Optionally applies a binary operator to all elements of this traversable or iterator, going left to right.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Optionally applies a binary operator to all elements of this traversable or iterator, going left to right.</p><p> Note: will not terminate for infinite iterators.</p><p>   Note: might return different results for different runs, unless the underlying collection type is ordered
+   or the operator is associative and commutative.
+</p></div><dl class="paramcmts block"><dt class="tparam">B</dt><dd class="cmt"><p>the result type of the binary operator.</p></dd><dt class="param">op</dt><dd class="cmt"><p>the binary operator.</p></dd><dt>returns</dt><dd class="cmt"><p>an option value containing the result of <code>reduceLeft(op)</code> is this traversable or iterator is nonempty,
+          <code>None</code> otherwise.
+</p></dd></dl><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#reduceRight">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">reduceRight</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span name="op">op: (A, B) ⇒ B</span>)</span><span class="result">: B</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Applies a binary operator to all elements of this traversable or iterator, going right to left.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Applies a binary operator to all elements of this traversable or iterator, going right to left.</p><p> Note: will not terminate for infinite iterators.</p><p>   Note: might return different results for different runs, unless the underlying collection type is ordered
+   or the operator is associative and commutative.</p><pre>
+</pre></div><dl class="paramcmts block"><dt class="tparam">B</dt><dd class="cmt"><p>the result type of the binary operator.</p></dd><dt class="param">op</dt><dd class="cmt"><p>the binary operator.</p></dd><dt>returns</dt><dd class="cmt"><p>the result of inserting <code>op</code> between consecutive elements of this traversable or iterator,
+          going right to left:
+            op(x<sub>1</sub>, op(x<sub>2</sub>, ..., op(x<sub>n-1</sub>, x<sub>n</sub>)...))
+          where <code>x,,1,,, ..., x,,n,,</code> are the elements of this traversable or iterator.</p></dd></dl><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#reduceRightOption">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">reduceRightOption</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span name="op">op: (A, B) ⇒ B</span>)</span><span class="result">: <a href="../Option.html" class="extype" name="scala.Option">Option</a>[B]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Optionally applies a binary operator to all elements of this traversable or iterator, going right to left.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Optionally applies a binary operator to all elements of this traversable or iterator, going right to left.</p><p> Note: will not terminate for infinite iterators.</p><p>   Note: might return different results for different runs, unless the underlying collection type is ordered
+   or the operator is associative and commutative.
+</p></div><dl class="paramcmts block"><dt class="tparam">B</dt><dd class="cmt"><p>the result type of the binary operator.</p></dd><dt class="param">op</dt><dd class="cmt"><p>the binary operator.</p></dd><dt>returns</dt><dd class="cmt"><p>an option value containing the result of <code>reduceRight(op)</code> is this traversable or iterator is nonempty,
+          <code>None</code> otherwise.
+</p></dd></dl><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="prt" name="scala.collection.TraversableOnce#reversed">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">reversed</span><span class="result">: <a href="immutable/List.html" class="extype" name="scala.collection.immutable.List">List</a>[A]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: protected[this] 
+        </div><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#sameElements">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">sameElements</span><span class="params">(<span name="that">that: Iterator[_]</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Tests if another iterator produces the same values as this one.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Tests if another iterator produces the same values as this one.</p><p> Note: will not terminate for infinite iterators.</p></div><dl class="paramcmts block"><dt class="param">that</dt><dd class="cmt"><p>the other iterator</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code>, if both iterators produce the same elements in the same order, <code>false</code> otherwise.
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#size">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">size</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">The size of this traversable or iterator.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>The size of this traversable or iterator.</p><p> Note: will not terminate for infinite iterators.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the number of elements in this traversable or iterator.
+</p></dd></dl><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#slice">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">slice</span><span class="params">(<span name="from">from: <span class="extype" name="scala.Int">Int</span></span>, <span name="until">until: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Creates an iterator returning an interval of the values produced by this iterator.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Creates an iterator returning an interval of the values produced by this iterator.</p></div><dl class="paramcmts block"><dt class="param">from</dt><dd class="cmt"><p>the index of the first element in this iterator which forms part of the slice.</p></dd><dt class="param">until</dt><dd class="cmt"><p>the index of the first element following the slice.</p></dd><dt>returns</dt><dd class="cmt"><p>an iterator which advances this iterator past the first <code>from</code> elements using <code>drop</code>,
+ and then takes <code>until - from</code> elements, using <code>take</code>.
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#sliding">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">sliding</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span name="size">size: <span class="extype" name="scala.Int">Int</span></span>, <span name="step">step: <span class="extype" name="scala.Int">Int</span> = <span class="default">1</span></span>)</span><span class="result">: <a href="Iterator$GroupedIterator.html" class="extype" name="scala.collection.Iterator.GroupedIterator">GroupedIterator</a>[B]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns an iterator which presents a &quot;sliding window&quot; view of
+ another iterator.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns an iterator which presents a &quot;sliding window&quot; view of
+ another iterator.  The first argument is the window size, and
+ the second is how far to advance the window on each iteration;
+ defaults to 1.  Example usages:</p><p> <pre>   // Returns List(List(1, 2, 3), List(2, 3, 4), List(3, 4, 5))
+   (1 to 5).iterator.sliding(3).toList
+   // Returns List(List(1, 2, 3, 4), List(4, 5))
+   (1 to 5).iterator.sliding(4, 3).toList
+   // Returns List(List(1, 2, 3, 4))
+   (1 to 5).iterator.sliding(4, 3).withPartial(false).toList
+   // Returns List(List(1, 2, 3, 4), List(4, 5, 20, 25))
+   // Illustrating that withPadding's argument is by-name.
+   val it2 = Iterator.iterate(20)(_ + 5)
+   (1 to 5).iterator.sliding(4, 3).withPadding(it2.next).toList
+ </pre></p></div><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#sum">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">sum</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">[use case] Sums up the elements of this collection.</p>
+            <div class="fullcomment">[use case] <div class="comment cmt"><p>Sums up the elements of this collection.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the sum of all elements in this traversable or iterator of numbers of type <code>Int</code>.
+  Instead of <code>Int</code>, any other type <code>T</code> with an implicit <code>Numeric[T]</code> implementation
+  can be used as element type of the traversable or iterator and as result type of <code>sum</code>.
+  Examples of such types are: <code>Long</code>, <code>Float</code>, <code>Double</code>, <code>BigInt</code>.</p></dd></dl><div class="block">
+          attributes: abstract 
+        </div><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#sum">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">sum</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="num">num: <a href="../math/Numeric.html" class="extype" name="scala.math.Numeric">Numeric</a>[B]</span>)</span><span class="result">: B</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Sums up the elements of this collection.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Sums up the elements of this collection.
+</p></div><dl class="paramcmts block"><dt class="tparam">B</dt><dd class="cmt"><p>the result type of the <code>+</code> operator.</p></dd><dt class="param">num</dt><dd class="cmt"><p>an implicit parameter defining a set of numeric operations
+                which includes the <code>+</code> operator to be used in forming the sum.</p></dd><dt>returns</dt><dd class="cmt"><p>the sum of all elements of this traversable or iterator with respect to the <code>+</code> operator in <code>num</code>.</p></dd></dl><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#synchronized">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: T0</span>)</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#take">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">take</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Selects first <i>n</i> values of this iterator.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Selects first <i>n</i> values of this iterator.</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>the number of values to take</p></dd><dt>returns</dt><dd class="cmt"><p>an iterator producing only of the first <code>n</code> values of this iterator, or else the
+         whole iterator, if it produces less than <code>n</code> values.
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#takeWhile">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">takeWhile</span><span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Takes longest prefix of values produced by this iterator that satisfy a predicate.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Takes longest prefix of values produced by this iterator that satisfy a predicate.</p></div><dl class="paramcmts block"><dt class="param">p</dt><dd class="cmt"><p>The predicate used to test elements.</p></dd><dt>returns</dt><dd class="cmt"><p>An iterator returning the values produced by this iterator, until
+          this iterator produces a value that does not satisfy
+          the predicate <code>p</code>.
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#toArray">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toArray</span><span class="result">: <a href="../Array.html" class="extype" name="scala.Array">Array</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">[use case] Converts this traversable or iterator to an array.</p>
+            <div class="fullcomment">[use case] <div class="comment cmt"><p>Converts this traversable or iterator to an array.</p><p> Note: will not terminate for infinite iterators.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>an array containing all elements of this traversable or iterator.
+          A <code>ClassManifest</code> must be available for the element type of this traversable or iterator.
+</p></dd></dl><div class="block">
+          attributes: abstract 
+        </div><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#toArray">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toArray</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <a href="../reflect/ClassManifest.html" class="extype" name="scala.reflect.ClassManifest">ClassManifest</a>[B]</span>)</span><span class="result">: <a href="../Array.html" class="extype" name="scala.Array">Array</a>[B]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Converts this traversable or iterator to an array.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Converts this traversable or iterator to an array.</p><p> Note: will not terminate for infinite iterators.
+</p></div><dl class="paramcmts block"><dt class="tparam">B</dt><dd class="cmt"><p>the type of the elements of the array. A <code>ClassManifest</code> for this type must
+              be available.</p></dd><dt>returns</dt><dd class="cmt"><p>an array containing all elements of this traversable or iterator.</p></dd></dl><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#toBuffer">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toBuffer</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="result">: <a href="mutable/Buffer.html" class="extype" name="scala.collection.mutable.Buffer">Buffer</a>[B]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Converts this traversable or iterator to a mutable buffer.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Converts this traversable or iterator to a mutable buffer.</p><p> Note: will not terminate for infinite iterators.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a buffer containing all elements of this traversable or iterator.
+</p></dd></dl><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#toIndexedSeq">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toIndexedSeq</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="result">: <a href="immutable/IndexedSeq.html" class="extype" name="scala.collection.immutable.IndexedSeq">IndexedSeq</a>[B]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Converts this traversable or iterator to an indexed sequence.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Converts this traversable or iterator to an indexed sequence.</p><p> Note: will not terminate for infinite iterators.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>an indexed sequence containing all elements of this traversable or iterator.
+</p></dd></dl><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#toIterable">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toIterable</span><span class="result">: <a href="Iterable.html" class="extype" name="scala.collection.Iterable">Iterable</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Converts this traversable or iterator to an iterable collection.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Converts this traversable or iterator to an iterable collection.  Note that
+ the choice of target <code>Iterable</code> is lazy in this default implementation
+ as this <code>TraversableOnce</code> may be lazy and unevaluated (i.e. it may
+ be an iterator which is only traversable once).</p><p> Note: will not terminate for infinite iterators.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>an <code>Iterable</code> containing all elements of this traversable or iterator.
+</p></dd></dl><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#toIterator">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toIterator</span><span class="result">: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns an Iterator over the elements in this traversable or iterator.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns an Iterator over the elements in this traversable or iterator.  Will return
+ the same Iterator if this instance is already an Iterator.</p><p> Note: will not terminate for infinite iterators.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>an Iterator containing all elements of this traversable or iterator.
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a> → <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#toList">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toList</span><span class="result">: <a href="immutable/List.html" class="extype" name="scala.collection.immutable.List">List</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Converts this traversable or iterator to a list.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Converts this traversable or iterator to a list.</p><p> Note: will not terminate for infinite iterators.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a list containing all elements of this traversable or iterator.
+</p></dd></dl><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#toMap">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toMap</span><span class="tparams">[<span name="T">T</span>, <span name="U">U</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="ev">ev: <a href="../Predef$$$less$colon$less.html" class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</a>[A, (T, U)]</span>)</span><span class="result">: <a href="immutable/Map.html" class="extype" name="scala.collection.immutable.Map">Map</a>[T, U]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Converts this traversable or iterator to a map.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Converts this traversable or iterator to a map.  This method is unavailable unless
+ the elements are members of Tuple2, each ((K, V)) becoming a key-value
+ pair in the map.  Duplicate keys will be overwritten by later keys:
+ if this is an unordered collection, which key is in the resulting map
+ is undefined.</p><p> Note: will not terminate for infinite iterators.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a map containing all elements of this traversable or iterator.
+</p></dd></dl><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#toSeq">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toSeq</span><span class="result">: <a href="Seq.html" class="extype" name="scala.collection.Seq">Seq</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Converts this traversable or iterator to a sequence.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Converts this traversable or iterator to a sequence. As with <code>toIterable</code>, it's lazy
+ in this default implementation, as this <code>TraversableOnce</code> may be
+ lazy and unevaluated.</p><p> Note: will not terminate for infinite iterators.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a sequence containing all elements of this traversable or iterator.
+</p></dd></dl><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.TraversableOnce#toSet">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toSet</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="result">: <a href="immutable/Set.html" class="extype" name="scala.collection.immutable.Set">Set</a>[B]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Converts this traversable or iterator to a set.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Converts this traversable or iterator to a set.</p><p> Note: will not terminate for infinite iterators.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a set containing all elements of this traversable or iterator.
+</p></dd></dl><div class="block">
+          definition classes: <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#toStream">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toStream</span><span class="result">: <a href="immutable/Stream.html" class="extype" name="scala.collection.immutable.Stream">Stream</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Converts this traversable or iterator to a stream.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Converts this traversable or iterator to a stream.</p><p> Note: will not terminate for infinite iterators.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a stream containing all elements of this traversable or iterator.
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a> → <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#toString">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Converts this iterator to a string.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Converts this iterator to a string.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>&quot;empty iterator&quot;</code> or <code>&quot;non-empty iterator&quot;</code>, depending on whether or not the iterator is empty.
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a> → AnyRef → Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#toTraversable">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toTraversable</span><span class="result">: <a href="Traversable.html" class="extype" name="scala.collection.Traversable">Traversable</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Converts this traversable or iterator to an unspecified Traversable.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Converts this traversable or iterator to an unspecified Traversable.  Will return
+ the same collection if this instance is already Traversable.</p><p> Note: will not terminate for infinite iterators.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a Traversable containing all elements of this traversable or iterator.
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a> → <a href="TraversableOnce.html" class="extype" name="scala.collection.TraversableOnce">TraversableOnce</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.JavaConversions.JEnumerationWrapper#underlying">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">underlying</span><span class="result">: <span class="extype" name="java.util.Enumeration">Enumeration</span>[A]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="scala.AnyRef#wait">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#wait">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#wait">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#withFilter">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">withFilter</span><span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Creates an iterator over all the elements of this iterator that
+ satisfy the predicate <code>p</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Creates an iterator over all the elements of this iterator that
+ satisfy the predicate <code>p</code>. The order of the elements
+ is preserved.</p><p> <b>Note:</b> <code>withFilter</code> is the same as <code>filter</code> on iterators. It exists so that
+ for-expressions with filters work over iterators.
+</p></div><dl class="paramcmts block"><dt class="param">p</dt><dd class="cmt"><p>the predicate used to test values.</p></dd><dt>returns</dt><dd class="cmt"><p>an iterator which produces those values of this iterator which satisfy the predicate <code>p</code>.
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#zip">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">zip</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="that">that: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[B]</span>)</span><span class="result">: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[(A, B)]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Creates an iterator formed from this iterator and another iterator
+ by combining corresponding values in pairs.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Creates an iterator formed from this iterator and another iterator
+ by combining corresponding values in pairs.
+ If one of the two iterators is longer than the other, its remaining
+ elements are ignored.</p></div><dl class="paramcmts block"><dt class="param">that</dt><dd class="cmt"><p>The iterator providing the second half of each result pair</p></dd><dt>returns</dt><dd class="cmt"><p>a new iterator containing pairs consisting of
+                corresponding elements of this iterator and <code>that</code>. The number
+                of elements returned by the new iterator is the
+                minimum of the number of elements returned by this
+                iterator and <code>that</code>.
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#zipAll">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">zipAll</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="that">that: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[B]</span>, <span name="thisElem">thisElem: A</span>, <span name="thatElem">thatElem: B</span>)</span><span class="result">: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[(A, B)]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">[use case] Creates an iterator formed from this iterator and another iterator
+ by combining corresponding elements in pairs.</p>
+            <div class="fullcomment">[use case] <div class="comment cmt"><p>Creates an iterator formed from this iterator and another iterator
+ by combining corresponding elements in pairs.
+ If one of the two iterators is shorter than the other,
+ placeholder elements are used to extend the shorter iterator to the length of the longer.</p></div><dl class="paramcmts block"><dt class="param">that</dt><dd class="cmt"><p>iterator <code>that</code> may have a different length
+                 as the self iterator.</p></dd><dt class="param">thisElem</dt><dd class="cmt"><p>element <code>thisElem</code> is used to fill up the
+                 resulting iterator if the self iterator is shorter than
+                 <code>that</code></p></dd><dt class="param">thatElem</dt><dd class="cmt"><p>element <code>thatElem</code> is used to fill up the
+                 resulting iterator if <code>that</code> is shorter than
+                 the self iterator</p></dd><dt>returns</dt><dd class="cmt"><p>a new iterator containing pairs consisting of
+                 corresponding values of this iterator and <code>that</code>. The length
+                 of the returned iterator is the maximum of the lengths of this iterator and <code>that</code>.
+                 If this iterator is shorter than <code>that</code>, <code>thisElem</code> values are used to pad the result.
+                 If <code>that</code> is shorter than this iterator, <code>thatElem</code> values are used to pad the result.
+</p></dd></dl><div class="block">
+          attributes: abstract 
+        </div><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#zipAll">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">zipAll</span><span class="tparams">[<span name="B">B</span>, <span name="A1">A1 &gt;: A</span>, <span name="B1">B1 &gt;: B</span>]</span><span class="params">(<span name="that">that: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[B]</span>, <span name="thisElem">thisElem: A1</span>, <span name="thatElem">thatElem: B1</span>)</span><span class="result">: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[(A1, B1)]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Creates an iterator formed from this iterator and another iterator
+ by combining corresponding elements in pairs.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Creates an iterator formed from this iterator and another iterator
+ by combining corresponding elements in pairs.
+ If one of the two iterators is shorter than the other,
+ placeholder elements are used to extend the shorter iterator to the length of the longer.
+</p></div><dl class="paramcmts block"><dt class="param">that</dt><dd class="cmt"><p>iterator <code>that</code> may have a different length
+                 as the self iterator.</p></dd><dt class="param">thisElem</dt><dd class="cmt"><p>element <code>thisElem</code> is used to fill up the
+                 resulting iterator if the self iterator is shorter than
+                 <code>that</code></p></dd><dt class="param">thatElem</dt><dd class="cmt"><p>element <code>thatElem</code> is used to fill up the
+                 resulting iterator if <code>that</code> is shorter than
+                 the self iterator</p></dd><dt>returns</dt><dd class="cmt"><p>a new iterator containing pairs consisting of
+                 corresponding values of this iterator and <code>that</code>. The length
+                 of the returned iterator is the maximum of the lengths of this iterator and <code>that</code>.
+                 If this iterator is shorter than <code>that</code>, <code>thisElem</code> values are used to pad the result.
+                 If <code>that</code> is shorter than this iterator, <code>thatElem</code> values are used to pad the result.
+</p></dd></dl><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.collection.Iterator#zipWithIndex">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">zipWithIndex</span><span class="result">: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[(A, <span class="extype" name="scala.Int">Int</span>)] {...}</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Creates an iterator that pairs each element produced by this iterator
+ with its index, counting from 0.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Creates an iterator that pairs each element produced by this iterator
+ with its index, counting from 0.
+</p></div><div class="block">
+          definition classes: <a href="Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li></ol>
+            </div>
+                
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

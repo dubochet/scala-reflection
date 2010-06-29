@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>Scaladoc for scala.util.continuations</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+          
+      <link href="../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+
+      <p id="owner"><a href="../../package.html" class="extype" name="scala">scala</a>.<a href="../package.html" class="extype" name="scala.util">util</a></p>
+
+      <div id="definition">
+        <img src="../../../lib/package_big.png" />
+        <h1>continuations</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">continuations</span>
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"></div>
+      
+      <div id="template">
+
+        <div id="mbrsel">
+          
+          <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+          </div>
+        </div>
+        
+                
+        
+        <div class="members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="scala.util.continuations.ControlContext">
+      <h4 class="signature"><a href="ControlContext.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ControlContext</span><span class="tparams">[<span name="A">+A</span>, <span name="B">-B</span>, <span name="C">+C</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#cps">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">cps</span><span class="result"> = <a href="cpsParam.html" class="extype" name="scala.util.continuations.cpsParam">cpsParam</a>[A, A]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.util.continuations.cpsParam">
+      <h4 class="signature"><a href="cpsParam.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">cpsParam</span><span class="tparams">[<span name="B">-B</span>, <span name="C">+C</span>]</span><span class="result"> extends Annotation with StaticAnnotation with TypeConstraint</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="_root_#suspendable">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">suspendable</span><span class="result"> = <a href="cpsParam.html" class="extype" name="scala.util.continuations.cpsParam">cpsParam</a>[<span class="extype" name="scala.Unit">Unit</span>, <span class="extype" name="scala.Unit">Unit</span>]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li></ol>
+            </div>
+        
+        <div class="members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="_root_#reify">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">reify</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="C">C</span>]</span><span class="params">(<span name="ctx">ctx: ⇒ A @scala.util.continuations.cpsParam[B,C]</span>)</span><span class="result">: <a href="ControlContext.html" class="extype" name="scala.util.continuations.ControlContext">ControlContext</a>[A, B, C]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#reifyR">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">reifyR</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="C">C</span>]</span><span class="params">(<span name="ctx">ctx: ⇒ <a href="ControlContext.html" class="extype" name="scala.util.continuations.ControlContext">ControlContext</a>[A, B, C]</span>)</span><span class="result">: <a href="ControlContext.html" class="extype" name="scala.util.continuations.ControlContext">ControlContext</a>[A, B, C]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#reset">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">reset</span><span class="tparams">[<span name="A">A</span>, <span name="C">C</span>]</span><span class="params">(<span name="ctx">ctx: ⇒ A @scala.util.continuations.cpsParam[A,C]</span>)</span><span class="result">: C</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#reset0">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">reset0</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="ctx">ctx: ⇒ A @scala.util.continuations.cpsParam[A,A]</span>)</span><span class="result">: A</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#run">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">run</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="ctx">ctx: ⇒ Any @scala.util.continuations.cpsParam[Unit,A]</span>)</span><span class="result">: A</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#shift">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">shift</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="C">C</span>]</span><span class="params">(<span name="fun">fun: ((A) ⇒ B) ⇒ C</span>)</span><span class="result">: A @scala.util.continuations.cpsParam[B,C]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#shiftR">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">shiftR</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="C">C</span>]</span><span class="params">(<span name="fun">fun: ((A) ⇒ B) ⇒ C</span>)</span><span class="result">: <a href="ControlContext.html" class="extype" name="scala.util.continuations.ControlContext">ControlContext</a>[A, B, C]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#shiftUnit">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">shiftUnit</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="C">C &gt;: B</span>]</span><span class="params">(<span name="x">x: A</span>)</span><span class="result">: A @scala.util.continuations.cpsParam[B,C]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#shiftUnit0">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">shiftUnit0</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span name="x">x: A</span>)</span><span class="result">: A @scala.util.continuations.cpsParam[B,B]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#shiftUnitR">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">shiftUnitR</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span name="x">x: A</span>)</span><span class="result">: <a href="ControlContext.html" class="extype" name="scala.util.continuations.ControlContext">ControlContext</a>[A, B, B]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li></ol>
+            </div>
+                
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

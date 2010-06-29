@@ -1,0 +1,631 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>Scaladoc for scala.collection.immutable</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+          
+      <link href="../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+
+      <p id="owner"><a href="../../package.html" class="extype" name="scala">scala</a>.<a href="../package.html" class="extype" name="scala.collection">collection</a></p>
+
+      <div id="definition">
+        <img src="../../../lib/package_big.png" />
+        <h1>immutable</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">immutable</span>
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"></div>
+      
+      <div id="template">
+
+        <div id="mbrsel">
+          
+          <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+          </div>
+        </div>
+        
+                
+        
+        <div class="members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="scala.collection.immutable.::">
+      <h4 class="signature"><a href="$colon$colon.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">::</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="hd">hd: B</span>, <span name="tl">tl: List[B]</span>)</span><span class="result"> extends List[B] with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A non empty list characterized by a head and a tail.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.BitSet">
+      <h4 class="signature"><a href="BitSet.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">BitSet</span><span class="result"> extends Set[Int] with BitSet with BitSetLike[BitSet]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A class for immutable bitsets.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.DefaultMap">
+      <h4 class="signature"><a href="DefaultMap.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">DefaultMap</span><span class="tparams">[<span name="A">A</span>, <span name="B">+B</span>]</span><span class="result"> extends Map[A, B]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A default map which implements the <code>+</code> and <code>-</code> methods of maps.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.HashMap">
+      <h4 class="signature"><a href="HashMap.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">HashMap</span><span class="tparams">[<span name="A">A</span>, <span name="B">+B</span>]</span><span class="result"> extends Map[A, B] with MapLike[A, B, HashMap[A, B]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class implements immutable maps using a hash trie.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.HashSet">
+      <h4 class="signature"><a href="HashSet.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">HashSet</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Set[A] with GenericSetTemplate[A, HashSet[A][A]] with SetLike[A, HashSet[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class implements immutable sets using a hash trie.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.IndexedSeq">
+      <h4 class="signature"><a href="IndexedSeq.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">IndexedSeq</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends Seq[A] with IndexedSeq[A] with GenericTraversableTemplate[A, IndexedSeq[A][A]] with IndexedSeqLike[A, IndexedSeq[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A subtrait of <code>collection.IndexedSeq</code> which represents indexed sequences
+ that are guaranteed immutable.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.IntMap">
+      <h4 class="signature"><a href="IntMap.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">IntMap</span><span class="tparams">[<span name="T">+T</span>]</span><span class="result"> extends Map[Int, T] with MapLike[Int, T, IntMap[T]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Specialised immutable map structure for integer keys, based on
+ <a href="http://citeseer.ist.psu.edu/okasaki98fast.html">Fast Mergeable Integer Maps</a> by Okasaki and Gill.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.Iterable">
+      <h4 class="signature"><a href="Iterable.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Iterable</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends Traversable[A] with Iterable[A] with GenericTraversableTemplate[A, Iterable[A][A]] with IterableLike[A, Iterable[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A base trait for iterable collections that are guaranteed immutable.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.LinearSeq">
+      <h4 class="signature"><a href="LinearSeq.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">LinearSeq</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends Seq[A] with LinearSeq[A] with GenericTraversableTemplate[A, LinearSeq[A][A]] with LinearSeqLike[A, LinearSeq[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A subtrait of <code>collection.LinearSeq</code> which represents sequences that
+ are guaranteed immutable.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.List">
+      <h4 class="signature"><a href="List.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">List</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends LinearSeq[A] with Product with GenericTraversableTemplate[A, List[A][A]] with LinearSeqOptimized[A, List[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A class for immutable linked lists representing ordered collections
+ of elements of type.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.ListMap">
+      <h4 class="signature"><a href="ListMap.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ListMap</span><span class="tparams">[<span name="A">A</span>, <span name="B">+B</span>]</span><span class="result"> extends Map[A, B] with MapLike[A, B, ListMap[A, B]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class implements immutable maps using a list-based data
+ structure.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.ListSet">
+      <h4 class="signature"><a href="ListSet.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ListSet</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Set[A] with GenericSetTemplate[A, ListSet[A][A]] with SetLike[A, ListSet[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class implements immutable sets using a list-based data
+ structure.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.LongMap">
+      <h4 class="signature"><a href="LongMap.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">LongMap</span><span class="tparams">[<span name="T">+T</span>]</span><span class="result"> extends Map[Long, T] with MapLike[Long, T, LongMap[T]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt"> Specialised immutable map structure for long keys, based on
+ <a href="http://citeseer.ist.psu.edu/okasaki98fast.html">Fast Mergeable Long Maps</a> by Okasaki and Gill.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.Map">
+      <h4 class="signature"><a href="Map.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Map</span><span class="tparams">[<span name="A">A</span>, <span name="B">+B</span>]</span><span class="result"> extends Iterable[(A, B)] with Map[A, B] with MapLike[A, B, Map[A, B]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A generic trait for immutable maps.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.MapLike">
+      <h4 class="signature"><a href="MapLike.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">MapLike</span><span class="tparams">[<span name="A">A</span>, <span name="B">+B</span>, <span name="This">+This &lt;: MapLike[A, B, This] with Map[A, B]</span>]</span><span class="result"> extends MapLike[A, B, This]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt"> A generic template for immutable maps from keys of type <code>A</code> to values of type <code>B</code>.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.MapProxy">
+      <h4 class="signature"><a href="MapProxy.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">MapProxy</span><span class="tparams">[<span name="A">A</span>, <span name="B">+B</span>]</span><span class="result"> extends Map[A, B] with MapProxyLike[A, B, Map[A, B]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt"> This is a simple wrapper class for <a href="Map.html"
+ target="contentFrame"><code>scala.collection.immutable.Map</code></a>.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.NumericRange">
+      <h4 class="signature"><a href="NumericRange.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">NumericRange</span><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends IndexedSeq[T]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt"><code>NumericRange</code> is a more generic version of the
+ <code>Range</code> class which works with arbitrary types.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.PagedSeq">
+      <h4 class="signature"><a href="PagedSeq.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">PagedSeq</span><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends IndexedSeq[T]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">An implementation of lazily computed sequences, where elements are stored
+ in <code></code>pages<i>, i.e. arrays of fixed size.
+</i></p>
+    </li><li visbl="pub" name="scala.collection.immutable.Queue">
+      <h4 class="signature"><a href="Queue.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Queue</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends LinearSeq[A] with GenericTraversableTemplate[A, Queue[A][A]] with LinearSeqLike[A, Queue[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt"><code>Queue</code> objects implement data structures that allow to
+ insert and retrieve elements in a first-in-first-out (FIFO) manner.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.Range">
+      <h4 class="signature"><a href="Range.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Range</span><span class="result"> extends IndexedSeq[Int]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The <code>Range</code> class represents integer values in range
+ <i>[start;end)</i> with non-zero step value <code>step</code>.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.RedBlack">
+      <h4 class="signature"><a href="RedBlack.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">RedBlack</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A base class containing the implementations for <code>TreeMaps</code> and <code>TreeSets</code>.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.Seq">
+      <h4 class="signature"><a href="Seq.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Seq</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends Iterable[A] with Seq[A] with GenericTraversableTemplate[A, Seq[A][A]] with SeqLike[A, Seq[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A subtrait of <code>collection.Seq</code> which represents sequences
+ that are guaranteed immutable.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.Set">
+      <h4 class="signature"><a href="Set.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Set</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Iterable[A] with Set[A] with GenericSetTemplate[A, Set[A][A]] with SetLike[A, Set[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A generic trait for immutable sets.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.SetProxy">
+      <h4 class="signature"><a href="SetProxy.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">SetProxy</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Set[A] with SetProxyLike[A, Set[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This is a simple wrapper class for <a href="Set.html"
+ target="contentFrame"><code>scala.collection.immutable.Set</code></a>.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.SortedMap">
+      <h4 class="signature"><a href="SortedMap.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">SortedMap</span><span class="tparams">[<span name="A">A</span>, <span name="B">+B</span>]</span><span class="result"> extends Map[A, B] with SortedMap[A, B] with MapLike[A, B, SortedMap[A, B]] with SortedMapLike[A, B, SortedMap[A, B]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A map whose keys are sorted.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.SortedSet">
+      <h4 class="signature"><a href="SortedSet.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">SortedSet</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Set[A] with SortedSet[A] with SortedSetLike[A, SortedSet[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A subtrait of <code>collection.SortedSet</code> which represents sorted sets
+ which cannot be mutated.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.Stack">
+      <h4 class="signature"><a href="Stack.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Stack</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends LinearSeq[A] with GenericTraversableTemplate[A, Stack[A][A]] with LinearSeqOptimized[A, Stack[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class implements immutable stacks using a list-based data
+ structure.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.Stream">
+      <h4 class="signature"><a href="Stream.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Stream</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends LinearSeq[A] with GenericTraversableTemplate[A, Stream[A][A]] with LinearSeqOptimized[A, Stream[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The class <code>Stream</code> implements lazy lists where elements
+ are only evaluated when they are needed.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.StringLike">
+      <h4 class="signature"><a href="StringLike.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">StringLike</span><span class="tparams">[<span name="Repr">+Repr</span>]</span><span class="result"> extends IndexedSeqOptimized[Char, Repr] with Ordered[String]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A trait describing stringlike collections.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.StringOps">
+      <h4 class="signature"><a href="StringOps.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">StringOps</span><span class="result"> extends StringLike[String]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt"> This class serves as a wrapper providing <code>String</code>s with all the operations
+ found in indexed sequences.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.Traversable">
+      <h4 class="signature"><a href="Traversable.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Traversable</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends Traversable[A] with GenericTraversableTemplate[A, Traversable[A][A]] with TraversableLike[A, Traversable[A]] with Immutable</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A trait for traversable collections that are guaranteed immutable.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.TreeHashMap">
+      <h4 class="signature"><a href="TreeHashMap.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">TreeHashMap</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.collection.immutable.TreeMap">
+      <h4 class="signature"><a href="TreeMap.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">TreeMap</span><span class="tparams">[<span name="A">A</span>, <span name="B">+B</span>]</span><span class="result"> extends RedBlack[A] with SortedMap[A, B] with SortedMapLike[A, B, TreeMap[A, B]] with MapLike[A, B, TreeMap[A, B]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class implements immutable maps using a tree.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.TreeSet">
+      <h4 class="signature"><a href="TreeSet.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">TreeSet</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends RedBlack[A] with SortedSet[A] with SortedSetLike[A, TreeSet[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class implements immutable sets using a tree.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.Vector">
+      <h4 class="signature"><a href="Vector.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Vector</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends IndexedSeq[A] with GenericTraversableTemplate[A, Vector[A][A]] with IndexedSeqLike[A, Vector[A]] with VectorPointer[A]</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.collection.immutable.VectorBuilder">
+      <h4 class="signature"><a href="VectorBuilder.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">VectorBuilder</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Builder[A, Vector[A]] with VectorPointer[A]</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.collection.immutable.VectorIterator">
+      <h4 class="signature"><a href="VectorIterator.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">VectorIterator</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends Iterator[A] with VectorPointer[A]</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.collection.immutable.WrappedString">
+      <h4 class="signature"><a href="WrappedString.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">WrappedString</span><span class="result"> extends IndexedSeq[Char] with StringLike[WrappedString] with Proxy</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt"> This class serves as a wrapper augmenting <code>String</code>s with all the operations
+ found in indexed sequences.</p>
+    </li></ol>
+            </div>
+        
+        <div class="members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="scala.collection.immutable.BitSet">
+      <h4 class="signature"><a href="BitSet$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">BitSet</span><span class="result"> extends BitSetFactory[BitSet]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations to create <code>immutable.BitSet</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.HashMap">
+      <h4 class="signature"><a href="HashMap$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">HashMap</span><span class="result"> extends ImmutableMapFactory[HashMap[A, B][A, B]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations needed to create <code>immutable.HashMap</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.HashSet">
+      <h4 class="signature"><a href="HashSet$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">HashSet</span><span class="result"> extends ImmutableSetFactory[HashSet[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations needed to create <code>immutable.HashSet</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.IndexedSeq">
+      <h4 class="signature"><a href="IndexedSeq$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">IndexedSeq</span><span class="result"> extends SeqFactory[IndexedSeq[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations to create <code>IndexedSeq</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.IntMap">
+      <h4 class="signature"><a href="IntMap$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">IntMap</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A companion object for integer maps.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.Iterable">
+      <h4 class="signature"><a href="Iterable$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Iterable</span><span class="result"> extends TraversableFactory[Iterable[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations to create <code>immutable.Iterable</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.LinearSeq">
+      <h4 class="signature"><a href="LinearSeq$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">LinearSeq</span><span class="result"> extends SeqFactory[LinearSeq[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations to create <code>immutable.LinearSeq</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.List">
+      <h4 class="signature"><a href="List$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">List</span><span class="result"> extends SeqFactory[List[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations to create <code>List</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.ListMap">
+      <h4 class="signature"><a href="ListMap$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">ListMap</span><span class="result"> extends ImmutableMapFactory[ListMap[A, B][A, B]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations needed to create <code>immutable.ListMap</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.ListSet">
+      <h4 class="signature"><a href="ListSet$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">ListSet</span><span class="result"> extends ImmutableSetFactory[ListSet[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations needed to create <code>immutable.ListSet</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.LongMap">
+      <h4 class="signature"><a href="LongMap$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">LongMap</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A companion object for long maps.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.Map">
+      <h4 class="signature"><a href="Map$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Map</span><span class="result"> extends ImmutableMapFactory[Map[A, B][A, B]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations needed to create <code>immutable.Map</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.Nil">
+      <h4 class="signature"><a href="Nil$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Nil</span><span class="result"> extends List[Nothing] with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The empty list.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.NumericRange">
+      <h4 class="signature"><a href="NumericRange$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">NumericRange</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A companion object for numeric ranges.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.PagedSeq">
+      <h4 class="signature"><a href="PagedSeq$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">PagedSeq</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The <code>PagedSeq</code> object defines a lazy implementations of
+ a random access sequence.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.Queue">
+      <h4 class="signature"><a href="Queue$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Queue</span><span class="result"> extends SeqFactory[Queue[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations to create <code>immutable.Queue</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.Range">
+      <h4 class="signature"><a href="Range$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Range</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A companion object for the <code>Range</code> class.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.Seq">
+      <h4 class="signature"><a href="Seq$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Seq</span><span class="result"> extends SeqFactory[Seq[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations to create <code>immutable.Seq</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.Set">
+      <h4 class="signature"><a href="Set$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Set</span><span class="result"> extends ImmutableSetFactory[Set[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations needed to create <code>immutable.Set</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.SortedMap">
+      <h4 class="signature"><a href="SortedMap$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">SortedMap</span><span class="result"> extends ImmutableSortedMapFactory[SortedMap[A, B][A, B]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations needed to create sorted maps of type <code>immutable.SortedMap</code>.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.SortedSet">
+      <h4 class="signature"><a href="SortedSet$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">SortedSet</span><span class="result"> extends ImmutableSortedSetFactory[SortedSet[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations needed to create sorted sets of type <code>immutable.SortedSet</code>.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.Stack">
+      <h4 class="signature"><a href="Stack$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Stack</span><span class="result"> extends SeqFactory[Stack[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations to create <code>immutable.Stack</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.Stream">
+      <h4 class="signature"><a href="Stream$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Stream</span><span class="result"> extends SeqFactory[Stream[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The object <code>Stream</code> provides helper functions
+to manipulate streams.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.StringLike">
+      <h4 class="signature"><a href="StringLike$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">StringLike</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A companion object for the <code>StringLike</code> containing some constants.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.Traversable">
+      <h4 class="signature"><a href="Traversable$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Traversable</span><span class="result"> extends TraversableFactory[Traversable[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations to create <code>immutable.Traversable</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.TreeMap">
+      <h4 class="signature"><a href="TreeMap$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">TreeMap</span><span class="result"> extends ImmutableSortedMapFactory[TreeMap[A, B][A, B]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations needed to create sorted maps of type <code>immutable.TreeMap</code>.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.TreeSet">
+      <h4 class="signature"><a href="TreeSet$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">TreeSet</span><span class="result"> extends ImmutableSortedSetFactory[TreeSet[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations needed to create sorted sets of type <code>immutable.TreeSet</code>.</p>
+    </li><li visbl="pub" name="scala.collection.immutable.Vector">
+      <h4 class="signature"><a href="Vector$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Vector</span><span class="result"> extends SeqFactory[Vector[A][A]]</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.collection.immutable.WrappedString">
+      <h4 class="signature"><a href="WrappedString$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">WrappedString</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A companion object for wrapped strings.</p>
+    </li></ol>
+            </div>
+                
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

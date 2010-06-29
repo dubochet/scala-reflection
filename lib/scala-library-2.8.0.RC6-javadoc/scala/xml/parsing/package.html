@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>Scaladoc for scala.xml.parsing</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+          
+      <link href="../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+
+      <p id="owner"><a href="../../package.html" class="extype" name="scala">scala</a>.<a href="../package.html" class="extype" name="scala.xml">xml</a></p>
+
+      <div id="definition">
+        <img src="../../../lib/package_big.png" />
+        <h1>parsing</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">parsing</span>
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"></div>
+      
+      <div id="template">
+
+        <div id="mbrsel">
+          
+          <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+          </div>
+        </div>
+        
+                
+        
+        <div class="members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="scala.xml.parsing.ConsoleErrorHandler">
+      <h4 class="signature"><a href="ConsoleErrorHandler.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">ConsoleErrorHandler</span><span class="result"> extends DefaultHandler</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.xml.parsing.ConstructingHandler">
+      <h4 class="signature"><a href="ConstructingHandler.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ConstructingHandler</span><span class="result"> extends MarkupHandler</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Implementation of MarkupHandler that constructs nodes.</p>
+    </li><li visbl="pub" name="scala.xml.parsing.ConstructingParser">
+      <h4 class="signature"><a href="ConstructingParser.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ConstructingParser</span><span class="result"> extends ConstructingHandler with ExternalSources with MarkupParser</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">An xml parser.</p>
+    </li><li visbl="pub" name="scala.xml.parsing.DefaultMarkupHandler">
+      <h4 class="signature"><a href="DefaultMarkupHandler.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">DefaultMarkupHandler</span><span class="result"> extends MarkupHandler</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">default implementation of markup handler always returns NodeSeq.</p>
+    </li><li visbl="pub" name="scala.xml.parsing.ExternalSources">
+      <h4 class="signature"><a href="ExternalSources.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">ExternalSources</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">no summary matey</p>
+    </li><li visbl="pub" name="scala.xml.parsing.FactoryAdapter">
+      <h4 class="signature"><a href="FactoryAdapter.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">FactoryAdapter</span><span class="result"> extends DefaultHandler with XMLLoader[Node]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">SAX adapter class, for use with Java SAX parser.</p>
+    </li><li visbl="pub" name="scala.xml.parsing.FatalError">
+      <h4 class="signature"><a href="FatalError.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">FatalError</span><span class="params">(<span name="msg">msg: String</span>)</span><span class="result"> extends RuntimeException with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">!!! This is poorly named, but I guess it's in the API.</p>
+    </li><li visbl="pub" name="scala.xml.parsing.MarkupHandler">
+      <h4 class="signature"><a href="MarkupHandler.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">MarkupHandler</span><span class="result"> extends Logged</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">class that handles markup - provides callback methods to MarkupParser.</p>
+    </li><li visbl="pub" name="scala.xml.parsing.MarkupParser">
+      <h4 class="signature"><a href="MarkupParser.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">MarkupParser</span><span class="result"> extends MarkupParserCommon with TokenTests</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">An XML parser.</p>
+    </li><li visbl="pub" name="scala.xml.parsing.NoBindingFactoryAdapter">
+      <h4 class="signature"><a href="NoBindingFactoryAdapter.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">NoBindingFactoryAdapter</span><span class="result"> extends FactoryAdapter with NodeFactory[Elem]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">nobinding adaptor providing callbacks to parser to create elements.</p>
+    </li><li visbl="pub" name="scala.xml.parsing.TokenTests">
+      <h4 class="signature"><a href="TokenTests.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">TokenTests</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Helper functions for parsing XML fragments
+</p>
+    </li><li visbl="pub" name="scala.xml.parsing.ValidatingMarkupHandler">
+      <h4 class="signature"><a href="ValidatingMarkupHandler.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ValidatingMarkupHandler</span><span class="result"> extends MarkupHandler with Logged</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: abstract 
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.xml.parsing.XhtmlParser">
+      <h4 class="signature"><a href="XhtmlParser.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">XhtmlParser</span><span class="result"> extends ConstructingHandler with MarkupParser with ExternalSources</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   An XML Parser that preserves CDATA blocks and knows about HtmlEntities.</p>
+    </li></ol>
+            </div>
+        
+        <div class="members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="scala.xml.parsing.ConstructingParser">
+      <h4 class="signature"><a href="ConstructingParser$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">ConstructingParser</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.xml.parsing.MarkupParserCommon">
+      <h4 class="signature"><a href="MarkupParserCommon$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">MarkupParserCommon</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.xml.parsing.XhtmlEntities">
+      <h4 class="signature"><a href="XhtmlEntities$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">XhtmlEntities</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   (c) David Pollak 2007 WorldWide Conferencing, LLC.</p>
+    </li><li visbl="pub" name="scala.xml.parsing.XhtmlParser">
+      <h4 class="signature"><a href="XhtmlParser$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">XhtmlParser</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   Convenience method that instantiates, initializes and runs an XhtmlParser.</p>
+    </li></ol>
+            </div>
+                
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

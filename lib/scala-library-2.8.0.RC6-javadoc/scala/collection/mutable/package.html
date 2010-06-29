@@ -1,0 +1,951 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>Scaladoc for scala.collection.mutable</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+          
+      <link href="../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+
+      <p id="owner"><a href="../../package.html" class="extype" name="scala">scala</a>.<a href="../package.html" class="extype" name="scala.collection">collection</a></p>
+
+      <div id="definition">
+        <img src="../../../lib/package_big.png" />
+        <h1>mutable</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">mutable</span>
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"></div>
+      
+      <div id="template">
+
+        <div id="mbrsel">
+          
+          <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+          </div>
+        </div>
+        
+                
+        
+        <div class="members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="scala.collection.mutable.AddingBuilder">
+      <h4 class="signature"><a href="AddingBuilder.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">AddingBuilder</span><span class="tparams">[<span name="Elem">Elem</span>, <span name="To">To &lt;: Addable[Elem, To] with Iterable[Elem] with IterableLike[Elem, To]</span>]</span><span class="result"> extends Builder[Elem, To]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The canonical builder for collections that are addable, i.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.ArrayBuffer">
+      <h4 class="signature"><a href="ArrayBuffer.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ArrayBuffer</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Buffer[A] with GenericTraversableTemplate[A, ArrayBuffer[A][A]] with BufferLike[A, ArrayBuffer[A]] with IndexedSeqOptimized[A, ArrayBuffer[A]] with Builder[A, ArrayBuffer[A]] with ResizableArray[A]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">An implementation of the <code>Buffer</code> class using an array to
+ represent the assembled sequence internally.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.ArrayBuilder">
+      <h4 class="signature"><a href="ArrayBuilder.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ArrayBuilder</span><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends Builder[T, Array[T]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A builder class for arrays.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.ArrayLike">
+      <h4 class="signature"><a href="ArrayLike.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">ArrayLike</span><span class="tparams">[<span name="A">A</span>, <span name="Repr">+Repr</span>]</span><span class="result"> extends IndexedSeqOptimized[A, Repr]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A common supertrait of <code>ArrayOps</code> and <code>WrappedArray</code> that factors out most
+ operations on arrays and wrapped arrays.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.ArrayOps">
+      <h4 class="signature"><a href="ArrayOps.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ArrayOps</span><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends ArrayLike[T, Array[T]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class serves as a wrapper for <code>Array</code>s with all the operations found in
+ indexed sequences.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.ArraySeq">
+      <h4 class="signature"><a href="ArraySeq.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ArraySeq</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends IndexedSeq[A] with GenericTraversableTemplate[A, ArraySeq[A][A]] with IndexedSeqOptimized[A, ArraySeq[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A class for polymorphic arrays of elements that's represented
+ internally by an array of objects.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.ArrayStack">
+      <h4 class="signature"><a href="ArrayStack.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ArrayStack</span><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends Seq[T] with Cloneable[ArrayStack[T]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Simple stack class backed by an array.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.BitSet">
+      <h4 class="signature"><a href="BitSet.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">BitSet</span><span class="result"> extends Set[Int] with BitSet with BitSetLike[BitSet] with SetLike[Int, BitSet]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A class for mutable bitsets.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.Buffer">
+      <h4 class="signature"><a href="Buffer.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Buffer</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Seq[A] with GenericTraversableTemplate[A, Buffer[A][A]] with BufferLike[A, Buffer[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Buffers are used to create sequences of elements incrementally by
+ appending, prepending, or inserting new elements.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.BufferLike">
+      <h4 class="signature"><a href="BufferLike.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">BufferLike</span><span class="tparams">[<span name="A">A</span>, <span name="This">+This &lt;: BufferLike[A, This] with Buffer[A]</span>]</span><span class="result"> extends Growable[A] with Shrinkable[A] with Scriptable[A] with Subtractable[A, This] with Cloneable[This] with SeqLike[A, This]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A template trait for buffers of type <code>Buffer[A]</code>.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.BufferProxy">
+      <h4 class="signature"><a href="BufferProxy.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">BufferProxy</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Buffer[A] with Proxy</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This is a simple proxy class for <a href="Buffer.html"
+ target="contentFrame"><code>scala.collection.mutable.Buffer</code></a>.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.Builder">
+      <h4 class="signature"><a href="Builder.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Builder</span><span class="tparams">[<span name="Elem">-Elem</span>, <span name="To">+To</span>]</span><span class="result"> extends Growable[Elem]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The base trait of all builders.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.Cloneable">
+      <h4 class="signature"><a href="Cloneable.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Cloneable</span><span class="tparams">[<span name="A">+A &lt;: AnyRef</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A trait for cloneable collections.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.CloneableCollection">
+      <h4 class="signature"><a href="CloneableCollection.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name deprecated">CloneableCollection</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The J2ME version of the library defined this trait with a <code>clone</code> method to substitute for the lack of <code>Object.clone</code> there.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.ConcurrentMap">
+      <h4 class="signature"><a href="ConcurrentMap.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">ConcurrentMap</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result"> extends Map[A, B]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A template trait for mutable maps that allow concurrent access.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.DefaultEntry">
+      <h4 class="signature"><a href="DefaultEntry.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">DefaultEntry</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result"> extends HashEntry[A, DefaultEntry[A, B]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Class used internally for default map model.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.DefaultMapModel">
+      <h4 class="signature"><a href="DefaultMapModel.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">DefaultMapModel</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result"> extends Map[A, B]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class is used internally.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.DoubleLinkedList">
+      <h4 class="signature"><a href="DoubleLinkedList.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">DoubleLinkedList</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends LinearSeq[A] with GenericTraversableTemplate[A, DoubleLinkedList[A][A]] with DoubleLinkedListLike[A, DoubleLinkedList[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class implements double linked lists where both the head (<code>elem</code>),
+ the tail (<code>next</code>) and a reference to the previous node (<code>prev</code>) are mutable.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.DoubleLinkedListLike">
+      <h4 class="signature"><a href="DoubleLinkedListLike.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">DoubleLinkedListLike</span><span class="tparams">[<span name="A">A</span>, <span name="This">This &lt;: Seq[A] with DoubleLinkedListLike[A, This]</span>]</span><span class="result"> extends LinkedListLike[A, This]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This extensible class may be used as a basis for implementing double
+ linked lists.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.FlatHashTable">
+      <h4 class="signature"><a href="FlatHashTable.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">FlatHashTable</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">An implementation class backing a <code>HashSet</code>.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.GrowingBuilder">
+      <h4 class="signature"><a href="GrowingBuilder.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">GrowingBuilder</span><span class="tparams">[<span name="Elem">Elem</span>, <span name="To">To &lt;: Growable[Elem]</span>]</span><span class="result"> extends Builder[Elem, To]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The canonical builder for collections that are growable, i.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.HashEntry">
+      <h4 class="signature"><a href="HashEntry.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">HashEntry</span><span class="tparams">[<span name="A">A</span>, <span name="E">E</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Class used internally.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.HashMap">
+      <h4 class="signature"><a href="HashMap.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">HashMap</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result"> extends Map[A, B] with MapLike[A, B, HashMap[A, B]] with HashTable[A]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class implements mutable maps using a hashtable.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.HashSet">
+      <h4 class="signature"><a href="HashSet.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">HashSet</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Set[A] with GenericSetTemplate[A, HashSet[A][A]] with SetLike[A, HashSet[A]] with FlatHashTable[A]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class implements mutable sets using a hashtable.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.HashTable">
+      <h4 class="signature"><a href="HashTable.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">HashTable</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class can be used to construct data structures that are based
+ on hashtables.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.History">
+      <h4 class="signature"><a href="History.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">History</span><span class="tparams">[<span name="Evt">Evt</span>, <span name="Pub">Pub</span>]</span><span class="result"> extends Subscriber[Evt, Pub] with Iterable[(Pub, Evt)]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt"><code>History[A, B]</code> objects may subscribe to events of
+ type <code>A</code> published by an object of type <code>B</code>.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.ImmutableMapAdaptor">
+      <h4 class="signature"><a href="ImmutableMapAdaptor.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ImmutableMapAdaptor</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result"> extends Map[A, B]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class can be used as an adaptor to create mutable maps from
+ immutable map implementations.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.ImmutableSetAdaptor">
+      <h4 class="signature"><a href="ImmutableSetAdaptor.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ImmutableSetAdaptor</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Set[A]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class can be used as an adaptor to create mutable sets from
+ immutable set implementations.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.IndexedSeq">
+      <h4 class="signature"><a href="IndexedSeq.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">IndexedSeq</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Seq[A] with IndexedSeq[A] with GenericTraversableTemplate[A, IndexedSeq[A][A]] with IndexedSeqLike[A, IndexedSeq[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A subtrait of <code>collection.IndexedSeq</code> which represents sequences
+ that can be mutated.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.IndexedSeqLike">
+      <h4 class="signature"><a href="IndexedSeqLike.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">IndexedSeqLike</span><span class="tparams">[<span name="A">A</span>, <span name="Repr">+Repr</span>]</span><span class="result"> extends IndexedSeqLike[A, Repr]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A subtrait of scala.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.IndexedSeqOptimized">
+      <h4 class="signature"><a href="IndexedSeqOptimized.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">IndexedSeqOptimized</span><span class="tparams">[<span name="A">A</span>, <span name="Repr">+Repr</span>]</span><span class="result"> extends IndexedSeqLike[A, Repr] with IndexedSeqOptimized[A, Repr]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A subtrait of scala.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.IndexedSeqView">
+      <h4 class="signature"><a href="IndexedSeqView.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">IndexedSeqView</span><span class="tparams">[<span name="A">A</span>, <span name="Coll">+Coll</span>]</span><span class="result"> extends IndexedSeq[A] with IndexedSeqOptimized[A, IndexedSeqView[A, Coll]] with SeqView[A, Coll] with SeqViewLike[A, Coll, IndexedSeqView[A, Coll]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A non-strict view of a mutable <code>IndexedSeq</code>.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.Iterable">
+      <h4 class="signature"><a href="Iterable.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Iterable</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Traversable[A] with Iterable[A] with GenericTraversableTemplate[A, Iterable[A][A]] with IterableLike[A, Iterable[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A base trait for iterable collections that can be mutated.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.LazyBuilder">
+      <h4 class="signature"><a href="LazyBuilder.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">LazyBuilder</span><span class="tparams">[<span name="Elem">Elem</span>, <span name="To">+To</span>]</span><span class="result"> extends Builder[Elem, To]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A builder that constructs its result lazily.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.LinearSeq">
+      <h4 class="signature"><a href="LinearSeq.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">LinearSeq</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Seq[A] with LinearSeq[A] with GenericTraversableTemplate[A, LinearSeq[A][A]] with LinearSeqLike[A, LinearSeq[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A subtrait of <code>collection.LinearSeq</code> which represents sequences
+ that can be mutated.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.LinkedEntry">
+      <h4 class="signature"><a href="LinkedEntry.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">LinkedEntry</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result"> extends HashEntry[A, LinkedEntry[A, B]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Class for the linked hash map entry, used internally.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.LinkedHashMap">
+      <h4 class="signature"><a href="LinkedHashMap.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">LinkedHashMap</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result"> extends Map[A, B] with MapLike[A, B, LinkedHashMap[A, B]] with HashTable[A]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class implements mutable maps using a hashtable.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.LinkedHashSet">
+      <h4 class="signature"><a href="LinkedHashSet.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">LinkedHashSet</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Set[A] with GenericSetTemplate[A, LinkedHashSet[A][A]] with SetLike[A, LinkedHashSet[A]] with FlatHashTable[A]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class implements mutable sets using a hashtable.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.LinkedList">
+      <h4 class="signature"><a href="LinkedList.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">LinkedList</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends LinearSeq[A] with GenericTraversableTemplate[A, LinkedList[A][A]] with LinkedListLike[A, LinkedList[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class implements single linked lists where both the head (<code>elem</code>)
+ and the tail (<code>next</code>) are mutable.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.LinkedListLike">
+      <h4 class="signature"><a href="LinkedListLike.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">LinkedListLike</span><span class="tparams">[<span name="A">A</span>, <span name="This">This &lt;: Seq[A] with LinkedListLike[A, This]</span>]</span><span class="result"> extends SeqLike[A, This]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This extensible class may be used as a basis for implementing linked
+ list.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.ListBuffer">
+      <h4 class="signature"><a href="ListBuffer.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ListBuffer</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Buffer[A] with GenericTraversableTemplate[A, ListBuffer[A][A]] with BufferLike[A, ListBuffer[A]] with Builder[A, List[A]] with SeqForwarder[A]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A <code>Buffer</code> implementation back up by a list.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.ListMap">
+      <h4 class="signature"><a href="ListMap.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ListMap</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result"> extends Map[A, B] with MapLike[A, B, ListMap[A, B]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A simple mutable map backed by a list.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.Map">
+      <h4 class="signature"><a href="Map.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Map</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result"> extends Iterable[(A, B)] with Map[A, B] with MapLike[A, B, Map[A, B]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A base trait for maps that can be mutated.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.MapBuilder">
+      <h4 class="signature"><a href="MapBuilder.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">MapBuilder</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="Coll">Coll &lt;: Map[A, B] with MapLike[A, B, Coll]</span>]</span><span class="result"> extends Builder[(A, B), Coll]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The canonical builder for immutable maps, working with the map's <code>+</code> method
+ to add new elements.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.MapLike">
+      <h4 class="signature"><a href="MapLike.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">MapLike</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="This">+This &lt;: MapLike[A, B, This] with Map[A, B]</span>]</span><span class="result"> extends MapLike[A, B, This] with Builder[(A, B), This] with Growable[(A, B)] with Shrinkable[A] with Cloneable[This]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A template trait for mutable maps.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.MapProxy">
+      <h4 class="signature"><a href="MapProxy.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">MapProxy</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result"> extends Map[A, B] with MapProxyLike[A, B, Map[A, B]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt"> This trait implements a proxy for <a href="Map.html"
+ target="contentFrame"><code>scala.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.MultiMap">
+      <h4 class="signature"><a href="MultiMap.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">MultiMap</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result"> extends Map[A, Set[B]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A trait for mutable maps with multiple values assigned to a key.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.MutableList">
+      <h4 class="signature"><a href="MutableList.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">MutableList</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends LinearSeq[A] with LinearSeqOptimized[A, MutableList[A]] with Builder[A, MutableList[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt"> This class is used internally to represent mutable lists.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.ObservableBuffer">
+      <h4 class="signature"><a href="ObservableBuffer.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">ObservableBuffer</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Buffer[A] with Publisher[Message[A] with Undoable]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class is typically used as a mixin.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.ObservableMap">
+      <h4 class="signature"><a href="ObservableMap.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">ObservableMap</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result"> extends Map[A, B] with Publisher[Message[(A, B)] with Undoable]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class is typically used as a mixin.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.ObservableSet">
+      <h4 class="signature"><a href="ObservableSet.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">ObservableSet</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Set[A] with Publisher[Message[A] with Undoable]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class is typically used as a mixin.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.OpenHashMap">
+      <h4 class="signature"><a href="OpenHashMap.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">OpenHashMap</span><span class="tparams">[<span name="Key">Key</span>, <span name="Value">Value</span>]</span><span class="result"> extends Map[Key, Value] with MapLike[Key, Value, OpenHashMap[Key, Value]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A mutable hash map based on an open hashing scheme.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.PriorityQueue">
+      <h4 class="signature"><a href="PriorityQueue.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">PriorityQueue</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Seq[A] with SeqLike[A, PriorityQueue[A]] with Growable[A] with Cloneable[PriorityQueue[A]] with Builder[A, PriorityQueue[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class implements priority queues using a heap.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.PriorityQueueProxy">
+      <h4 class="signature"><a href="PriorityQueueProxy.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">PriorityQueueProxy</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends PriorityQueue[A] with Proxy</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class servers as a proxy for priority queues.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.Publisher">
+      <h4 class="signature"><a href="Publisher.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Publisher</span><span class="tparams">[<span name="Evt">Evt</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt"><code>Publisher[A,This]</code> objects publish events of type <code>A</code> to all registered subscribers.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.Queue">
+      <h4 class="signature"><a href="Queue.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Queue</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends MutableList[A] with Cloneable[Queue[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt"><code>Queue</code> objects implement data structures that allow to
+ insert and retrieve elements in a first-in-first-out (FIFO) manner.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.QueueProxy">
+      <h4 class="signature"><a href="QueueProxy.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">QueueProxy</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Queue[A] with Proxy</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt"><code>Queue</code> objects implement data structures that allow to
+ insert and retrieve elements in a first-in-first-out (FIFO) manner.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.ResizableArray">
+      <h4 class="signature"><a href="ResizableArray.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">ResizableArray</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends IndexedSeq[A] with GenericTraversableTemplate[A, ResizableArray[A][A]] with IndexedSeqOptimized[A, ResizableArray[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class is used internally to implement data structures that
+ are based on resizable arrays.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.RevertibleHistory">
+      <h4 class="signature"><a href="RevertibleHistory.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">RevertibleHistory</span><span class="tparams">[<span name="Evt">Evt &lt;: Undoable</span>, <span name="Pub">Pub</span>]</span><span class="result"> extends History[Evt, Pub] with Undoable</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A revertible history is a <code>History</code> object which supports
+ an undo operation.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.Seq">
+      <h4 class="signature"><a href="Seq.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Seq</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Iterable[A] with Seq[A] with GenericTraversableTemplate[A, Seq[A][A]] with SeqLike[A, Seq[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A subtrait of <code>collection.Seq</code> which represents sequences
+ that can be mutated.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.Set">
+      <h4 class="signature"><a href="Set.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Set</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Iterable[A] with Set[A] with GenericSetTemplate[A, Set[A][A]] with SetLike[A, Set[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A base trait for sets that can be mutated.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.SetBuilder">
+      <h4 class="signature"><a href="SetBuilder.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">SetBuilder</span><span class="tparams">[<span name="A">A</span>, <span name="Coll">Coll &lt;: Addable[A, Coll] with Iterable[A] with IterableLike[A, Coll]</span>]</span><span class="result"> extends AddingBuilder[A, Coll]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The canonical builder for mutable Sets.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.SetLike">
+      <h4 class="signature"><a href="SetLike.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">SetLike</span><span class="tparams">[<span name="A">A</span>, <span name="This">+This &lt;: SetLike[A, This] with Set[A]</span>]</span><span class="result"> extends SetLike[A, This] with Scriptable[A] with Builder[A, This] with Growable[A] with Shrinkable[A] with Cloneable[Set[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A template trait for mutable sets of type <code>mutable.Set[A]</code>.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.SetProxy">
+      <h4 class="signature"><a href="SetProxy.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">SetProxy</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Set[A] with SetProxyLike[A, Set[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This is a simple wrapper class for <a href="Set.html"
+ target="contentFrame"><code>scala.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.Stack">
+      <h4 class="signature"><a href="Stack.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Stack</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Seq[A] with Cloneable[Stack[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A stack implements a data structure which allows to store and retrieve
+ objects in a last-in-first-out (LIFO) fashion.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.StackProxy">
+      <h4 class="signature"><a href="StackProxy.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">StackProxy</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Stack[A] with Proxy</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A stack implements a data structure which allows to store and retrieve
+ objects in a last-in-first-out (LIFO) fashion.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.StringBuilder">
+      <h4 class="signature"><a href="StringBuilder.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">StringBuilder</span><span class="result"> extends Builder[Char, String] with IndexedSeq[Char] with IndexedSeqOptimized[Char, IndexedSeq[Char]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A builder for mutable sequence of characters.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.Subscriber">
+      <h4 class="signature"><a href="Subscriber.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Subscriber</span><span class="tparams">[<span name="Evt">-Evt</span>, <span name="Pub">-Pub</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt"><code>Subscriber[A, B]</code> objects may subscribe to events of
+ type <code>A</code> published by an object of type <code>B</code>.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.SynchronizedBuffer">
+      <h4 class="signature"><a href="SynchronizedBuffer.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">SynchronizedBuffer</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Buffer[A]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class should be used as a mixin.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.SynchronizedMap">
+      <h4 class="signature"><a href="SynchronizedMap.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">SynchronizedMap</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result"> extends Map[A, B]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class should be used as a mixin.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.SynchronizedPriorityQueue">
+      <h4 class="signature"><a href="SynchronizedPriorityQueue.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">SynchronizedPriorityQueue</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends PriorityQueue[A]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class implements synchronized priority queues using a binary heap.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.SynchronizedQueue">
+      <h4 class="signature"><a href="SynchronizedQueue.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">SynchronizedQueue</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Queue[A]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This is a synchronized version of the <code>Queue[T]</code> class.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.SynchronizedSet">
+      <h4 class="signature"><a href="SynchronizedSet.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">SynchronizedSet</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Set[A]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class should be used as a mixin.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.SynchronizedStack">
+      <h4 class="signature"><a href="SynchronizedStack.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">SynchronizedStack</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Stack[A]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This is a synchronized version of the <code>Stack[T]</code> class.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.Traversable">
+      <h4 class="signature"><a href="Traversable.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Traversable</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Traversable[A] with GenericTraversableTemplate[A, Traversable[A][A]] with TraversableLike[A, Traversable[A]] with Mutable</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A trait for traversable collections that can be mutated.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.Undoable">
+      <h4 class="signature"><a href="Undoable.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Undoable</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Classes that mix in the <code>Undoable</code> class provide an operation
+ <code>undo</code> which can be used to undo the last operation.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.WeakHashMap">
+      <h4 class="signature"><a href="WeakHashMap.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">WeakHashMap</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result"> extends JMapWrapper[A, B] with JMapWrapperLike[A, B, WeakHashMap[A, B]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A hash map with references to entries which are weakly reachable.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.WrappedArray">
+      <h4 class="signature"><a href="WrappedArray.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">WrappedArray</span><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends IndexedSeq[T] with ArrayLike[T, WrappedArray[T]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt"> A class representing <code>Array[T]</code>.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.WrappedArrayBuilder">
+      <h4 class="signature"><a href="WrappedArrayBuilder.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">WrappedArrayBuilder</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Builder[A, WrappedArray[A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A builder class for arrays.</p>
+    </li></ol>
+            </div>
+        
+        <div class="members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="scala.collection.mutable.ArrayBuffer">
+      <h4 class="signature"><a href="ArrayBuffer$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">ArrayBuffer</span><span class="result"> extends SeqFactory[ArrayBuffer[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Factory object for the <code>ArrayBuffer</code> class.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.ArrayBuilder">
+      <h4 class="signature"><a href="ArrayBuilder$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">ArrayBuilder</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A companion object for array builders.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.ArrayOps">
+      <h4 class="signature"><a href="ArrayOps$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">ArrayOps</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A companion object for <code>ArrayOps</code>.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.ArraySeq">
+      <h4 class="signature"><a href="ArraySeq$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">ArraySeq</span><span class="result"> extends SeqFactory[ArraySeq[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations to create <code>ArraySeq</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.BitSet">
+      <h4 class="signature"><a href="BitSet$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">BitSet</span><span class="result"> extends BitSetFactory[BitSet]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations to create <code>BitSet</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.Buffer">
+      <h4 class="signature"><a href="Buffer$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Buffer</span><span class="result"> extends SeqFactory[Buffer[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations to create <code>Buffer</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.DoubleLinkedList">
+      <h4 class="signature"><a href="DoubleLinkedList$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">DoubleLinkedList</span><span class="result"> extends SeqFactory[DoubleLinkedList[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations to create <code>DoubleLinkedList</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.HashMap">
+      <h4 class="signature"><a href="HashMap$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">HashMap</span><span class="result"> extends MutableMapFactory[HashMap[A, B][A, B]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations needed to create <code>mutable.HashMap</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.HashSet">
+      <h4 class="signature"><a href="HashSet$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">HashSet</span><span class="result"> extends MutableSetFactory[HashSet[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations needed to create <code>mutable.HashSet</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.IndexedSeq">
+      <h4 class="signature"><a href="IndexedSeq$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">IndexedSeq</span><span class="result"> extends SeqFactory[IndexedSeq[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations to create <code>mutable.IndexedSeq</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.IndexedSeqView">
+      <h4 class="signature"><a href="IndexedSeqView$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">IndexedSeqView</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">An object containing the necessary implicit definitions to make
+ <code>SeqView</code>s work.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.Iterable">
+      <h4 class="signature"><a href="Iterable$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Iterable</span><span class="result"> extends TraversableFactory[Iterable[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations to create <code>mutable.Iterable</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.LinearSeq">
+      <h4 class="signature"><a href="LinearSeq$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">LinearSeq</span><span class="result"> extends SeqFactory[LinearSeq[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations to create <code>mutable.LinearSeq</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.LinkedHashMap">
+      <h4 class="signature"><a href="LinkedHashMap$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">LinkedHashMap</span><span class="result"> extends MutableMapFactory[LinkedHashMap[A, B][A, B]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations needed to create <code>LinkedHashMap</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.LinkedHashSet">
+      <h4 class="signature"><a href="LinkedHashSet$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">LinkedHashSet</span><span class="result"> extends MutableSetFactory[LinkedHashSet[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations needed to create <code>LinkedHashSet</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.LinkedList">
+      <h4 class="signature"><a href="LinkedList$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">LinkedList</span><span class="result"> extends SeqFactory[LinkedList[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations to create <code>LinkedList</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.ListBuffer">
+      <h4 class="signature"><a href="ListBuffer$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">ListBuffer</span><span class="result"> extends SeqFactory[ListBuffer[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations to create <code>ListBuffer</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.ListMap">
+      <h4 class="signature"><a href="ListMap$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">ListMap</span><span class="result"> extends MutableMapFactory[ListMap[A, B][A, B]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations needed to create <code>mutable.ListMap</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.Map">
+      <h4 class="signature"><a href="Map$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Map</span><span class="result"> extends MutableMapFactory[Map[A, B][A, B]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations needed to create <code>mutable.Map</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.OpenHashMap">
+      <h4 class="signature"><a href="OpenHashMap$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">OpenHashMap</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">no summary matey</p>
+    </li><li visbl="pub" name="scala.collection.mutable.Queue">
+      <h4 class="signature"><a href="Queue$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Queue</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.collection.mutable.ResizableArray">
+      <h4 class="signature"><a href="ResizableArray$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">ResizableArray</span><span class="result"> extends SeqFactory[ResizableArray[A][A]]</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.collection.mutable.Seq">
+      <h4 class="signature"><a href="Seq$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Seq</span><span class="result"> extends SeqFactory[Seq[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations to create <code>mutable.Seq</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.Set">
+      <h4 class="signature"><a href="Set$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Set</span><span class="result"> extends MutableSetFactory[Set[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations needed to create <code>mutable.Set</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.Stack">
+      <h4 class="signature"><a href="Stack$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Stack</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.collection.mutable.StringBuilder">
+      <h4 class="signature"><a href="StringBuilder$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">StringBuilder</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.collection.mutable.Traversable">
+      <h4 class="signature"><a href="Traversable$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Traversable</span><span class="result"> extends TraversableFactory[Traversable[A][A]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations to create <code>mutable.Traversable</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.WeakHashMap">
+      <h4 class="signature"><a href="WeakHashMap$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">WeakHashMap</span><span class="result"> extends MutableMapFactory[WeakHashMap[A, B][A, B]]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   This object provides a set of operations needed to create <code>WeakHashMap</code> values.</p>
+    </li><li visbl="pub" name="scala.collection.mutable.WrappedArray">
+      <h4 class="signature"><a href="WrappedArray$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">WrappedArray</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A companion object used to create instances of <code>WrappedArray</code>.</p>
+    </li></ol>
+            </div>
+                
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

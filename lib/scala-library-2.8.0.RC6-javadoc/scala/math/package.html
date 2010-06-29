@@ -1,0 +1,920 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>Scaladoc for scala.math</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		      <script type="text/javascript" src="../../lib/jquery.js"></script>
+          
+      <link href="../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+
+      <p id="owner"><a href="../package.html" class="extype" name="scala">scala</a></p>
+
+      <div id="definition">
+        <img src="../../lib/package_big.png" />
+        <h1>math</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">math</span>
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"><div class="comment cmt"><p>The package object <code>scala.math</code> contains methods for performing basic numeric
+ operations such as the elementary exponential, logarithm, square root, and
+ trigonometric functions.
+</p></div>
+            
+            
+            
+            
+          </div>
+      
+      <div id="template">
+
+        <div id="mbrsel">
+          
+          <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+          </div>
+        </div>
+        
+                
+        
+        <div class="members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="scala.math.BigDecimal">
+      <h4 class="signature"><a href="BigDecimal.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">BigDecimal</span><span class="result"> extends ScalaNumber with ScalaNumericConversions</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">no summary matey</p>
+    </li><li visbl="pub" name="scala.math.BigInt">
+      <h4 class="signature"><a href="BigInt.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">BigInt</span><span class="result"> extends ScalaNumber with ScalaNumericConversions</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">no summary matey</p>
+    </li><li visbl="pub" name="scala.math.Equiv">
+      <h4 class="signature"><a href="Equiv.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Equiv</span><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   A trait for representing equivalence relations.</p>
+    </li><li visbl="pub" name="scala.math.Fractional">
+      <h4 class="signature"><a href="Fractional.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Fractional</span><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends Numeric[T]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">no summary matey</p>
+    </li><li visbl="pub" name="scala.math.Integral">
+      <h4 class="signature"><a href="Integral.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Integral</span><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends Numeric[T]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">no summary matey</p>
+    </li><li visbl="pub" name="scala.math.LowPriorityOrderingImplicits">
+      <h4 class="signature"><a href="LowPriorityOrderingImplicits.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">LowPriorityOrderingImplicits</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This would conflict with all the nice implicit Orderings
+ available, but thanks to the magic of prioritized implicits
+ via subclassing we can make Ordered[A] =&gt; Ordering[A] only
+ turn up if nothing else works.</p>
+    </li><li visbl="pub" name="scala.math.Numeric">
+      <h4 class="signature"><a href="Numeric.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Numeric</span><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends Ordering[T]</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.math.Ordered">
+      <h4 class="signature"><a href="Ordered.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Ordered</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Comparable[A]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A trait for totally ordered data.</p>
+    </li><li visbl="pub" name="scala.math.Ordering">
+      <h4 class="signature"><a href="Ordering.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Ordering</span><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends Comparator[T] with PartialOrdering[T]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A trait for representing total orderings.</p>
+    </li><li visbl="pub" name="scala.math.PartialOrdering">
+      <h4 class="signature"><a href="PartialOrdering.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">PartialOrdering</span><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends Equiv[T]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">   A trait for representing partial orderings.</p>
+    </li><li visbl="pub" name="scala.math.PartiallyOrdered">
+      <h4 class="signature"><a href="PartiallyOrdered.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">PartiallyOrdered</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A class for partially ordered data.</p>
+    </li><li visbl="pub" name="scala.math.ScalaNumericConversions">
+      <h4 class="signature"><a href="ScalaNumericConversions.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">ScalaNumericConversions</span><span class="result"> extends ScalaNumber</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Conversions which present a consistent conversion interface
+ across all the numeric types.</p>
+    </li></ol>
+            </div>
+        
+        <div class="members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="scala.math.BigDecimal">
+      <h4 class="signature"><a href="BigDecimal$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">BigDecimal</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">no summary matey</p>
+    </li><li visbl="pub" name="scala.math.BigInt">
+      <h4 class="signature"><a href="BigInt$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">BigInt</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">no summary matey</p>
+    </li><li visbl="pub" name="scala.MathCommon#E">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">E</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">The <code>double</code> value that is closer than any other to
+ <code>e</code>, the base of the natural logarithms.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>The <code>double</code> value that is closer than any other to
+ <code>e</code>, the base of the natural logarithms.
+</p></div><div class="block">
+          definition classes: MathCommon
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#IEEEremainder">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">IEEEremainder</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>, <span name="y">y: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MathCommon
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.math.Numeric">
+      <h4 class="signature"><a href="Numeric$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Numeric</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">no summary matey</p>
+    </li><li visbl="pub" name="scala.math.Ordered">
+      <h4 class="signature"><a href="Ordered$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Ordered</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.math.Ordering">
+      <h4 class="signature"><a href="Ordering$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Ordering</span><span class="result"> extends LowPriorityOrderingImplicits</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.MathCommon#Pi">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">Pi</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">The <code>double</code> value that is closer than any other to
+ <code>pi</code>, the ratio of the circumference of a circle to its
+ diameter.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>The <code>double</code> value that is closer than any other to
+ <code>pi</code>, the ratio of the circumference of a circle to its
+ diameter.
+</p></div><div class="block">
+          definition classes: MathCommon
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#abs">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">abs</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MathCommon
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#abs">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">abs</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Float">Float</span></span>)</span><span class="result">: <span class="extype" name="scala.Float">Float</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MathCommon
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#abs">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">abs</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MathCommon
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#abs">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">abs</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MathCommon
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#acos">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">acos</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MathCommon
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#asin">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">asin</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MathCommon
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#atan">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">atan</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MathCommon
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#atan2">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">atan2</span><span class="params">(<span name="y">y: <span class="extype" name="scala.Double">Double</span></span>, <span name="x">x: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Converts rectangular coordinates <code>(x, y)</code> to polar
+ <code>(r, theta)</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Converts rectangular coordinates <code>(x, y)</code> to polar
+ <code>(r, theta)</code>.
+</p></div><dl class="paramcmts block"><dt class="param">y</dt><dd class="cmt"><p>the abscissa coordinate</p></dd><dt class="param">x</dt><dd class="cmt"><p>the ordinate coordinate</p></dd><dt>returns</dt><dd class="cmt"><p>the <em>theta</em> component of the point <code>(r, theta)</code>         in polar coordinates that corresponds to the point
+         <code>(x, y)</code> in Cartesian coordinates.
+</p></dd></dl><div class="block">
+          definition classes: MathCommon
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="_root_#cbrt">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">cbrt</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#ceil">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">ceil</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MathCommon
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#cos">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">cos</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MathCommon
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#cosh">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">cosh</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#exp">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">exp</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns Euler's number <code>e</code> raised to the power of a
+ <code>double</code> value.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns Euler's number <code>e</code> raised to the power of a
+ <code>double</code> value.
+</p></div><dl class="paramcmts block"><dt class="param">x</dt><dd class="cmt"><p>the exponent to raise <code>e</code> to.</p></dd><dt>returns</dt><dd class="cmt"><p>the value <code>e<sup>a</sup></code>, where <code>e</code>         is the base of the natural logarithms.
+</p></dd></dl><div class="block">
+          definition classes: MathCommon
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="_root_#expm1">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">expm1</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#floor">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">floor</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MathCommon
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#hypot">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">hypot</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>, <span name="y">y: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#log">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">log</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MathCommon
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#log10">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">log10</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#log1p">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">log1p</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#max">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">max</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>, <span name="y">y: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MathCommon
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#max">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">max</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Float">Float</span></span>, <span name="y">y: <span class="extype" name="scala.Float">Float</span></span>)</span><span class="result">: <span class="extype" name="scala.Float">Float</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MathCommon
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#max">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">max</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Long">Long</span></span>, <span name="y">y: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MathCommon
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#max">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">max</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Int">Int</span></span>, <span name="y">y: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MathCommon
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#min">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">min</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>, <span name="y">y: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MathCommon
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#min">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">min</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Float">Float</span></span>, <span name="y">y: <span class="extype" name="scala.Float">Float</span></span>)</span><span class="result">: <span class="extype" name="scala.Float">Float</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MathCommon
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#min">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">min</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Long">Long</span></span>, <span name="y">y: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MathCommon
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#min">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">min</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Int">Int</span></span>, <span name="y">y: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MathCommon
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#pow">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">pow</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>, <span name="y">y: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns the value of the first argument raised to the power of the
+ second argument.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns the value of the first argument raised to the power of the
+ second argument.
+</p></div><dl class="paramcmts block"><dt class="param">x</dt><dd class="cmt"><p>the base.</p></dd><dt class="param">y</dt><dd class="cmt"><p>the exponent.</p></dd><dt>returns</dt><dd class="cmt"><p>the value <code>x<sup>y</sup></code>.
+</p></dd></dl><div class="block">
+          definition classes: MathCommon
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#random">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">random</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a <code>double</code> value with a positive sign, greater than
+ or equal to <code>0.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a <code>double</code> value with a positive sign, greater than
+ or equal to <code>0.0</code> and less than <code>1.0</code>.
+</p></div><div class="block">
+          definition classes: MathCommon
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#rint">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">rint</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns the <code>double</code> value that is closest in value to the
+ argument and is equal to a mathematical integer.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns the <code>double</code> value that is closest in value to the
+ argument and is equal to a mathematical integer.
+</p></div><dl class="paramcmts block"><dt class="param">x</dt><dd class="cmt"><p>a <code>double</code> value</p></dd><dt>returns</dt><dd class="cmt"><p>the closest floating-point value to a that is equal to a
+         mathematical integer.
+</p></dd></dl><div class="block">
+          definition classes: MathCommon
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#round">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">round</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MathCommon
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#round">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">round</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Float">Float</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns the closest <code>long</code> to the argument.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns the closest <code>long</code> to the argument.
+</p></div><dl class="paramcmts block"><dt class="param">x</dt><dd class="cmt"><p>a floating-point value to be rounded to a <code>long</code>.</p></dd><dt>returns</dt><dd class="cmt"><p>the value of the argument rounded to the nearest
+         <code>long</code> value.
+</p></dd></dl><div class="block">
+          definition classes: MathCommon
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#signum">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">signum</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MathCommon
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#signum">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">signum</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MathCommon
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#signum">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">signum</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Float">Float</span></span>)</span><span class="result">: <span class="extype" name="scala.Float">Float</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MathCommon
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#signum">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">signum</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MathCommon
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#sin">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">sin</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MathCommon
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#sinh">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">sinh</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#sqrt">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">sqrt</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MathCommon
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#tan">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">tan</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: MathCommon
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#tanh">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">tanh</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#toDegrees">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toDegrees</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Converts an angle measured in radians to an approximately equivalent
+ angle measured in degrees.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Converts an angle measured in radians to an approximately equivalent
+ angle measured in degrees.
+</p></div><dl class="paramcmts block"><dt class="param">x</dt><dd class="cmt"><p>angle, in radians</p></dd><dt>returns</dt><dd class="cmt"><p>the measurement of the angle <code>x</code> in degrees.
+</p></dd></dl><div class="block">
+          definition classes: MathCommon
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.MathCommon#toRadians">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toRadians</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Converts an angle measured in degrees to an approximately equivalent
+ angle measured in radians.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Converts an angle measured in degrees to an approximately equivalent
+ angle measured in radians.
+</p></div><dl class="paramcmts block"><dt class="param">x</dt><dd class="cmt"><p>an angle, in degrees</p></dd><dt>returns</dt><dd class="cmt"><p>the measurement of the angle <code>x</code> in radians.
+</p></dd></dl><div class="block">
+          definition classes: MathCommon
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="_root_#ulp">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">ulp</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Float">Float</span></span>)</span><span class="result">: <span class="extype" name="scala.Float">Float</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#ulp">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">ulp</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li></ol>
+            </div>
+                
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

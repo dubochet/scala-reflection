@@ -1,0 +1,644 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>Scaladoc for scala.Product</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		      <script type="text/javascript" src="../lib/jquery.js"></script>
+          
+      <link href="../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../lib/template.js"></script>
+      <script type="text/javascript" src="../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="type">
+
+      <p id="owner"><a href="package.html" class="extype" name="scala">scala</a></p>
+
+      <div id="definition">
+        <img src="../lib/trait_big.png" />
+        <h1>Product</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Product</span><span class="result"> extends <a href="Equals.html" class="extype" name="scala.Equals">Equals</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"><div class="comment cmt"><p>The trait <code>Product</code> defines access functions for instances
+ of products, in particular case classes.
+</p></div><div class="block">
+            known subclasses: <a href="swing/event/WindowOpened.html" class="extype" name="scala.swing.event.WindowOpened">WindowOpened</a>, <a href="swing/event/WindowIconified.html" class="extype" name="scala.swing.event.WindowIconified">WindowIconified</a>, <a href="swing/event/WindowDeiconified.html" class="extype" name="scala.swing.event.WindowDeiconified">WindowDeiconified</a>, <a href="swing/event/WindowDeactivated.html" class="extype" name="scala.swing.event.WindowDeactivated">WindowDeactivated</a>, <a href="swing/event/WindowClosing.html" class="extype" name="scala.swing.event.WindowClosing">WindowClosing</a>, <a href="swing/event/WindowClosed.html" class="extype" name="scala.swing.event.WindowClosed">WindowClosed</a>, <a href="swing/event/WindowActivated.html" class="extype" name="scala.swing.event.WindowActivated">WindowActivated</a>, <a href="swing/event/UIElementHidden.html" class="extype" name="scala.swing.event.UIElementHidden">UIElementHidden</a>, <a href="swing/event/UIElementShown.html" class="extype" name="scala.swing.event.UIElementShown">UIElementShown</a>, <a href="swing/event/UIElementResized.html" class="extype" name="scala.swing.event.UIElementResized">UIElementResized</a>, <a href="swing/event/UIElementMoved.html" class="extype" name="scala.swing.event.UIElementMoved">UIElementMoved</a>, <a href="swing/event/TableRowsSelected.html" class="extype" name="scala.swing.event.TableRowsSelected">TableRowsSelected</a>, <a href="swing/event/TableColumnsSelected.html" class="extype" name="scala.swing.event.TableColumnsSelected">TableColumnsSelected</a>, <a href="swing/event/TableRowsRemoved.html" class="extype" name="scala.swing.event.TableRowsRemoved">TableRowsRemoved</a>, <a href="swing/event/TableRowsAdded.html" class="extype" name="scala.swing.event.TableRowsAdded">TableRowsAdded</a>, <a href="swing/event/TableUpdated.html" class="extype" name="scala.swing.event.TableUpdated">TableUpdated</a>, <a href="swing/event/TableChanged.html" class="extype" name="scala.swing.event.TableChanged">TableChanged</a>, <a href="swing/event/TableStructureChanged.html" class="extype" name="scala.swing.event.TableStructureChanged">TableStructureChanged</a>, <a href="swing/event/SelectionChanged.html" class="extype" name="scala.swing.event.SelectionChanged">SelectionChanged</a>, <a href="swing/event/MouseWheelMoved.html" class="extype" name="scala.swing.event.MouseWheelMoved">MouseWheelMoved</a>, <a href="swing/event/MouseExited.html" class="extype" name="scala.swing.event.MouseExited">MouseExited</a>, <a href="swing/event/MouseEntered.html" class="extype" name="scala.swing.event.MouseEntered">MouseEntered</a>, <a href="swing/event/MouseDragged.html" class="extype" name="scala.swing.event.MouseDragged">MouseDragged</a>, <a href="swing/event/MouseMoved.html" class="extype" name="scala.swing.event.MouseMoved">MouseMoved</a>, <a href="swing/event/MouseReleased.html" class="extype" name="scala.swing.event.MouseReleased">MouseReleased</a>, <a href="swing/event/MousePressed.html" class="extype" name="scala.swing.event.MousePressed">MousePressed</a>, <a href="swing/event/MouseClicked.html" class="extype" name="scala.swing.event.MouseClicked">MouseClicked</a>, <a href="swing/event/KeyReleased.html" class="extype" name="scala.swing.event.KeyReleased">KeyReleased</a>, <a href="swing/event/KeyPressed.html" class="extype" name="scala.swing.event.KeyPressed">KeyPressed</a>, <a href="swing/event/KeyTyped.html" class="extype" name="scala.swing.event.KeyTyped">KeyTyped</a>, <a href="collection/script/Include.html" class="extype" name="scala.collection.script.Include">Include</a>, <a href="collection/script/End$.html" class="extype" name="scala.collection.script.End">End</a>, <a href="collection/script/Remove.html" class="extype" name="scala.collection.script.Remove">Remove</a>, <a href="collection/script/NoLo$.html" class="extype" name="scala.collection.script.NoLo">NoLo</a>, <a href="collection/script/Start$.html" class="extype" name="scala.collection.script.Start">Start</a>, <a href="collection/script/Index.html" class="extype" name="scala.collection.script.Index">Index</a>, <a href="collection/script/Update.html" class="extype" name="scala.collection.script.Update">Update</a>, <a href="collection/script/Reset.html" class="extype" name="scala.collection.script.Reset">Reset</a>, <a href="collection/JavaConversions$$JPropertiesWrapper.html" class="extype" name="scala.collection.JavaConversions.JPropertiesWrapper">JPropertiesWrapper</a>, <a href="collection/JavaConversions$$JDictionaryWrapper.html" class="extype" name="scala.collection.JavaConversions.JDictionaryWrapper">JDictionaryWrapper</a>, <a href="collection/JavaConversions$$DictionaryWrapper.html" class="extype" name="scala.collection.JavaConversions.DictionaryWrapper">DictionaryWrapper</a>, <a href="collection/JavaConversions$$JConcurrentMapWrapper.html" class="extype" name="scala.collection.JavaConversions.JConcurrentMapWrapper">JConcurrentMapWrapper</a>, <a href="collection/JavaConversions$$MutableMapWrapper.html" class="extype" name="scala.collection.JavaConversions.MutableMapWrapper">MutableMapWrapper</a>, <a href="collection/JavaConversions$$JMapWrapper.html" class="extype" name="scala.collection.JavaConversions.JMapWrapper">JMapWrapper</a>, <a href="collection/JavaConversions$$JSetWrapper.html" class="extype" name="scala.collection.JavaConversions.JSetWrapper">JSetWrapper</a>, <a href="collection/JavaConversions$$MutableSetWrapper.html" class="extype" name="scala.collection.JavaConversions.MutableSetWrapper">MutableSetWrapper</a>, <a href="collection/JavaConversions$$JListWrapper.html" class="extype" name="scala.collection.JavaConversions.JListWrapper">JListWrapper</a>, <a href="collection/JavaConversions$$MutableBufferWrapper.html" class="extype" name="scala.collection.JavaConversions.MutableBufferWrapper">MutableBufferWrapper</a>, <a href="collection/JavaConversions$$MutableSeqWrapper.html" class="extype" name="scala.collection.JavaConversions.MutableSeqWrapper">MutableSeqWrapper</a>, <a href="collection/JavaConversions$$SeqWrapper.html" class="extype" name="scala.collection.JavaConversions.SeqWrapper">SeqWrapper</a>, <a href="collection/JavaConversions$$JCollectionWrapper.html" class="extype" name="scala.collection.JavaConversions.JCollectionWrapper">JCollectionWrapper</a>, <a href="collection/JavaConversions$$JIterableWrapper.html" class="extype" name="scala.collection.JavaConversions.JIterableWrapper">JIterableWrapper</a>, <a href="collection/JavaConversions$$IterableWrapper.html" class="extype" name="scala.collection.JavaConversions.IterableWrapper">IterableWrapper</a>, <a href="collection/JavaConversions$$JEnumerationWrapper.html" class="extype" name="scala.collection.JavaConversions.JEnumerationWrapper">JEnumerationWrapper</a>, <a href="collection/JavaConversions$$JIteratorWrapper.html" class="extype" name="scala.collection.JavaConversions.JIteratorWrapper">JIteratorWrapper</a>, <a href="collection/JavaConversions$$IteratorWrapper.html" class="extype" name="scala.collection.JavaConversions.IteratorWrapper">IteratorWrapper</a>, <a href="collection/immutable/List.html" class="extype" name="scala.collection.immutable.List">List</a>, <a href="collection/immutable/$colon$colon.html" class="extype" name="scala.collection.immutable.::">::</a>, <a href="collection/immutable/RedBlack$BlackTree.html" class="extype" name="scala.collection.immutable.RedBlack.BlackTree">BlackTree</a>, <a href="collection/immutable/RedBlack$RedTree.html" class="extype" name="scala.collection.immutable.RedBlack.RedTree">RedTree</a>, <a href="collection/immutable/RedBlack$Empty$.html" class="extype" name="scala.collection.immutable.RedBlack.Empty">Empty</a>, <a href="collection/immutable/Nil$.html" class="extype" name="scala.collection.immutable.Nil">Nil</a>, <a href="swing/event/ForegroundChanged.html" class="extype" name="scala.swing.event.ForegroundChanged">ForegroundChanged</a>, <a href="swing/event/FontChanged.html" class="extype" name="scala.swing.event.FontChanged">FontChanged</a>, <a href="swing/event/FocusLost.html" class="extype" name="scala.swing.event.FocusLost">FocusLost</a>, <a href="swing/event/FocusGained.html" class="extype" name="scala.swing.event.FocusGained">FocusGained</a>, <a href="swing/event/EditDone.html" class="extype" name="scala.swing.event.EditDone">EditDone</a>, <a href="swing/event/ComponentRemoved.html" class="extype" name="scala.swing.event.ComponentRemoved">ComponentRemoved</a>, <a href="swing/event/ComponentAdded.html" class="extype" name="scala.swing.event.ComponentAdded">ComponentAdded</a>, <a href="swing/event/ComponentHidden.html" class="extype" name="scala.swing.event.ComponentHidden">ComponentHidden</a>, <a href="swing/event/ComponentShown.html" class="extype" name="scala.swing.event.ComponentShown">ComponentShown</a>, <a href="swing/event/ComponentResized.html" class="extype" name="scala.swing.event.ComponentResized">ComponentResized</a>, <a href="swing/event/ComponentMoved.html" class="extype" name="scala.swing.event.ComponentMoved">ComponentMoved</a>, <a href="swing/event/CaretUpdate.html" class="extype" name="scala.swing.event.CaretUpdate">CaretUpdate</a>, <a href="swing/event/ButtonClicked.html" class="extype" name="scala.swing.event.ButtonClicked">ButtonClicked</a>, <a href="swing/event/BackgroundChanged.html" class="extype" name="scala.swing.event.BackgroundChanged">BackgroundChanged</a>, <a href="swing/Action$$NoAction$.html" class="extype" name="scala.swing.Action.NoAction">NoAction</a>, <a href="concurrent/TIMEOUT$.html" class="extype" name="scala.concurrent.TIMEOUT">TIMEOUT</a>, <a href="concurrent/pilib$$Sum.html" class="extype" name="scala.concurrent.pilib.Sum">Sum</a>, <a href="concurrent/pilib$$UGP.html" class="extype" name="scala.concurrent.pilib.UGP">UGP</a>, <a href="actors/remote/SendTo.html" class="extype" name="scala.actors.remote.SendTo">SendTo</a>, <a href="actors/remote/RemoteApply0.html" class="extype" name="scala.actors.remote.RemoteApply0">RemoteApply0</a>, <a href="actors/remote/Terminate$.html" class="extype" name="scala.actors.remote.Terminate">Terminate</a>, <a href="actors/remote/LocalApply0.html" class="extype" name="scala.actors.remote.LocalApply0">LocalApply0</a>, <a href="actors/remote/Locator.html" class="extype" name="scala.actors.remote.Locator">Locator</a>, <a href="actors/remote/Node.html" class="extype" name="scala.actors.remote.Node">Node</a>, <a href="actors/remote/NamedSend.html" class="extype" name="scala.actors.remote.NamedSend">NamedSend</a>, <a href="actors/UncaughtException.html" class="extype" name="scala.actors.UncaughtException">UncaughtException</a>, <a href="actors/TIMEOUT$.html" class="extype" name="scala.actors.TIMEOUT">TIMEOUT</a>, <a href="actors/$bang.html" class="extype" name="scala.actors.!">!</a>, <a href="actors/Exit.html" class="extype" name="scala.actors.Exit">Exit</a>, <a href="swing/Swing$$Raised$.html" class="extype" name="scala.swing.Swing.Raised">Raised</a>, <a href="swing/Swing$$Lowered$.html" class="extype" name="scala.swing.Swing.Lowered">Lowered</a>, <a href="swing/Swing$$EmptyIcon$.html" class="extype" name="scala.swing.Swing.EmptyIcon">EmptyIcon</a>, <a href="swing/MenuBar$$NoMenuBar$.html" class="extype" name="scala.swing.MenuBar.NoMenuBar">NoMenuBar</a>, <a href="reflect/generic/Constants$Constant.html" class="extype" name="scala.reflect.generic.Constants.Constant">Constant</a>, <a href="reflect/generic/Trees$Tree.html" class="extype" name="scala.reflect.generic.Trees.Tree">Tree</a>, <a href="reflect/generic/Trees$SelectFromArray.html" class="extype" name="scala.reflect.generic.Trees.SelectFromArray">SelectFromArray</a>, <a href="reflect/generic/Trees$ExistentialTypeTree.html" class="extype" name="scala.reflect.generic.Trees.ExistentialTypeTree">ExistentialTypeTree</a>, <a href="reflect/generic/Trees$TypeBoundsTree.html" class="extype" name="scala.reflect.generic.Trees.TypeBoundsTree">TypeBoundsTree</a>, <a href="reflect/generic/Trees$AppliedTypeTree.html" class="extype" name="scala.reflect.generic.Trees.AppliedTypeTree">AppliedTypeTree</a>, <a href="reflect/generic/Trees$CompoundTypeTree.html" class="extype" name="scala.reflect.generic.Trees.CompoundTypeTree">CompoundTypeTree</a>, <a href="reflect/generic/Trees$SelectFromTypeTree.html" class="extype" name="scala.reflect.generic.Trees.SelectFromTypeTree">SelectFromTypeTree</a>, <a href="reflect/generic/Trees$SingletonTypeTree.html" class="extype" name="scala.reflect.generic.Trees.SingletonTypeTree">SingletonTypeTree</a>, <a href="reflect/generic/Trees$Annotated.html" class="extype" name="scala.reflect.generic.Trees.Annotated">Annotated</a>, <a href="reflect/generic/Trees$Literal.html" class="extype" name="scala.reflect.generic.Trees.Literal">Literal</a>, <a href="reflect/generic/Trees$Ident.html" class="extype" name="scala.reflect.generic.Trees.Ident">Ident</a>, <a href="reflect/generic/Trees$Select.html" class="extype" name="scala.reflect.generic.Trees.Select">Select</a>, <a href="reflect/generic/Trees$This.html" class="extype" name="scala.reflect.generic.Trees.This">This</a>, <a href="reflect/generic/Trees$Super.html" class="extype" name="scala.reflect.generic.Trees.Super">Super</a>, <a href="reflect/generic/Trees$ApplyDynamic.html" class="extype" name="scala.reflect.generic.Trees.ApplyDynamic">ApplyDynamic</a>, <a href="reflect/generic/Trees$Apply.html" class="extype" name="scala.reflect.generic.Trees.Apply">Apply</a>, <a href="reflect/generic/Trees$TypeApply.html" class="extype" name="scala.reflect.generic.Trees.TypeApply">TypeApply</a>, <a href="reflect/generic/Trees$Typed.html" class="extype" name="scala.reflect.generic.Trees.Typed">Typed</a>, <a href="reflect/generic/Trees$New.html" class="extype" name="scala.reflect.generic.Trees.New">New</a>, <a href="reflect/generic/Trees$Throw.html" class="extype" name="scala.reflect.generic.Trees.Throw">Throw</a>, <a href="reflect/generic/Trees$Try.html" class="extype" name="scala.reflect.generic.Trees.Try">Try</a>, <a href="reflect/generic/Trees$Return.html" class="extype" name="scala.reflect.generic.Trees.Return">Return</a>, <a href="reflect/generic/Trees$Match.html" class="extype" name="scala.reflect.generic.Trees.Match">Match</a>, <a href="reflect/generic/Trees$If.html" class="extype" name="scala.reflect.generic.Trees.If">If</a>, <a href="reflect/generic/Trees$Assign.html" class="extype" name="scala.reflect.generic.Trees.Assign">Assign</a>, <a href="reflect/generic/Trees$Function.html" class="extype" name="scala.reflect.generic.Trees.Function">Function</a>, <a href="reflect/generic/Trees$ArrayValue.html" class="extype" name="scala.reflect.generic.Trees.ArrayValue">ArrayValue</a>, <a href="reflect/generic/Trees$UnApply.html" class="extype" name="scala.reflect.generic.Trees.UnApply">UnApply</a>, <a href="reflect/generic/Trees$Bind.html" class="extype" name="scala.reflect.generic.Trees.Bind">Bind</a>, <a href="reflect/generic/Trees$Star.html" class="extype" name="scala.reflect.generic.Trees.Star">Star</a>, <a href="reflect/generic/Trees$Alternative.html" class="extype" name="scala.reflect.generic.Trees.Alternative">Alternative</a>, <a href="reflect/generic/Trees$CaseDef.html" class="extype" name="scala.reflect.generic.Trees.CaseDef">CaseDef</a>, <a href="reflect/generic/Trees$Block.html" class="extype" name="scala.reflect.generic.Trees.Block">Block</a>, <a href="reflect/generic/Trees$Template.html" class="extype" name="scala.reflect.generic.Trees.Template">Template</a>, <a href="reflect/generic/Trees$Import.html" class="extype" name="scala.reflect.generic.Trees.Import">Import</a>, <a href="reflect/generic/Trees$ImportSelector.html" class="extype" name="scala.reflect.generic.Trees.ImportSelector">ImportSelector</a>, <a href="reflect/generic/Trees$LabelDef.html" class="extype" name="scala.reflect.generic.Trees.LabelDef">LabelDef</a>, <a href="reflect/generic/Trees$TypeDef.html" class="extype" name="scala.reflect.generic.Trees.TypeDef">TypeDef</a>, <a href="reflect/generic/Trees$DefDef.html" class="extype" name="scala.reflect.generic.Trees.DefDef">DefDef</a>, <a href="reflect/generic/Trees$ValDef.html" class="extype" name="scala.reflect.generic.Trees.ValDef">ValDef</a>, <a href="reflect/generic/Trees$ModuleDef.html" class="extype" name="scala.reflect.generic.Trees.ModuleDef">ModuleDef</a>, <a href="reflect/generic/Trees$ClassDef.html" class="extype" name="scala.reflect.generic.Trees.ClassDef">ClassDef</a>, <a href="reflect/generic/Trees$PackageDef.html" class="extype" name="scala.reflect.generic.Trees.PackageDef">PackageDef</a>, <a href="reflect/generic/Trees$EmptyTree$.html" class="extype" name="scala.reflect.generic.Trees.EmptyTree">EmptyTree</a>, <a href="reflect/generic/Trees$Modifiers.html" class="extype" name="scala.reflect.generic.Trees.Modifiers">Modifiers</a>, <a href="io/BytePickle$$Def.html" class="extype" name="scala.io.BytePickle.Def">Def</a>, <a href="io/BytePickle$$Ref.html" class="extype" name="scala.io.BytePickle.Ref">Ref</a>, <a href="testing/SUnit$$AssertFailed.html" class="extype" name="scala.testing.SUnit.AssertFailed">AssertFailed</a>, <a href="text/DocNil$.html" class="extype" name="scala.text.DocNil">DocNil</a>, <a href="text/DocText.html" class="extype" name="scala.text.DocText">DocText</a>, <a href="text/DocBreak$.html" class="extype" name="scala.text.DocBreak">DocBreak</a>, <a href="text/DocNest.html" class="extype" name="scala.text.DocNest">DocNest</a>, <a href="text/DocCons.html" class="extype" name="scala.text.DocCons">DocCons</a>, <a href="text/DocGroup.html" class="extype" name="scala.text.DocGroup">DocGroup</a>, <a href="util/control/TailCalls$$Done.html" class="extype" name="scala.util.control.TailCalls.Done">Done</a>, <a href="util/control/TailCalls$$Call.html" class="extype" name="scala.util.control.TailCalls.Call">Call</a>, <a href="util/grammar/EmptyHedgeRHS$.html" class="extype" name="scala.util.grammar.EmptyHedgeRHS">EmptyHedgeRHS</a>, <a href="util/grammar/ConsRHS.html" class="extype" name="scala.util.grammar.ConsRHS">ConsRHS</a>, <a href="util/grammar/LabelledRHS.html" class="extype" name="scala.util.grammar.LabelledRHS">LabelledRHS</a>, <a href="util/grammar/AnyHedgeRHS$.html" class="extype" name="scala.util.grammar.AnyHedgeRHS">AnyHedgeRHS</a>, <a href="util/grammar/AnyTreeRHS$.html" class="extype" name="scala.util.grammar.AnyTreeRHS">AnyTreeRHS</a>, <a href="util/regexp/Base$Eps$.html" class="extype" name="scala.util.regexp.Base.Eps">Eps</a>, <a href="util/regexp/Base$Star.html" class="extype" name="scala.util.regexp.Base.Star">Star</a>, <a href="util/regexp/PointedHedgeExp$Point$.html" class="extype" name="scala.util.regexp.PointedHedgeExp.Point">Point</a>, <a href="util/regexp/PointedHedgeExp$TopIter.html" class="extype" name="scala.util.regexp.PointedHedgeExp.TopIter">TopIter</a>, <a href="util/regexp/PointedHedgeExp$Node.html" class="extype" name="scala.util.regexp.PointedHedgeExp.Node">Node</a>, <a href="util/regexp/WordExp$Wildcard.html" class="extype" name="scala.util.regexp.WordExp.Wildcard">Wildcard</a>, <a href="util/regexp/WordExp$Letter.html" class="extype" name="scala.util.regexp.WordExp.Letter">Letter</a>, <a href="util/parsing/json/JSONArray.html" class="extype" name="scala.util.parsing.json.JSONArray">JSONArray</a>, <a href="util/parsing/json/JSONObject.html" class="extype" name="scala.util.parsing.json.JSONObject">JSONObject</a>, <a href="util/parsing/combinator/Parsers$$tilde.html" class="extype" name="scala.util.parsing.combinator.Parsers.~">~</a>, <a href="util/parsing/combinator/Parsers$Error.html" class="extype" name="scala.util.parsing.combinator.Parsers.Error">Error</a>, <a href="util/parsing/combinator/Parsers$Failure.html" class="extype" name="scala.util.parsing.combinator.Parsers.Failure">Failure</a>, <a href="util/parsing/combinator/Parsers$Success.html" class="extype" name="scala.util.parsing.combinator.Parsers.Success">Success</a>, <a href="util/parsing/combinator/testing/Ident.html" class="extype" name="scala.util.parsing.combinator.testing.Ident">Ident</a>, <a href="util/parsing/combinator/testing/Number.html" class="extype" name="scala.util.parsing.combinator.testing.Number">Number</a>, <a href="util/parsing/combinator/testing/Str.html" class="extype" name="scala.util.parsing.combinator.testing.Str">Str</a>, <a href="util/parsing/combinator/token/Tokens$EOF$.html" class="extype" name="scala.util.parsing.combinator.token.Tokens.EOF">EOF</a>, <a href="util/parsing/combinator/token/Tokens$ErrorToken.html" class="extype" name="scala.util.parsing.combinator.token.Tokens.ErrorToken">ErrorToken</a>, <a href="util/parsing/combinator/token/StdTokens$Identifier.html" class="extype" name="scala.util.parsing.combinator.token.StdTokens.Identifier">Identifier</a>, <a href="util/parsing/combinator/token/StdTokens$StringLit.html" class="extype" name="scala.util.parsing.combinator.token.StdTokens.StringLit">StringLit</a>, <a href="util/parsing/combinator/token/StdTokens$NumericLit.html" class="extype" name="scala.util.parsing.combinator.token.StdTokens.NumericLit">NumericLit</a>, <a href="util/parsing/combinator/token/StdTokens$Keyword.html" class="extype" name="scala.util.parsing.combinator.token.StdTokens.Keyword">Keyword</a>, <a href="util/parsing/input/OffsetPosition.html" class="extype" name="scala.util.parsing.input.OffsetPosition">OffsetPosition</a>, <a href="util/parsing/ast/Binders$BoundElement.html" class="extype" name="scala.util.parsing.ast.Binders.BoundElement">BoundElement</a>, <a href="xml/pull/XMLEventReader$POISON$.html" class="extype" name="scala.xml.pull.XMLEventReader.POISON">POISON</a>, <a href="xml/pull/EvElemEnd.html" class="extype" name="scala.xml.pull.EvElemEnd">EvElemEnd</a>, <a href="xml/pull/EvEntityRef.html" class="extype" name="scala.xml.pull.EvEntityRef">EvEntityRef</a>, <a href="xml/pull/EvProcInstr.html" class="extype" name="scala.xml.pull.EvProcInstr">EvProcInstr</a>, <a href="xml/pull/EvComment.html" class="extype" name="scala.xml.pull.EvComment">EvComment</a>, <a href="xml/pull/EvElemStart.html" class="extype" name="scala.xml.pull.EvElemStart">EvElemStart</a>, <a href="xml/pull/EvText.html" class="extype" name="scala.xml.pull.EvText">EvText</a>, <a href="xml/dtd/IMPLIED$.html" class="extype" name="scala.xml.dtd.IMPLIED">IMPLIED</a>, <a href="xml/dtd/AttrDecl.html" class="extype" name="scala.xml.dtd.AttrDecl">AttrDecl</a>, <a href="xml/parsing/FatalError.html" class="extype" name="scala.xml.parsing.FatalError">FatalError</a>, <a href="xml/dtd/SystemID.html" class="extype" name="scala.xml.dtd.SystemID">SystemID</a>, <a href="xml/dtd/ExtDef.html" class="extype" name="scala.xml.dtd.ExtDef">ExtDef</a>, <a href="xml/dtd/ParsedEntityDecl.html" class="extype" name="scala.xml.dtd.ParsedEntityDecl">ParsedEntityDecl</a>, <a href="xml/dtd/PCDATA$.html" class="extype" name="scala.xml.dtd.PCDATA">PCDATA</a>, <a href="xml/dtd/ANY$.html" class="extype" name="scala.xml.dtd.ANY">ANY</a>, <a href="xml/dtd/MIXED.html" class="extype" name="scala.xml.dtd.MIXED">MIXED</a>, <a href="xml/dtd/EMPTY$.html" class="extype" name="scala.xml.dtd.EMPTY">EMPTY</a>, <a href="xml/dtd/DEFAULT.html" class="extype" name="scala.xml.dtd.DEFAULT">DEFAULT</a>, <a href="xml/dtd/NotationDecl.html" class="extype" name="scala.xml.dtd.NotationDecl">NotationDecl</a>, <a href="xml/dtd/UnparsedEntityDecl.html" class="extype" name="scala.xml.dtd.UnparsedEntityDecl">UnparsedEntityDecl</a>, <a href="xml/dtd/ContentModel$$ElemName.html" class="extype" name="scala.xml.dtd.ContentModel.ElemName">ElemName</a>, <a href="xml/dtd/ParameterEntityDecl.html" class="extype" name="scala.xml.dtd.ParameterEntityDecl">ParameterEntityDecl</a>, <a href="xml/dtd/DocType.html" class="extype" name="scala.xml.dtd.DocType">DocType</a>, <a href="xml/dtd/IntDef.html" class="extype" name="scala.xml.dtd.IntDef">IntDef</a>, <a href="xml/dtd/PublicID.html" class="extype" name="scala.xml.dtd.PublicID">PublicID</a>, <a href="xml/dtd/ElemDecl.html" class="extype" name="scala.xml.dtd.ElemDecl">ElemDecl</a>, <a href="xml/dtd/AttListDecl.html" class="extype" name="scala.xml.dtd.AttListDecl">AttListDecl</a>, <a href="xml/dtd/REQUIRED$.html" class="extype" name="scala.xml.dtd.REQUIRED">REQUIRED</a>, <a href="xml/dtd/ValidationException.html" class="extype" name="scala.xml.dtd.ValidationException">ValidationException</a>, <a href="xml/dtd/ELEMENTS.html" class="extype" name="scala.xml.dtd.ELEMENTS">ELEMENTS</a>, <a href="xml/dtd/PEReference.html" class="extype" name="scala.xml.dtd.PEReference">PEReference</a>, <a href="xml/NamespaceBinding.html" class="extype" name="scala.xml.NamespaceBinding">NamespaceBinding</a>, <a href="xml/PrettyPrinter$Para.html" class="extype" name="scala.xml.PrettyPrinter.Para">Para</a>, <a href="xml/PrettyPrinter$Box.html" class="extype" name="scala.xml.PrettyPrinter.Box">Box</a>, <a href="xml/PrettyPrinter$Break$.html" class="extype" name="scala.xml.PrettyPrinter.Break">Break</a>, <a href="xml/Group.html" class="extype" name="scala.xml.Group">Group</a>, <a href="xml/Text.html" class="extype" name="scala.xml.Text">Text</a>, <a href="xml/EntityRef.html" class="extype" name="scala.xml.EntityRef">EntityRef</a>, <a href="xml/Comment.html" class="extype" name="scala.xml.Comment">Comment</a>, <a href="xml/ProcInstr.html" class="extype" name="scala.xml.ProcInstr">ProcInstr</a>, <a href="xml/PCData.html" class="extype" name="scala.xml.PCData">PCData</a>, <a href="xml/Null$.html" class="extype" name="scala.xml.Null">Null</a>, <a href="xml/MalformedAttributeException.html" class="extype" name="scala.xml.MalformedAttributeException">MalformedAttributeException</a>, <a href="Product5.html" class="extype" name="scala.Product5">Product5</a>, <a href="Tuple5.html" class="extype" name="scala.Tuple5">Tuple5</a>, <a href="Product14.html" class="extype" name="scala.Product14">Product14</a>, <a href="Product19.html" class="extype" name="scala.Product19">Product19</a>, <a href="Tuple19.html" class="extype" name="scala.Tuple19">Tuple19</a>, <a href="Product22.html" class="extype" name="scala.Product22">Product22</a>, <a href="Product7.html" class="extype" name="scala.Product7">Product7</a>, <a href="Product9.html" class="extype" name="scala.Product9">Product9</a>, <a href="Product12.html" class="extype" name="scala.Product12">Product12</a>, <a href="Tuple12.html" class="extype" name="scala.Tuple12">Tuple12</a>, <a href="Option.html" class="extype" name="scala.Option">Option</a>, <a href="None$.html" class="extype" name="scala.None">None</a>, <a href="Product16.html" class="extype" name="scala.Product16">Product16</a>, <a href="Tuple16.html" class="extype" name="scala.Tuple16">Tuple16</a>, <a href="Product6.html" class="extype" name="scala.Product6">Product6</a>, <a href="UninitializedFieldError.html" class="extype" name="scala.UninitializedFieldError">UninitializedFieldError</a>, <a href="Product17.html" class="extype" name="scala.Product17">Product17</a>, <a href="Product21.html" class="extype" name="scala.Product21">Product21</a>, <a href="Product3.html" class="extype" name="scala.Product3">Product3</a>, <a href="Tuple3.html" class="extype" name="scala.Tuple3">Tuple3</a>, <a href="Product1.html" class="extype" name="scala.Product1">Product1</a>, <a href="Tuple1.html" class="extype" name="scala.Tuple1">Tuple1</a>, <a href="Product15.html" class="extype" name="scala.Product15">Product15</a>, <a href="Product4.html" class="extype" name="scala.Product4">Product4</a>, <a href="Tuple22.html" class="extype" name="scala.Tuple22">Tuple22</a>, <a href="Tuple6.html" class="extype" name="scala.Tuple6">Tuple6</a>, <a href="Product13.html" class="extype" name="scala.Product13">Product13</a>, <a href="Tuple13.html" class="extype" name="scala.Tuple13">Tuple13</a>, <a href="Tuple17.html" class="extype" name="scala.Tuple17">Tuple17</a>, <a href="Cell.html" class="extype" name="scala.Cell">Cell</a>, <a href="Product18.html" class="extype" name="scala.Product18">Product18</a>, <a href="Some.html" class="extype" name="scala.Some">Some</a>, <a href="Product10.html" class="extype" name="scala.Product10">Product10</a>, <a href="Product8.html" class="extype" name="scala.Product8">Product8</a>, <a href="Tuple8.html" class="extype" name="scala.Tuple8">Tuple8</a>, <a href="Tuple9.html" class="extype" name="scala.Tuple9">Tuple9</a>, <a href="Left.html" class="extype" name="scala.Left">Left</a>, <a href="Tuple10.html" class="extype" name="scala.Tuple10">Tuple10</a>, <a href="Product20.html" class="extype" name="scala.Product20">Product20</a>, <a href="Product11.html" class="extype" name="scala.Product11">Product11</a>, <a href="Tuple11.html" class="extype" name="scala.Tuple11">Tuple11</a>, <a href="Right.html" class="extype" name="scala.Right">Right</a>, <a href="Product2.html" class="extype" name="scala.Product2">Product2</a>, <a href="Tuple2.html" class="extype" name="scala.Tuple2">Tuple2</a>, <a href="Either$$RightProjection.html" class="extype" name="scala.Either.RightProjection">RightProjection</a>, <a href="Either$$LeftProjection.html" class="extype" name="scala.Either.LeftProjection">LeftProjection</a>, <a href="Tuple15.html" class="extype" name="scala.Tuple15">Tuple15</a>, <a href="Tuple4.html" class="extype" name="scala.Tuple4">Tuple4</a>, <a href="Tuple20.html" class="extype" name="scala.Tuple20">Tuple20</a>, <a href="Tuple18.html" class="extype" name="scala.Tuple18">Tuple18</a>, <a href="Tuple21.html" class="extype" name="scala.Tuple21">Tuple21</a>, <a href="Tuple14.html" class="extype" name="scala.Tuple14">Tuple14</a>, <a href="Tuple7.html" class="extype" name="scala.Tuple7">Tuple7</a>, <a href="Predef$$Triple.html" class="extype" name="scala.Predef.Triple">Triple</a>, <a href="Predef$$Pair.html" class="extype" name="scala.Predef.Pair">Pair</a>
+          </div><div class="block">
+            source: <a href="https://lampsvn.epfl.ch/trac/scala/browser/scala/trunk/src///library/scala/Product.scala">Product.scala</a>
+          </div>
+            <div class="block"><ol>version
+                  <li><p>1.0</p></li>
+                </ol></div>
+            <div class="block"><ol>since
+                  <li><p>2.3
+</p></li>
+                </ol></div>
+            
+            <div class="block"><ol>authors:
+                  <li><p>Burak Emir</p></li>
+                </ol></div>
+          </div>
+      
+      <div id="template">
+
+        <div id="mbrsel">
+          <div id="ancestors">
+                <span class="filtertype">Inherited</span>
+                <ol><li class="hideall">Hide All</li><li class="showall">Show all</li></ol>
+                <ol id="linearization"><li class="in" name="scala.Equals">Equals</li><li class="in" name="scala.AnyRef">AnyRef</li><li class="in" name="scala.Any">Any</li></ol>
+              </div>
+          <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+          </div>
+        </div>
+        
+                
+        
+        
+        
+        <div class="members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="scala.AnyRef#!=">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">!=</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.Any#!=">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"><code>o != arg0</code> is the same as <code>!(o == (arg0))</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p><code>o != arg0</code> is the same as <code>!(o == (arg0))</code>.
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for dis-equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>false</code> if the receiver object is equivalent to the argument; <code>true</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef###">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef → Any
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#$asInstanceOf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">$asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">()</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#$isInstanceOf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">$isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#==">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">==</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"><code>o == arg0</code> is the same as <code>if (o eq null) arg0 eq null else o.equals(arg0)</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p><code>o == arg0</code> is the same as <code>if (o eq null) arg0 eq null else o.equals(arg0)</code>.
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the receiver object is equivalent to the argument; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.Any#==">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"><code>o == arg0</code> is the same as <code>o.equals(arg0)</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p><code>o == arg0</code> is the same as <code>o.equals(arg0)</code>.
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the receiver object is equivalent to the argument; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.Any#asInstanceOf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is used to cast the receiver object to be of type <code>T0</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is used to cast the receiver object to be of type <code>T0</code>.</p><p>Note that the success of a cast at runtime is modulo Scala's erasure semantics.  Therefore the expression<code>1.asInstanceOf[String]</code> will throw a <code>ClassCastException</code> at runtime, while the expression<code>List(1).asInstanceOf[List[String]]</code> will not.  In the latter example, because the type argument is erased as
+part of compilation it is not possible to check whether the contents of the list are of the requested typed.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the receiver object.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.Equals#canEqual">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">canEqual</span><span class="params">(<span name="that">that: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">A method that should be called from every well-designed equals method
+ that is open to be overridden in a subclass.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>A method that should be called from every well-designed equals method
+ that is open to be overridden in a subclass. See Programming in Scala,
+ Chapter 28 for discussion and design.
+</p></div><div class="block">
+          attributes: abstract 
+        </div><div class="block">
+          definition classes: <a href="Equals.html" class="extype" name="scala.Equals">Equals</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="prt" name="scala.AnyRef#clone">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: AnyRef</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method creates and returns a copy of the receiver object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method creates and returns a copy of the receiver object.</p><p>The default implementation of the <code>clone</code> method is platform dependent.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a copy of the receiver object.</p></dd></dl><div class="block">
+          attributes: protected 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#eq">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is used to test whether the argument (<code>arg0</code>) is a reference to the
+receiver object (<code>this</code>).</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is used to test whether the argument (<code>arg0</code>) is a reference to the
+receiver object (<code>this</code>).</p><p>The <code>eq</code> method implements an [http://en.wikipedia.org/wiki/Equivalence_relation equivalence relation] on
+non-null instances of <code>AnyRef</code>:
+ * It is reflexive: for any non-null instance <code>x</code> of type <code>AnyRef</code>, <code>x.eq(x)</code> returns <code>true</code>.
+ * It is symmetric: for any non-null instances <code>x</code> and <code>y</code> of type <code>AnyRef</code>, <code>x.eq(y)</code> returns <code>true</code> if and
+   only if <code>y.eq(x)</code> returns <code>true</code>.
+ * It is transitive: for any non-null instances <code>x</code>, <code>y</code>, and <code>z</code> of type <code>AnyRef</code> if <code>x.eq(y)</code> returns <code>true</code>   and <code>y.eq(z)</code> returns <code>true</code>, then <code>x.eq(z)</code> returns <code>true</code>.</p><p>Additionally, the <code>eq</code> method has three other properties.
+ * It is consistent: for any non-null instances <code>x</code> and <code>y</code> of type <code>AnyRef</code>, multiple invocations of
+   <code>x.eq(y)</code> consistently returns <code>true</code> or consistently returns <code>false</code>.
+ * For any non-null instance <code>x</code> of type <code>AnyRef</code>, <code>x.eq(null)</code> and <code>null.eq(x)</code> returns <code>false</code>.
+ * <code>null.eq(null)</code> returns <code>true</code>.</p><p>When overriding the <code>equals</code> or <code>hashCode</code> methods, it is important to ensure that their behavior is
+consistent with reference equality.  Therefore, if two objects are references to each other (<code>o1 eq o2</code>), they
+should be equal to each other (<code>o1 == o2</code>) and they should hash to the same value (<code>o1.hashCode == o2.hashCode</code>).
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for reference equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the argument is a reference to the receiver object; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#equals">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is used to compare the receiver object (<code>this</code>) with the argument object (<code>arg0</code>) for equivalence.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is used to compare the receiver object (<code>this</code>) with the argument object (<code>arg0</code>) for equivalence.</p><p>The default implementations of this method is an [http://en.wikipedia.org/wiki/Equivalence_relation equivalence
+relation]:
+ * It is reflexive: for any instance <code>x</code> of type <code>Any</code>, <code>x.equals(x)</code> should return <code>true</code>.
+ * It is symmetric: for any instances <code>x</code> and <code>y</code> of type <code>Any</code>, <code>x.equals(y)</code> should return <code>true</code> if and
+   only if <code>y.equals(x)</code> returns <code>true</code>.
+ * It is transitive: for any instances <code>x</code>, <code>y</code>, and <code>z</code> of type <code>AnyRef</code> if <code>x.equals(y)</code> returns <code>true</code> and
+   <code>y.equals(z)</code> returns <code>true</code>, then <code>x.equals(z)</code> should return <code>true</code>.</p><p>If you override this method, you should verify that your implementation remains an equivalence relation.
+Additionally, when overriding this method it is often necessary to override <code>hashCode</code> to ensure that objects
+that are &quot;equal&quot; (<code>o1.equals(o2)</code> returns <code>true</code>) hash to the same 
+scala.Int
+(<code>o1.hashCode.equals(o2.hashCode)</code>).
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the receiver object is equivalent to the argument; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          definition classes: AnyRef → Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="prt" name="scala.AnyRef#finalize">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is called by the garbage collector on the receiver object when garbage collection determines that
+there are no more references to the object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is called by the garbage collector on the receiver object when garbage collection determines that
+there are no more references to the object.</p><p>The details of when and if the <code>finalize</code> method are invoked, as well as the interaction between <code>finalize</code>and non-local returns and exceptions, are all platform dependent.</p></div><div class="block">
+          attributes: protected 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#getClass">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: java.lang.Class[_ &lt;: java.lang.Object]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a representation that corresponds to the dynamic class of the receiver object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a representation that corresponds to the dynamic class of the receiver object.</p><p>The nature of the representation is platform dependent.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a representation that corresponds to the dynamic class of the receiver object.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#hashCode">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a hash code value for the object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a hash code value for the object.</p><p>The default hashing algorithm is platform dependent.</p><p>Note that it is allowed for two objects to have identical hash codes (<code>o1.hashCode.equals(o2.hashCode)</code>) yet
+not be equal (<code>o1.equals(o2)</code> returns <code>false</code>).  A degenerate implementation could always return <code>0</code>.
+However, it is required that if two objects are equal (<code>o1.equals(o2)</code> returns <code>true</code>) that they have
+identical hash codes (<code>o1.hashCode.equals(o2.hashCode)</code>).  Therefore, when overriding this method, be sure
+to verify that the behavior is consistent with the <code>equals</code> method.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the hash code value for the object.</p></dd></dl><div class="block">
+          definition classes: AnyRef → Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.Any#isInstanceOf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">This method is used to test whether the dynamic type of the receiver object is <code>T0</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>This method is used to test whether the dynamic type of the receiver object is <code>T0</code>.</p><p>Note that the test result of the test is modulo Scala's erasure semantics.  Therefore the expression<code>1.isInstanceOf[String]</code> will return <code>false</code>, while the expression <code>List(1).isInstanceOf[List[String]]</code> will
+return <code>true</code>.  In the latter example, because the type argument is erased as part of compilation it is not
+possible to check whether the contents of the list are of the requested typed.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>true</code> if the receiver object is an instance of erasure of type <code>T0</code>; <code>false</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#ne">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"><code>o.ne(arg0)</code> is the same as <code>!(o.eq(arg0))</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p><code>o.ne(arg0)</code> is the same as <code>!(o.eq(arg0))</code>.
+</p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for reference dis-equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>false</code> if the argument is not a reference to the receiver object; <code>true</code> otherwise.</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#notify">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Wakes up a single thread that is waiting on the receiver object's monitor.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Wakes up a single thread that is waiting on the receiver object's monitor.</p></div><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#notifyAll">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Wakes up all threads that are waiting on the receiver object's monitor.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Wakes up all threads that are waiting on the receiver object's monitor.</p></div><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.Product#productArity">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">productArity</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">return k for a product <code>A(x_1,.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>return k for a product <code>A(x_1,...,x_k)</code></p></div><div class="block">
+          attributes: abstract 
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.Product#productElement">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">productElement</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Any">Any</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">For a product <code>A(x_1,.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>For a product <code>A(x_1,...,x_k)</code>, returns <code>x_(n+1)</code> for <code>0 &amp;lt;= n &amp;lt; k</code></p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>the index of the element to return</p></dd><dt>returns</dt><dd class="cmt"><p>The element <code>n</code> elements after the first element
+</p></dd></dl><div class="block">
+          attributes: abstract 
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.Product#productElements">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name deprecated">productElements</span><span class="result">: <a href="collection/Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[<span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block"><ol>deprecated:
+          <li><p>use productIterator instead</p></li>
+        </ol></div></div>
+          
+    </li><li visbl="pub" name="scala.Product#productIterator">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">productIterator</span><span class="result">: <a href="collection/Iterator.html" class="extype" name="scala.collection.Iterator">Iterator</a>[<span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">An iterator that returns all fields of this product</p>
+            <div class="fullcomment"><div class="comment cmt"><p>An iterator that returns all fields of this product</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.Product#productPrefix">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">productPrefix</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"> By default the empty string.</p>
+            <div class="fullcomment"><div class="comment cmt"><p> By default the empty string. Implementations may override this
+ method in order to prepend a string prefix to the result of the
+ toString methods.
+</p></div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#synchronized">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: T0</span>)</span><span class="result">: T0</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#toString">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a string representation of the object.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a string representation of the object.</p><p>The default representation is platform dependent.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a string representation of the object.</p></dd></dl><div class="block">
+          definition classes: AnyRef → Any
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#wait">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#wait">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li><li visbl="pub" name="scala.AnyRef#wait">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: AnyRef
+        </div></div>
+          
+    </li></ol>
+            </div>
+                
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

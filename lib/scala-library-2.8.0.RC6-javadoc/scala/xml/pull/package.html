@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>Scaladoc for scala.xml.pull</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+          
+      <link href="../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+
+      <p id="owner"><a href="../../package.html" class="extype" name="scala">scala</a>.<a href="../package.html" class="extype" name="scala.xml">xml</a></p>
+
+      <div id="definition">
+        <img src="../../../lib/package_big.png" />
+        <h1>pull</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">pull</span>
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"></div>
+      
+      <div id="template">
+
+        <div id="mbrsel">
+          
+          <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+          </div>
+        </div>
+        
+                
+        
+        <div class="members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="scala.xml.pull.EvComment">
+      <h4 class="signature"><a href="EvComment.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">EvComment</span><span class="params">(<span name="text">text: String</span>)</span><span class="result"> extends XMLEvent with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A comment is encountered</p>
+    </li><li visbl="pub" name="scala.xml.pull.EvElemEnd">
+      <h4 class="signature"><a href="EvElemEnd.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">EvElemEnd</span><span class="params">(<span name="pre">pre: String</span>, <span name="label">label: String</span>)</span><span class="result"> extends XMLEvent with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">An element is encountered the last time</p>
+    </li><li visbl="pub" name="scala.xml.pull.EvElemStart">
+      <h4 class="signature"><a href="EvElemStart.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">EvElemStart</span><span class="params">(<span name="pre">pre: String</span>, <span name="label">label: String</span>, <span name="attrs">attrs: MetaData</span>, <span name="scope">scope: NamespaceBinding</span>)</span><span class="result"> extends XMLEvent with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">An element is encountered the first time</p>
+    </li><li visbl="pub" name="scala.xml.pull.EvEntityRef">
+      <h4 class="signature"><a href="EvEntityRef.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">EvEntityRef</span><span class="params">(<span name="entity">entity: String</span>)</span><span class="result"> extends XMLEvent with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">An entity reference is encountered</p>
+    </li><li visbl="pub" name="scala.xml.pull.EvProcInstr">
+      <h4 class="signature"><a href="EvProcInstr.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">EvProcInstr</span><span class="params">(<span name="target">target: String</span>, <span name="text">text: String</span>)</span><span class="result"> extends XMLEvent with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A processing instruction is encountered</p>
+    </li><li visbl="pub" name="scala.xml.pull.EvText">
+      <h4 class="signature"><a href="EvText.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">EvText</span><span class="params">(<span name="text">text: String</span>)</span><span class="result"> extends XMLEvent with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">A text node is encountered</p>
+    </li><li visbl="pub" name="scala.xml.pull.ProducerConsumerIterator">
+      <h4 class="signature"><a href="ProducerConsumerIterator.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">ProducerConsumerIterator</span><span class="tparams">[<span name="T">T &gt;: Null</span>]</span><span class="result"> extends Iterator[T]</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="scala.xml.pull.XMLEvent">
+      <h4 class="signature"><a href="XMLEvent.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">XMLEvent</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">This class represents an XML event for pull parsing.</p>
+    </li><li visbl="pub" name="scala.xml.pull.XMLEventReader">
+      <h4 class="signature"><a href="XMLEventReader.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">XMLEventReader</span><span class="result"> extends ProducerConsumerIterator[XMLEvent]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">  A pull parser that offers to view an XML document as a series of events.</p>
+    </li></ol>
+            </div>
+        
+        
+                
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>
