@@ -24,23 +24,18 @@ trait Scopes extends generic.Scopes { self: Universe =>
 
   def newScope = new Scope
 
-  /*
-  class OptimisticScope extends AbsScope {
+  class OptimisticScope extends Scope {
 
-    def enter(sym: Any): Any = null
+    override def enter(sym: Any): Any = null
 
-    def iterator: Iterator[Any] = null
+    override def iterator: Iterator[Any] = null
 
-    def lookup(name: Name): Symbol =
+    override def lookup(name: Name): Symbol =
       lookupAll(name).toList match {
         case Nil => NoSymbol
         case s :: ss => s
       }
 
-    def lookupAll(name: Name): Iterator[Symbol] =
-      iterator filter { _.name == name}
-
   }
-  */
 
 }
