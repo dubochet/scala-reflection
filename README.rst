@@ -2,6 +2,10 @@
                           THE SCALA REFLECTION LIBRARY                          
 ================================================================================
 
+*This codebase is historic, and represents early efforts in the development of a
+Scala reflection library. It has been entirely replaced and superseeded by later
+developments.*
+
 The Scala reflection library is intended to provide developers with a means to 
 reflect on Scala programs in a way that exposes structures corresponding to the 
 Scala source being reflected upon.
@@ -12,8 +16,5 @@ implements an abstract API — which it shares with the Scala compiler — that 
 recreate the original Scala view of a program from class files. This API is the
 *backend* of the Scala reflection library. The *frontend* ties the backend and
 Java reflection into a user-friendly system to do Scala reflection.
-
-The Scala reflection library is in development. For the time being, no usable
-version is available.
 
 Questions can be addressed to Gilles Dubochet <gilles.dubochet@epfl.ch>.
